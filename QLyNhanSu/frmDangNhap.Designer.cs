@@ -106,7 +106,7 @@
             pictureBox1.Image = Properties.Resources.hoyoverse_icon_logo_22;
             pictureBox1.Location = new Point(56, 30);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(184, 144);
+            pictureBox1.Size = new Size(186, 150);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -136,7 +136,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.DodgerBlue;
-            label4.Location = new Point(323, 144);
+            label4.Location = new Point(321, 129);
             label4.Name = "label4";
             label4.Size = new Size(258, 30);
             label4.TabIndex = 5;

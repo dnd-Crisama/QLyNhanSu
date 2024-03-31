@@ -103,6 +103,16 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2310707 {
+            get {
+                object obj = ResourceManager.GetObject("2310707", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3067416 {
             get {
                 object obj = ResourceManager.GetObject("3067416", resourceCulture);
@@ -136,6 +146,16 @@ namespace QLyNhanSu.Properties {
         internal static System.Drawing.Bitmap _32d33ae6fe6a483a86411652f7a3775a_7318876557544328823 {
             get {
                 object obj = ResourceManager.GetObject("32d33ae6fe6a483a86411652f7a3775a_7318876557544328823", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3596079 {
+            get {
+                object obj = ResourceManager.GetObject("3596079", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
