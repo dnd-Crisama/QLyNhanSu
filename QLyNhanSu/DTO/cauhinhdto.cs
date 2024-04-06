@@ -11,7 +11,7 @@ namespace QLyNhanSu.DTO
         public int id { get; set; }
         public string ten { get; set; }
         public string tacgia { get; set; }
-        public string gioithieu { get; set; }
+        public string noidung { get; set; }
 
         public string huongdan { get; set; }
     }

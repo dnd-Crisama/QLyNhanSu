@@ -9,8 +9,10 @@
 
         private void stripChamCong_Click(object sender, EventArgs e)
         {
-            frmChamCong frmChamCong = new frmChamCong();
+            this.Hide();
+            frmChamCong frmChamCong = new frmChamCong();           
             frmChamCong.ShowDialog();
+            this.Show();
         }
     }
 }
