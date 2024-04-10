@@ -209,6 +209,7 @@
             button2.TabIndex = 8;
             button2.Text = "Đăng nhập";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button4
             // 
@@ -220,6 +221,7 @@
             button4.TabIndex = 10;
             button4.Text = "Thoát";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // ckbShowPass
             // 
@@ -249,6 +251,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmDangNhap";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng nhập";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -275,12 +278,12 @@
         private Label label4;
         private Panel panel3;
         private Panel panel4;
-        private TextBox txtUsername;
         private PictureBox pictureBox2;
         private TextBox txtPassword;
         private PictureBox pictureBox3;
         private Button button2;
         private Button button4;
         private CheckBox ckbShowPass;
+        public TextBox txtUsername;
     }
 }

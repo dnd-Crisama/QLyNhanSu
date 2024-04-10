@@ -59,8 +59,6 @@
             toolStripSeparator3 = new ToolStripSeparator();
             stripTroGiup1 = new ToolStripMenuItem();
             stripHeThong = new ToolStripMenuItem();
-            stripCSDL = new ToolStripMenuItem();
-            stripBackup = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             lbltaikhoan = new ToolStripStatusLabel();
@@ -75,9 +73,14 @@
             toolStripStatusLabel3 = new ToolStripStatusLabel();
             toolStripProgressBar1 = new ToolStripProgressBar();
             toolStripStatusLabel5 = new ToolStripStatusLabel();
-            toolStrip1 = new ToolStrip();
+            panel1 = new Panel();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            lblTime = new Label();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -86,7 +89,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { stripTaiKhoan, stripChamCong, stripChucNang, stripNhanSu, stripDanhMuc, stripNguoiDung, stripTroGiup, stripHeThong });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1126, 28);
+            menuStrip1.RenderMode = ToolStripRenderMode.Professional;
+            menuStrip1.Size = new Size(1350, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -102,21 +106,23 @@
             // 
             stripDangNhap.Image = Properties.Resources.image_2024_03_31_102858918_690px;
             stripDangNhap.Name = "stripDangNhap";
-            stripDangNhap.Size = new Size(184, 26);
+            stripDangNhap.Size = new Size(132, 22);
             stripDangNhap.Text = "Đăng nhập";
+            stripDangNhap.Click += stripDangNhap_Click;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(181, 6);
+            toolStripSeparator1.Size = new Size(129, 6);
             // 
             // stripThoat
             // 
             stripThoat.ForeColor = Color.Red;
             stripThoat.Image = Properties.Resources._15181205;
             stripThoat.Name = "stripThoat";
-            stripThoat.Size = new Size(184, 26);
+            stripThoat.Size = new Size(132, 22);
             stripThoat.Text = "Thoát";
+            stripThoat.Click += stripThoat_Click;
             // 
             // stripChamCong
             // 
@@ -137,18 +143,18 @@
             // stripQLLuong
             // 
             stripQLLuong.Name = "stripQLLuong";
-            stripQLLuong.Size = new Size(180, 22);
+            stripQLLuong.Size = new Size(149, 22);
             stripQLLuong.Text = "Quản lý lương";
             // 
             // toolStripSeparator4
             // 
             toolStripSeparator4.Name = "toolStripSeparator4";
-            toolStripSeparator4.Size = new Size(177, 6);
+            toolStripSeparator4.Size = new Size(146, 6);
             // 
             // stripTinhLuong
             // 
             stripTinhLuong.Name = "stripTinhLuong";
-            stripTinhLuong.Size = new Size(180, 22);
+            stripTinhLuong.Size = new Size(149, 22);
             stripTinhLuong.Text = "Tính lương";
             // 
             // stripNhanSu
@@ -272,31 +278,19 @@
             // 
             // stripHeThong
             // 
-            stripHeThong.DropDownItems.AddRange(new ToolStripItem[] { stripCSDL, stripBackup });
             stripHeThong.Image = Properties.Resources._3067416;
             stripHeThong.Name = "stripHeThong";
             stripHeThong.Size = new Size(89, 24);
             stripHeThong.Text = "Hệ thống";
-            // 
-            // stripCSDL
-            // 
-            stripCSDL.Name = "stripCSDL";
-            stripCSDL.Size = new Size(180, 22);
-            stripCSDL.Text = "Cơ sở dữ liệu";
-            // 
-            // stripBackup
-            // 
-            stripBackup.Name = "stripBackup";
-            stripBackup.Size = new Size(180, 22);
-            stripBackup.Text = "Backup";
+            stripHeThong.Click += stripHeThong_Click;
             // 
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, lbltaikhoan, toolStripStatusLabel2, toolStripStatusLabel6, lblquyen, toolStripStatusLabel4, lblngaygio, toolStripStatusLabel9, toolStripStatusLabel8, lblThongBaoChung, toolStripStatusLabel3, toolStripProgressBar1, toolStripStatusLabel5 });
-            statusStrip1.Location = new Point(0, 623);
+            statusStrip1.Location = new Point(0, 707);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1126, 22);
+            statusStrip1.Size = new Size(1350, 22);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -382,31 +376,70 @@
             toolStripStatusLabel5.Size = new Size(17, 17);
             toolStripStatusLabel5.Text = "in";
             // 
-            // toolStrip1
+            // panel1
             // 
-            toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Location = new Point(0, 28);
-            toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1126, 25);
-            toolStrip1.TabIndex = 2;
-            toolStrip1.Text = "toolStrip1";
+            panel1.BackColor = Color.AliceBlue;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(0, 31);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1350, 52);
+            panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Indigo;
+            label1.Location = new Point(431, 2);
+            label1.Name = "label1";
+            label1.Size = new Size(449, 40);
+            label1.TabIndex = 0;
+            label1.Text = "Employee Management System";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._355861759_670321011806471_2971325253730285293_n;
+            pictureBox1.Location = new Point(0, 77);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1351, 627);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
+            // lblTime
+            // 
+            lblTime.AutoSize = true;
+            lblTime.Font = new Font("Segoe UI", 9.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTime.ForeColor = Color.DarkMagenta;
+            lblTime.Location = new Point(1095, 6);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(0, 17);
+            lblTime.TabIndex = 4;
             // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1126, 645);
-            Controls.Add(toolStrip1);
+            AutoSize = true;
+            ClientSize = new Size(1350, 729);
+            Controls.Add(lblTime);
+            Controls.Add(pictureBox1);
+            Controls.Add(panel1);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "frmMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Quản lý nhân sự";
+            Load += frmMain_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -416,9 +449,8 @@
         private MenuStrip menuStrip1;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
-        private ToolStrip toolStrip1;
         private ToolStripMenuItem stripTaiKhoan;
-        private ToolStripMenuItem stripDangNhap;
+        public ToolStripMenuItem stripDangNhap;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripMenuItem stripThoat;
         private ToolStripMenuItem stripChamCong;
@@ -440,8 +472,6 @@
         private ToolStripSeparator toolStripSeparator3;
         private ToolStripMenuItem stripTroGiup1;
         private ToolStripMenuItem stripHeThong;
-        private ToolStripMenuItem stripCSDL;
-        private ToolStripMenuItem stripBackup;
         private ToolStripSeparator toolStripSeparator4;
         private ToolStripMenuItem stripQLPhongBan;
         private ToolStripMenuItem stripQLTacVu;
@@ -461,5 +491,9 @@
         private ToolStripStatusLabel toolStripStatusLabel3;
         private ToolStripProgressBar toolStripProgressBar1;
         private ToolStripStatusLabel toolStripStatusLabel5;
+        private Panel panel1;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private Label lblTime;
     }
 }

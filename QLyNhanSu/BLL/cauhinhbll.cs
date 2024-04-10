@@ -30,9 +30,10 @@ namespace QLyNhanSu.BLL
         }
         public void them(cauhinhdto doituong)
         {
-            string chuoi = " INSERT INTO CauHinh ";
-            chuoi += " (ten,tacgia,noidung,huongdan) ";
+            string chuoi = "INSERT INTO CauHinh";
+            chuoi += " (id,ten,tacgia,noidung,huongdan) ";
             chuoi += " VALUES ( ";
+            chuoi += " N'" + doituong.id + "', ";
             chuoi += " N'" + doituong.ten + "', ";
             chuoi += " N'" + doituong.tacgia + "', ";
             chuoi += " N'" + doituong.noidung + "', ";
@@ -62,7 +63,7 @@ namespace QLyNhanSu.BLL
         }
         public void xoa(cauhinhdto doituong)
         {
-            string chuoi = "DELETE FROM CauHinh    ";
+            string chuoi = "DELETE FROM CauHinh";
             chuoi += " WHERE id = N'" + doituong.id + "' ";
             try
             {

@@ -53,6 +53,14 @@
             splitContainer3 = new SplitContainer();
             label9 = new Label();
             dataGridView1 = new DataGridView();
+            Column7 = new DataGridViewTextBoxColumn();
+            Column8 = new DataGridViewTextBoxColumn();
+            Column9 = new DataGridViewTextBoxColumn();
+            Column10 = new DataGridViewTextBoxColumn();
+            Column11 = new DataGridViewTextBoxColumn();
+            Column12 = new DataGridViewTextBoxColumn();
+            Column13 = new DataGridViewTextBoxColumn();
+            Column14 = new DataGridViewTextBoxColumn();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -73,17 +81,7 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            label17 = new Label();
             panel1 = new Panel();
-            panel2 = new Panel();
-            pictureBox6 = new PictureBox();
-            panel3 = new Panel();
-            label16 = new Label();
-            label18 = new Label();
-            textBox14 = new TextBox();
-            label19 = new Label();
-            textBox15 = new TextBox();
-            pictureBox7 = new PictureBox();
             panel4 = new Panel();
             dataGridView2 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
@@ -94,14 +92,16 @@
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
-            Column8 = new DataGridViewTextBoxColumn();
-            Column9 = new DataGridViewTextBoxColumn();
-            Column10 = new DataGridViewTextBoxColumn();
-            Column11 = new DataGridViewTextBoxColumn();
-            Column12 = new DataGridViewTextBoxColumn();
-            Column13 = new DataGridViewTextBoxColumn();
-            Column14 = new DataGridViewTextBoxColumn();
+            panel2 = new Panel();
+            pictureBox7 = new PictureBox();
+            label19 = new Label();
+            textBox15 = new TextBox();
+            label18 = new Label();
+            textBox14 = new TextBox();
+            label16 = new Label();
+            panel3 = new Panel();
+            label17 = new Label();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -124,12 +124,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -437,6 +437,48 @@
             dataGridView1.Size = new Size(433, 262);
             dataGridView1.TabIndex = 0;
             // 
+            // Column7
+            // 
+            Column7.HeaderText = "Mã";
+            Column7.Name = "Column7";
+            Column7.Width = 50;
+            // 
+            // Column8
+            // 
+            Column8.HeaderText = "Tên nhân viên";
+            Column8.Name = "Column8";
+            Column8.Width = 150;
+            // 
+            // Column9
+            // 
+            Column9.HeaderText = "CMT";
+            Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            Column10.HeaderText = "Ngày sinh";
+            Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            Column11.HeaderText = "Điện thoại";
+            Column11.Name = "Column11";
+            // 
+            // Column12
+            // 
+            Column12.HeaderText = "Phòng ban";
+            Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            Column13.HeaderText = "Chức vụ";
+            Column13.Name = "Column13";
+            // 
+            // Column14
+            // 
+            Column14.HeaderText = "Trạng thái";
+            Column14.Name = "Column14";
+            // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources._2310707;
@@ -622,18 +664,6 @@
             label1.TabIndex = 0;
             label1.Text = "NHÂN SỰ";
             // 
-            // label17
-            // 
-            label17.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.ForeColor = Color.Coral;
-            label17.Location = new Point(364, 10);
-            label17.Name = "label17";
-            label17.Size = new Size(151, 17);
-            label17.TabIndex = 2;
-            label17.Text = "BẢNG LƯƠNG CHI TIẾT";
-            // 
             // panel1
             // 
             panel1.Controls.Add(panel4);
@@ -644,94 +674,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(893, 368);
             panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = SystemColors.GradientInactiveCaption;
-            panel2.Controls.Add(pictureBox7);
-            panel2.Controls.Add(label19);
-            panel2.Controls.Add(textBox15);
-            panel2.Controls.Add(label18);
-            panel2.Controls.Add(textBox14);
-            panel2.Controls.Add(label16);
-            panel2.Location = new Point(-1, 335);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(895, 30);
-            panel2.TabIndex = 0;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = Properties.Resources._3596079;
-            pictureBox6.Location = new Point(836, 5);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(46, 28);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 3;
-            pictureBox6.TabStop = false;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(label17);
-            panel3.Controls.Add(pictureBox6);
-            panel3.Location = new Point(-1, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(891, 39);
-            panel3.TabIndex = 4;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(603, 9);
-            label16.Name = "label16";
-            label16.Size = new Size(53, 15);
-            label16.TabIndex = 24;
-            label16.Text = "Lọc theo";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new Point(663, 9);
-            label18.Name = "label18";
-            label18.Size = new Size(40, 15);
-            label18.TabIndex = 26;
-            label18.Text = "Tháng";
-            // 
-            // textBox14
-            // 
-            textBox14.BackColor = SystemColors.HighlightText;
-            textBox14.Location = new Point(707, 4);
-            textBox14.Name = "textBox14";
-            textBox14.ReadOnly = true;
-            textBox14.Size = new Size(34, 23);
-            textBox14.TabIndex = 25;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Location = new Point(746, 9);
-            label19.Name = "label19";
-            label19.Size = new Size(33, 15);
-            label19.TabIndex = 28;
-            label19.Text = "Năm";
-            // 
-            // textBox15
-            // 
-            textBox15.BackColor = SystemColors.HighlightText;
-            textBox15.Location = new Point(782, 3);
-            textBox15.Name = "textBox15";
-            textBox15.ReadOnly = true;
-            textBox15.Size = new Size(60, 23);
-            textBox15.TabIndex = 27;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Properties.Resources._2310707;
-            pictureBox7.Location = new Point(854, 3);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(28, 24);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 5;
-            pictureBox7.TabStop = false;
             // 
             // panel4
             // 
@@ -800,47 +742,105 @@
             Column6.Name = "Column6";
             Column6.Width = 265;
             // 
-            // Column7
+            // panel2
             // 
-            Column7.HeaderText = "Mã";
-            Column7.Name = "Column7";
-            Column7.Width = 50;
+            panel2.BackColor = SystemColors.GradientInactiveCaption;
+            panel2.Controls.Add(pictureBox7);
+            panel2.Controls.Add(label19);
+            panel2.Controls.Add(textBox15);
+            panel2.Controls.Add(label18);
+            panel2.Controls.Add(textBox14);
+            panel2.Controls.Add(label16);
+            panel2.Location = new Point(-1, 335);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(895, 30);
+            panel2.TabIndex = 0;
             // 
-            // Column8
+            // pictureBox7
             // 
-            Column8.HeaderText = "Tên nhân viên";
-            Column8.Name = "Column8";
-            Column8.Width = 150;
+            pictureBox7.Image = Properties.Resources._2310707;
+            pictureBox7.Location = new Point(854, 3);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(28, 24);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 5;
+            pictureBox7.TabStop = false;
             // 
-            // Column9
+            // label19
             // 
-            Column9.HeaderText = "CMT";
-            Column9.Name = "Column9";
+            label19.AutoSize = true;
+            label19.Location = new Point(746, 9);
+            label19.Name = "label19";
+            label19.Size = new Size(33, 15);
+            label19.TabIndex = 28;
+            label19.Text = "Năm";
             // 
-            // Column10
+            // textBox15
             // 
-            Column10.HeaderText = "Ngày sinh";
-            Column10.Name = "Column10";
+            textBox15.BackColor = SystemColors.HighlightText;
+            textBox15.Location = new Point(782, 3);
+            textBox15.Name = "textBox15";
+            textBox15.ReadOnly = true;
+            textBox15.Size = new Size(60, 23);
+            textBox15.TabIndex = 27;
             // 
-            // Column11
+            // label18
             // 
-            Column11.HeaderText = "Điện thoại";
-            Column11.Name = "Column11";
+            label18.AutoSize = true;
+            label18.Location = new Point(663, 9);
+            label18.Name = "label18";
+            label18.Size = new Size(40, 15);
+            label18.TabIndex = 26;
+            label18.Text = "Tháng";
             // 
-            // Column12
+            // textBox14
             // 
-            Column12.HeaderText = "Phòng ban";
-            Column12.Name = "Column12";
+            textBox14.BackColor = SystemColors.HighlightText;
+            textBox14.Location = new Point(707, 4);
+            textBox14.Name = "textBox14";
+            textBox14.ReadOnly = true;
+            textBox14.Size = new Size(34, 23);
+            textBox14.TabIndex = 25;
             // 
-            // Column13
+            // label16
             // 
-            Column13.HeaderText = "Chức vụ";
-            Column13.Name = "Column13";
+            label16.AutoSize = true;
+            label16.Location = new Point(603, 9);
+            label16.Name = "label16";
+            label16.Size = new Size(53, 15);
+            label16.TabIndex = 24;
+            label16.Text = "Lọc theo";
             // 
-            // Column14
+            // panel3
             // 
-            Column14.HeaderText = "Trạng thái";
-            Column14.Name = "Column14";
+            panel3.Controls.Add(label17);
+            panel3.Controls.Add(pictureBox6);
+            panel3.Location = new Point(-1, 3);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(891, 39);
+            panel3.TabIndex = 4;
+            // 
+            // label17
+            // 
+            label17.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.Coral;
+            label17.Location = new Point(364, 10);
+            label17.Name = "label17";
+            label17.Size = new Size(151, 17);
+            label17.TabIndex = 2;
+            label17.Text = "BẢNG LƯƠNG CHI TIẾT";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources._3596079;
+            pictureBox6.Location = new Point(836, 5);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(46, 28);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 3;
+            pictureBox6.TabStop = false;
             // 
             // frmChamCong
             // 
@@ -850,6 +850,7 @@
             Controls.Add(splitContainer1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmChamCong";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Chấm công";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
@@ -877,14 +878,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 

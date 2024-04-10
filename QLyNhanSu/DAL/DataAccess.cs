@@ -79,7 +79,7 @@ namespace QLyNhanSu.DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Connection = cn;
                 DataTable result = new DataTable();
-                SqlDataAdapter dapter = new SqlDataAdapter();
+                SqlDataAdapter dapter = new SqlDataAdapter(cmd);
 
                 dapter.Fill(result);
                 return result;
@@ -140,6 +140,10 @@ namespace QLyNhanSu.DAL
                 // return cmd.ExecuteNonQuery();
                 // return (int)cmd.ExecuteScalar();
                 object returnObj = cmd.ExecuteScalar();
+                if (returnObj == null)
+                {
+                    throw new Exception("Returned object is null.");
+                }
                 int.TryParse(returnObj.ToString(), out returnValue);
                 return returnValue;
             }

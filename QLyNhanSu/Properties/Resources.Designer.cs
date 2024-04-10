@@ -103,9 +103,39 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1827933 {
+            get {
+                object obj = ResourceManager.GetObject("1827933", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1828819 {
+            get {
+                object obj = ResourceManager.GetObject("1828819", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2310707 {
             get {
                 object obj = ResourceManager.GetObject("2310707", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _23107071 {
+            get {
+                object obj = ResourceManager.GetObject("23107071", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +183,16 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _355861759_670321011806471_2971325253730285293_n {
+            get {
+                object obj = ResourceManager.GetObject("355861759_670321011806471_2971325253730285293_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3596079 {
             get {
                 object obj = ResourceManager.GetObject("3596079", resourceCulture);
@@ -163,9 +203,19 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _44f5b21e1f57dd17eb7b9a4e66f0639a {
+        internal static System.Drawing.Bitmap _399274 {
             get {
-                object obj = ResourceManager.GetObject("44f5b21e1f57dd17eb7b9a4e66f0639a", resourceCulture);
+                object obj = ResourceManager.GetObject("399274", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _489707 {
+            get {
+                object obj = ResourceManager.GetObject("489707", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +233,29 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _560512 {
+            get {
+                object obj = ResourceManager.GetObject("560512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6826735 {
             get {
                 object obj = ResourceManager.GetObject("6826735", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6861362 {
+            get {
+                object obj = ResourceManager.GetObject("6861362", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +273,9 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap desktop_wallpaper_mcdonalds_yoimiya_in_2021_mcdonalds_cute_anime_thumbnail {
+        internal static System.Drawing.Bitmap _9913406 {
             get {
-                object obj = ResourceManager.GetObject("desktop-wallpaper-mcdonalds-yoimiya-in-2021-mcdonalds-cute-anime-thumbnail", resourceCulture);
+                object obj = ResourceManager.GetObject("9913406", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +283,9 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap desktop_wallpaper_mcdonalds_yoimiya_in_2021_mcdonalds_cute_anime_thumbnail1 {
+        internal static System.Drawing.Bitmap desktop_wallpaper_mcdonalds_yoimiya_in_2021_mcdonalds_cute_anime_thumbnail {
             get {
-                object obj = ResourceManager.GetObject("desktop-wallpaper-mcdonalds-yoimiya-in-2021-mcdonalds-cute-anime-thumbnail1", resourceCulture);
+                object obj = ResourceManager.GetObject("desktop-wallpaper-mcdonalds-yoimiya-in-2021-mcdonalds-cute-anime-thumbnail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -72,7 +72,7 @@ namespace QLyNhanSu.DAL
                     //save file
                     workSheet.SaveAs(_pathname);
                     excelApp.Quit();
-                    excelApp.Visible = true;
+                    excelApp.Visible = false;
                     return _return = "Export Successfully!";
                 }
             } catch (Exception ex)
@@ -153,7 +153,7 @@ namespace QLyNhanSu.DAL
             string strSQL = "SELECT * FROM [Sheet1$]";
             OleDbCommand cmd = new OleDbCommand(strSQL, conn);
             DataSet ds = new DataSet();
-            OleDbDataAdapter da = new OleDbDataAdapter();
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
             da.Fill(ds);
             return ds.Tables[0];
         }
