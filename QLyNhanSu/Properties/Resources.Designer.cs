@@ -293,6 +293,16 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Flat_restart_icon_svg {
+            get {
+                object obj = ResourceManager.GetObject("Flat_restart_icon.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hoyoverse_icon_logo_22 {
             get {
                 object obj = ResourceManager.GetObject("hoyoverse-icon-logo-22", resourceCulture);
@@ -316,6 +326,76 @@ namespace QLyNhanSu.Properties {
         internal static System.Drawing.Bitmap image_2024_03_31_102858918_690px {
             get {
                 object obj = ResourceManager.GetObject("image_2024_03_31_102858918_690px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_check_mark_cross_x_miscellaneous_trademark_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-check-mark-cross-x-miscellaneous-trademark-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_magnifying_glass_icon_image_1128382 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-magnifying-glass-icon-image_1128382", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton2_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton2.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton3_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton3.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton4_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton4.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton5_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton5.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton8_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton8.Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
