@@ -1,6 +1,6 @@
 ﻿namespace QLyNhanSu
 {
-    partial class Form1
+    partial class frmQuanLyTaiKhoan
     {
         /// <summary>
         /// Required designer variable.
