@@ -40,15 +40,15 @@
             toolStripButton6 = new ToolStripButton();
             toolStripButton7 = new ToolStripButton();
             dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
             label2 = new Label();
             label1 = new Label();
             label3 = new Label();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             textBox3 = new TextBox();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -59,7 +59,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, toolStripTextBox1, toolStripButton6, toolStripButton7 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(800, 27);
+            toolStrip1.Size = new Size(700, 27);
             toolStrip1.TabIndex = 5;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -69,7 +69,7 @@
             toolStripButton1.Image = Properties.Resources.Flat_restart_icon_svg;
             toolStripButton1.ImageTransparentColor = Color.Magenta;
             toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(29, 24);
+            toolStripButton1.Size = new Size(24, 24);
             toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStripButton2
@@ -78,7 +78,7 @@
             toolStripButton2.Image = Properties.Resources.toolStripButton2_Image;
             toolStripButton2.ImageTransparentColor = Color.Magenta;
             toolStripButton2.Name = "toolStripButton2";
-            toolStripButton2.Size = new Size(29, 24);
+            toolStripButton2.Size = new Size(24, 24);
             toolStripButton2.Text = "toolStripButton2";
             // 
             // toolStripButton3
@@ -87,7 +87,7 @@
             toolStripButton3.Image = Properties.Resources.toolStripButton3_Image;
             toolStripButton3.ImageTransparentColor = Color.Magenta;
             toolStripButton3.Name = "toolStripButton3";
-            toolStripButton3.Size = new Size(29, 24);
+            toolStripButton3.Size = new Size(24, 24);
             toolStripButton3.Text = "toolStripButton3";
             // 
             // toolStripButton4
@@ -96,7 +96,7 @@
             toolStripButton4.Image = Properties.Resources.toolStripButton4_Image;
             toolStripButton4.ImageTransparentColor = Color.Magenta;
             toolStripButton4.Name = "toolStripButton4";
-            toolStripButton4.Size = new Size(29, 24);
+            toolStripButton4.Size = new Size(24, 24);
             toolStripButton4.Text = "toolStripButton4";
             // 
             // toolStripButton8
@@ -105,7 +105,7 @@
             toolStripButton8.Image = Properties.Resources.toolStripButton8_Image;
             toolStripButton8.ImageTransparentColor = Color.Magenta;
             toolStripButton8.Name = "toolStripButton8";
-            toolStripButton8.Size = new Size(29, 24);
+            toolStripButton8.Size = new Size(24, 24);
             toolStripButton8.Text = "toolStripButton8";
             // 
             // toolStripButton5
@@ -114,19 +114,19 @@
             toolStripButton5.Image = Properties.Resources.toolStripButton5_Image;
             toolStripButton5.ImageTransparentColor = Color.Magenta;
             toolStripButton5.Name = "toolStripButton5";
-            toolStripButton5.Size = new Size(29, 24);
+            toolStripButton5.Size = new Size(24, 24);
             toolStripButton5.Text = "toolStripButton5";
             // 
             // toolStripLabel1
             // 
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(72, 24);
+            toolStripLabel1.Size = new Size(57, 24);
             toolStripLabel1.Text = "Tìm Kiếm";
             // 
             // toolStripTextBox1
             // 
             toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 27);
+            toolStripTextBox1.Size = new Size(88, 27);
             // 
             // toolStripButton6
             // 
@@ -134,7 +134,7 @@
             toolStripButton6.Image = Properties.Resources.pngtree_magnifying_glass_icon_image_1128382;
             toolStripButton6.ImageTransparentColor = Color.Magenta;
             toolStripButton6.Name = "toolStripButton6";
-            toolStripButton6.Size = new Size(29, 24);
+            toolStripButton6.Size = new Size(24, 24);
             toolStripButton6.Text = "toolStripButton6";
             // 
             // toolStripButton7
@@ -143,66 +143,19 @@
             toolStripButton7.Image = Properties.Resources.png_clipart_computer_icons_check_mark_cross_x_miscellaneous_trademark_thumbnail;
             toolStripButton7.ImageTransparentColor = Color.Magenta;
             toolStripButton7.Name = "toolStripButton7";
-            toolStripButton7.Size = new Size(29, 24);
+            toolStripButton7.Size = new Size(24, 24);
             toolStripButton7.Text = "toolStripButton7";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(0, 155);
+            dataGridView1.Location = new Point(0, 116);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(800, 353);
+            dataGridView1.Size = new Size(700, 265);
             dataGridView1.TabIndex = 16;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(28, 37);
-            label2.Name = "label2";
-            label2.Size = new Size(33, 20);
-            label2.TabIndex = 17;
-            label2.Text = "Mã:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(28, 69);
-            label1.Name = "label1";
-            label1.Size = new Size(35, 20);
-            label1.TabIndex = 18;
-            label1.Text = "Tên:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(28, 98);
-            label3.Name = "label3";
-            label3.Size = new Size(52, 20);
-            label3.TabIndex = 19;
-            label3.Text = "Giá trị:";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(103, 91);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(171, 27);
-            textBox2.TabIndex = 22;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(103, 62);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(171, 27);
-            textBox1.TabIndex = 23;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(103, 30);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(171, 27);
-            textBox3.TabIndex = 24;
             // 
             // Column1
             // 
@@ -225,11 +178,62 @@
             Column3.Name = "Column3";
             Column3.Width = 125;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(24, 43);
+            label2.Name = "label2";
+            label2.Size = new Size(27, 15);
+            label2.TabIndex = 17;
+            label2.Text = "Mã:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(24, 67);
+            label1.Name = "label1";
+            label1.Size = new Size(28, 15);
+            label1.TabIndex = 18;
+            label1.Text = "Tên:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(24, 89);
+            label3.Name = "label3";
+            label3.Size = new Size(41, 15);
+            label3.TabIndex = 19;
+            label3.Text = "Giá trị:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(90, 83);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(150, 23);
+            textBox2.TabIndex = 22;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(90, 61);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(150, 23);
+            textBox1.TabIndex = 23;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(90, 37);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(150, 23);
+            textBox3.TabIndex = 24;
+            // 
             // frmQuanLyDanhMucTroCap
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 507);
+            ClientSize = new Size(700, 380);
             Controls.Add(textBox3);
             Controls.Add(textBox1);
             Controls.Add(textBox2);
@@ -238,7 +242,9 @@
             Controls.Add(label2);
             Controls.Add(dataGridView1);
             Controls.Add(toolStrip1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmQuanLyDanhMucTroCap";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmQuanLyDanhMucTroCap";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();

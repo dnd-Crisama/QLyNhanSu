@@ -10,8 +10,9 @@
 
 namespace QLyNhanSu.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,7 +24,13 @@ namespace QLyNhanSu.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+        internal static Image toolStripButton2_Image;
+        internal static Image toolStripButton3_Image;
+        internal static Image toolStripButton4_Image;
+        internal static Image toolStripButton8_Image;
+        internal static Image toolStripButton5_Image;
+        internal static Image pngtree_magnifying_glass_icon_image_1128382;
+        internal static Image png_clipart_computer_icons_check_mark_cross_x_miscellaneous_trademark_thumbnail;
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
@@ -31,7 +38,9 @@ namespace QLyNhanSu.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
+        public static Image Flat_restart_icon_svg { get; internal set; }
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -293,16 +302,6 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Flat_restart_icon_svg {
-            get {
-                object obj = ResourceManager.GetObject("Flat_restart_icon.svg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap hoyoverse_icon_logo_22 {
             get {
                 object obj = ResourceManager.GetObject("hoyoverse-icon-logo-22", resourceCulture);
@@ -326,76 +325,6 @@ namespace QLyNhanSu.Properties {
         internal static System.Drawing.Bitmap image_2024_03_31_102858918_690px {
             get {
                 object obj = ResourceManager.GetObject("image_2024_03_31_102858918_690px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_clipart_computer_icons_check_mark_cross_x_miscellaneous_trademark_thumbnail {
-            get {
-                object obj = ResourceManager.GetObject("png-clipart-computer-icons-check-mark-cross-x-miscellaneous-trademark-thumbnail", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngtree_magnifying_glass_icon_image_1128382 {
-            get {
-                object obj = ResourceManager.GetObject("pngtree-magnifying-glass-icon-image_1128382", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap toolStripButton2_Image {
-            get {
-                object obj = ResourceManager.GetObject("toolStripButton2.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap toolStripButton3_Image {
-            get {
-                object obj = ResourceManager.GetObject("toolStripButton3.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap toolStripButton4_Image {
-            get {
-                object obj = ResourceManager.GetObject("toolStripButton4.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap toolStripButton5_Image {
-            get {
-                object obj = ResourceManager.GetObject("toolStripButton5.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap toolStripButton8_Image {
-            get {
-                object obj = ResourceManager.GetObject("toolStripButton8.Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

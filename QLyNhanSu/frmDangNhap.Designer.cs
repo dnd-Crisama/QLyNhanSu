@@ -46,6 +46,7 @@
             button2 = new Button();
             button4 = new Button();
             ckbShowPass = new CheckBox();
+            ckbRemember = new CheckBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
@@ -203,7 +204,7 @@
             // 
             button2.BackColor = Color.LightBlue;
             button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(340, 405);
+            button2.Location = new Point(338, 413);
             button2.Name = "button2";
             button2.Size = new Size(107, 50);
             button2.TabIndex = 8;
@@ -215,7 +216,7 @@
             // 
             button4.BackColor = Color.IndianRed;
             button4.FlatStyle = FlatStyle.Popup;
-            button4.Location = new Point(582, 405);
+            button4.Location = new Point(582, 413);
             button4.Name = "button4";
             button4.Size = new Size(107, 50);
             button4.TabIndex = 10;
@@ -227,7 +228,7 @@
             // 
             ckbShowPass.AutoSize = true;
             ckbShowPass.ForeColor = Color.SteelBlue;
-            ckbShowPass.Location = new Point(582, 367);
+            ckbShowPass.Location = new Point(582, 372);
             ckbShowPass.Name = "ckbShowPass";
             ckbShowPass.Size = new Size(113, 19);
             ckbShowPass.TabIndex = 11;
@@ -235,11 +236,23 @@
             ckbShowPass.UseVisualStyleBackColor = true;
             ckbShowPass.CheckedChanged += ckbShowPass_CheckedChanged;
             // 
+            // ckbRemember
+            // 
+            ckbRemember.AutoSize = true;
+            ckbRemember.ForeColor = Color.SteelBlue;
+            ckbRemember.Location = new Point(311, 373);
+            ckbRemember.Name = "ckbRemember";
+            ckbRemember.Size = new Size(104, 19);
+            ckbRemember.TabIndex = 12;
+            ckbRemember.Text = "Remember me";
+            ckbRemember.UseVisualStyleBackColor = true;
+            // 
             // frmDangNhap
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(730, 530);
+            Controls.Add(ckbRemember);
             Controls.Add(ckbShowPass);
             Controls.Add(button4);
             Controls.Add(button2);
@@ -253,6 +266,7 @@
             Name = "frmDangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng nhập";
+            Load += frmDangNhap_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -285,5 +299,6 @@
         private Button button4;
         private CheckBox ckbShowPass;
         public TextBox txtUsername;
+        private CheckBox ckbRemember;
     }
 }

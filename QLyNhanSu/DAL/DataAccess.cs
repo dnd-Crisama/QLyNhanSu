@@ -53,7 +53,7 @@ namespace QLyNhanSu.DAL
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = cn;
                 DataTable result = new DataTable();
-                SqlDataAdapter dapter = new SqlDataAdapter();
+                SqlDataAdapter dapter = new SqlDataAdapter(cmd);
 
                 dapter.Fill(result);
                 return result;
@@ -181,7 +181,7 @@ namespace QLyNhanSu.DAL
         public Boolean kiemtra_dangnhap (string tenbang, string user, string pass, string tb_user, string tb_pass)
         {
             int c = 0;
-            string sql = "select count(*) from " + tenbang + " where " + tb_user + "= '" + user + "' and " + tb_pass + " = '" + pass + "' ";
+            string sql = "select count(*) from " + tenbang + " where " + tb_user + "= '" + user + "' and " + tb_pass + " = '" + pass + "' and trangthai = 1" ;
             SqlConnection cn = new SqlConnection();
             SqlCommand cmd = new SqlCommand();
             try

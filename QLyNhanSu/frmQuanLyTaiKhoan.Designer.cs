@@ -29,304 +29,292 @@
         private void InitializeComponent()
         {
             toolStrip1 = new ToolStrip();
-            toolStripButton1 = new ToolStripButton();
-            toolStripButton2 = new ToolStripButton();
-            toolStripButton3 = new ToolStripButton();
-            toolStripButton4 = new ToolStripButton();
-            toolStripButton8 = new ToolStripButton();
-            toolStripButton5 = new ToolStripButton();
+            btnLoad = new ToolStripButton();
+            btnAdd = new ToolStripButton();
+            btnEdit = new ToolStripButton();
+            btnCancel = new ToolStripButton();
+            btnSave = new ToolStripButton();
             toolStripLabel1 = new ToolStripLabel();
-            toolStripTextBox1 = new ToolStripTextBox();
-            toolStripButton6 = new ToolStripButton();
-            toolStripButton7 = new ToolStripButton();
+            txtSearch = new ToolStripTextBox();
+            btnSearch = new ToolStripButton();
+            btnDelete = new ToolStripButton();
+            btnExport = new ToolStripButton();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            txtMa = new TextBox();
+            txtRePass = new TextBox();
+            txtUser = new TextBox();
+            txtPass = new TextBox();
             checkBox1 = new CheckBox();
             dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Colum2 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
+            statusStrip1 = new StatusStrip();
+            lblEx = new ToolStripStatusLabel();
+            cbbQuyen = new ComboBox();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, toolStripTextBox1, toolStripButton6, toolStripButton7 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { btnLoad, btnAdd, btnEdit, btnCancel, btnSave, toolStripLabel1, txtSearch, btnSearch, btnDelete, btnExport });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1150, 27);
+            toolStrip1.Size = new Size(1006, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // btnLoad
             // 
-            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton1.Image = Properties.Resources.Flat_restart_icon_svg;
-            toolStripButton1.ImageTransparentColor = Color.Magenta;
-            toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(29, 24);
-            toolStripButton1.Text = "toolStripButton1";
+            btnLoad.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnLoad.Image = Properties.Resources._560512;
+            btnLoad.ImageTransparentColor = Color.Magenta;
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(24, 24);
+            btnLoad.Text = "toolStripButton1";
+            btnLoad.Click += btnLoad_Click;
             // 
-            // toolStripButton2
+            // btnAdd
             // 
-            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton2.Image = Properties.Resources.toolStripButton2_Image;
-            toolStripButton2.ImageTransparentColor = Color.Magenta;
-            toolStripButton2.Name = "toolStripButton2";
-            toolStripButton2.Size = new Size(29, 24);
-            toolStripButton2.Text = "toolStripButton2";
+            btnAdd.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnAdd.Image = Properties.Resources._1828819;
+            btnAdd.ImageTransparentColor = Color.Magenta;
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(24, 24);
+            btnAdd.Text = "toolStripButton2";
+            btnAdd.Click += btnAdd_Click;
             // 
-            // toolStripButton3
+            // btnEdit
             // 
-            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton3.Image = Properties.Resources.toolStripButton3_Image;
-            toolStripButton3.ImageTransparentColor = Color.Magenta;
-            toolStripButton3.Name = "toolStripButton3";
-            toolStripButton3.Size = new Size(29, 24);
-            toolStripButton3.Text = "toolStripButton3";
+            btnEdit.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnEdit.Image = Properties.Resources._1827933;
+            btnEdit.ImageTransparentColor = Color.Magenta;
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(24, 24);
+            btnEdit.Text = "toolStripButton3";
+            btnEdit.Click += btnEdit_Click;
             // 
-            // toolStripButton4
+            // btnCancel
             // 
-            toolStripButton4.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton4.Image = Properties.Resources.toolStripButton4_Image;
-            toolStripButton4.ImageTransparentColor = Color.Magenta;
-            toolStripButton4.Name = "toolStripButton4";
-            toolStripButton4.Size = new Size(29, 24);
-            toolStripButton4.Text = "toolStripButton4";
+            btnCancel.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnCancel.Image = Properties.Resources._399274;
+            btnCancel.ImageTransparentColor = Color.Magenta;
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(24, 24);
+            btnCancel.Text = "toolStripButton4";
+            btnCancel.Click += btnCanel_Click;
             // 
-            // toolStripButton8
+            // btnSave
             // 
-            toolStripButton8.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton8.Image = Properties.Resources.toolStripButton8_Image;
-            toolStripButton8.ImageTransparentColor = Color.Magenta;
-            toolStripButton8.Name = "toolStripButton8";
-            toolStripButton8.Size = new Size(29, 24);
-            toolStripButton8.Text = "toolStripButton8";
-            // 
-            // toolStripButton5
-            // 
-            toolStripButton5.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton5.Image = Properties.Resources.toolStripButton5_Image;
-            toolStripButton5.ImageTransparentColor = Color.Magenta;
-            toolStripButton5.Name = "toolStripButton5";
-            toolStripButton5.Size = new Size(29, 24);
-            toolStripButton5.Text = "toolStripButton5";
+            btnSave.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnSave.Image = Properties.Resources._489707;
+            btnSave.ImageTransparentColor = Color.Magenta;
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(24, 24);
+            btnSave.Text = "toolStripButton5";
+            btnSave.Click += btnSave_Click;
             // 
             // toolStripLabel1
             // 
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(72, 24);
+            toolStripLabel1.Size = new Size(57, 24);
             toolStripLabel1.Text = "Tìm Kiếm";
             // 
-            // toolStripTextBox1
+            // txtSearch
             // 
-            toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 27);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(88, 27);
             // 
-            // toolStripButton6
+            // btnSearch
             // 
-            toolStripButton6.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton6.Image = Properties.Resources.pngtree_magnifying_glass_icon_image_1128382;
-            toolStripButton6.ImageTransparentColor = Color.Magenta;
-            toolStripButton6.Name = "toolStripButton6";
-            toolStripButton6.Size = new Size(29, 24);
-            toolStripButton6.Text = "toolStripButton6";
+            btnSearch.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnSearch.Image = Properties.Resources.pngtree_magnifying_glass_icon_image_1128382;
+            btnSearch.ImageTransparentColor = Color.Magenta;
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(24, 24);
+            btnSearch.Text = "toolStripButton6";
+            btnSearch.Click += btnSearch_Click;
             // 
-            // toolStripButton7
+            // btnDelete
             // 
-            toolStripButton7.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton7.Image = Properties.Resources.png_clipart_computer_icons_check_mark_cross_x_miscellaneous_trademark_thumbnail;
-            toolStripButton7.ImageTransparentColor = Color.Magenta;
-            toolStripButton7.Name = "toolStripButton7";
-            toolStripButton7.Size = new Size(29, 24);
-            toolStripButton7.Text = "toolStripButton7";
+            btnDelete.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnDelete.Image = Properties.Resources._6861362;
+            btnDelete.ImageTransparentColor = Color.Magenta;
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(24, 24);
+            btnDelete.Text = "toolStripButton7";
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // btnExport
+            // 
+            btnExport.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnExport.Image = Properties.Resources._9913406;
+            btnExport.ImageTransparentColor = Color.Magenta;
+            btnExport.Name = "btnExport";
+            btnExport.Size = new Size(24, 24);
+            btnExport.Text = "toolStripButton8";
+            btnExport.Click += btnExcelIX_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 49);
+            label1.Location = new Point(10, 37);
             label1.Name = "label1";
-            label1.Size = new Size(33, 20);
+            label1.Size = new Size(27, 15);
             label1.TabIndex = 1;
             label1.Text = "Mã:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 75);
+            label2.Location = new Point(10, 60);
             label2.Name = "label2";
-            label2.Size = new Size(54, 20);
+            label2.Size = new Size(45, 15);
             label2.TabIndex = 2;
             label2.Text = "Quyền:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 113);
+            label3.Location = new Point(10, 91);
             label3.Name = "label3";
-            label3.Size = new Size(110, 20);
+            label3.Size = new Size(88, 15);
             label3.TabIndex = 3;
             label3.Text = "Tên đăng nhập:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 146);
+            label4.Location = new Point(10, 116);
             label4.Name = "label4";
-            label4.Size = new Size(73, 20);
+            label4.Size = new Size(60, 15);
             label4.TabIndex = 4;
             label4.Text = "Mật khẩu:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 183);
+            label5.Location = new Point(10, 143);
             label5.Name = "label5";
-            label5.Size = new Size(131, 20);
+            label5.Size = new Size(106, 15);
             label5.TabIndex = 5;
             label5.Text = "Nhắc lại mật khảu:";
             // 
-            // textBox1
+            // txtMa
             // 
-            textBox1.Location = new Point(145, 42);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 6;
+            txtMa.Location = new Point(127, 32);
+            txtMa.Margin = new Padding(3, 2, 3, 2);
+            txtMa.Name = "txtMa";
+            txtMa.Size = new Size(110, 23);
+            txtMa.TabIndex = 6;
             // 
-            // textBox2
+            // txtRePass
             // 
-            textBox2.Location = new Point(145, 176);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(270, 27);
-            textBox2.TabIndex = 7;
+            txtRePass.Location = new Point(127, 138);
+            txtRePass.Margin = new Padding(3, 2, 3, 2);
+            txtRePass.Name = "txtRePass";
+            txtRePass.Size = new Size(237, 23);
+            txtRePass.TabIndex = 7;
             // 
-            // textBox3
+            // txtUser
             // 
-            textBox3.Location = new Point(145, 106);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(270, 27);
-            textBox3.TabIndex = 8;
+            txtUser.Location = new Point(127, 86);
+            txtUser.Margin = new Padding(3, 2, 3, 2);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(237, 23);
+            txtUser.TabIndex = 8;
             // 
-            // textBox4
+            // txtPass
             // 
-            textBox4.Location = new Point(145, 72);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 9;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(145, 139);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(270, 27);
-            textBox5.TabIndex = 10;
+            txtPass.Location = new Point(127, 110);
+            txtPass.Margin = new Padding(3, 2, 3, 2);
+            txtPass.Name = "txtPass";
+            txtPass.Size = new Size(237, 23);
+            txtPass.TabIndex = 10;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(145, 219);
+            checkBox1.Checked = true;
+            checkBox1.CheckState = CheckState.Checked;
+            checkBox1.ForeColor = Color.Green;
+            checkBox1.Location = new Point(127, 170);
+            checkBox1.Margin = new Padding(3, 2, 3, 2);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(39, 24);
+            checkBox1.Size = new Size(78, 19);
             checkBox1.TabIndex = 11;
-            checkBox1.Text = "1";
+            checkBox1.Text = "Trạng thái";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Colum2, Column2, Column4, Column5, Column6, Column3 });
-            dataGridView1.Location = new Point(0, 265);
+            dataGridView1.Location = new Point(0, 199);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1138, 292);
+            dataGridView1.Size = new Size(996, 219);
             dataGridView1.TabIndex = 12;
+            dataGridView1.CellContentClick += dataGridView1_CellClick;
             // 
-            // Column1
+            // statusStrip1
             // 
-            Column1.HeaderText = "ID";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
+            statusStrip1.Items.AddRange(new ToolStripItem[] { lblEx });
+            statusStrip1.Location = new Point(0, 392);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(1006, 22);
+            statusStrip1.TabIndex = 13;
+            statusStrip1.Text = "statusStrip1";
             // 
-            // Colum2
+            // lblEx
             // 
-            Colum2.HeaderText = "Tên";
-            Colum2.MinimumWidth = 6;
-            Colum2.Name = "Colum2";
-            Colum2.Width = 125;
+            lblEx.ForeColor = Color.CornflowerBlue;
+            lblEx.Name = "lblEx";
+            lblEx.Size = new Size(59, 17);
+            lblEx.Text = "Trạng thái";
             // 
-            // Column2
+            // cbbQuyen
             // 
-            Column2.HeaderText = "Mã Quyền";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
+            cbbQuyen.FormattingEnabled = true;
+            cbbQuyen.Location = new Point(127, 60);
+            cbbQuyen.Name = "cbbQuyen";
+            cbbQuyen.Size = new Size(121, 23);
+            cbbQuyen.TabIndex = 14;
             // 
-            // Column4
+            // frmQuanLyTaiKhoan
             // 
-            Column4.HeaderText = "Trạng Thái";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Tên Quyền";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Giá Trị";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            Column6.Width = 125;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Mật Khẩu ";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
-            // 
-            // Form1
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1150, 552);
+            ClientSize = new Size(1006, 414);
+            Controls.Add(cbbQuyen);
+            Controls.Add(statusStrip1);
             Controls.Add(dataGridView1);
             Controls.Add(checkBox1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPass);
+            Controls.Add(txtUser);
+            Controls.Add(txtRePass);
+            Controls.Add(txtMa);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(toolStrip1);
-            Name = "Form1";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "frmQuanLyTaiKhoan";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Quản Lý Tài Khoản";
+            Load += frmQuanLyTaiKhoan_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -334,35 +322,30 @@
         #endregion
 
         private ToolStrip toolStrip1;
-        private ToolStripButton toolStripButton1;
-        private ToolStripButton toolStripButton2;
-        private ToolStripButton toolStripButton3;
-        private ToolStripButton toolStripButton4;
-        private ToolStripButton toolStripButton5;
+        private ToolStripButton btnLoad;
+        private ToolStripButton btnAdd;
+        private ToolStripButton btnEdit;
+        private ToolStripButton btnCancel;
+        private ToolStripButton btnSave;
         private ToolStripLabel toolStripLabel1;
-        private ToolStripTextBox toolStripTextBox1;
-        private ToolStripButton toolStripButton8;
-        private ToolStripButton toolStripButton6;
-        private ToolStripButton toolStripButton7;
+        private ToolStripTextBox txtSearch;
+        private ToolStripButton btnExport;
+        private ToolStripButton btnSearch;
+        private ToolStripButton btnDelete;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtMa;
+        private TextBox txtRePass;
+        private TextBox txtUser;
+        private TextBox txtPass;
         private CheckBox checkBox1;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Colum2;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column3;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel lblEx;
+        private ComboBox cbbQuyen;
     }
    
 

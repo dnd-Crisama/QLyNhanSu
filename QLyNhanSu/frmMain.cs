@@ -40,14 +40,16 @@ namespace QLyNhanSu
                 stripChucNang.Enabled = false;
                 stripNguoiDung.Enabled = false;
                 stripHeThong.Enabled = false;
+                stripDangNhap.Text = "Đăng nhập";
+                stripDangNhap.Image = Properties.Resources.image_2024_03_31_102858918_690px;
             }
             else
             {
                 stripChamCong.Enabled = true;
-                stripChucNang.Enabled =true;
+                stripChucNang.Enabled = true;
                 stripDanhMuc.Enabled = true;
                 stripNhanSu.Enabled = true;
-                stripChucNang.Enabled =true;
+                stripChucNang.Enabled = true;
                 stripNguoiDung.Enabled = true;
                 stripHeThong.Enabled = true;
             }
@@ -70,7 +72,9 @@ namespace QLyNhanSu
 
         private void stripThoat_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            isLogin = false;
+            stripDangNhap.Click += stripDangNhap_Click;
+            KiemTraDangNhap();
         }
 
         private void stripHeThong_Click(object sender, EventArgs e)
@@ -85,12 +89,11 @@ namespace QLyNhanSu
         private void frmMain_Load(object sender, EventArgs e)
         {
             KiemTraDangNhap();
-            
+
         }
 
         private void stripDangNhap_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+        {          
             frmDangNhap frmDangNhap = new frmDangNhap();
             frmDangNhap.ShowDialog();
             if (isLogin)
@@ -103,6 +106,64 @@ namespace QLyNhanSu
                 this.Show();
             }
             
+
+        }
+
+        private void stripQLHoSo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmQuanLyHoSoNhanSu frmQuanLyHoSoNhanSu = new frmQuanLyHoSoNhanSu();
+            frmQuanLyHoSoNhanSu.ShowDialog();
+            this.Show();
+
+        }
+
+        private void stripQLTaiKhoan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmQuanLyTaiKhoan frmQuanLyTaiKhoan = new frmQuanLyTaiKhoan();
+            frmQuanLyTaiKhoan.ShowDialog();
+            this.Show();
+        }
+
+        private void stripQLNhanSu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmQuanLyNhanVien frmQuanLyNhanVien = new frmQuanLyNhanVien();
+            frmQuanLyNhanVien.ShowDialog();
+            this.Show();
+        }
+
+        private void stripQLPhongBan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmQuanLyNhanVien frmQuanLyPhongBan = new frmQuanLyNhanVien();
+            frmQuanLyPhongBan.ShowDialog();
+            this.Show();
+        }
+
+        private void stripQLTacVu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmQuanLyDanhMucChucVu frmQuanLyDanhMucChucVu = new frmQuanLyDanhMucChucVu();
+            frmQuanLyDanhMucChucVu.ShowDialog();
+            this.Show();
+        }
+
+        private void stripQLTroCap_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmQuanLyDanhMucTroCap frmQuanLyDanhMucTroCap = new frmQuanLyDanhMucTroCap();
+            frmQuanLyDanhMucTroCap.ShowDialog();
+            this.Show();
+        }
+
+        private void stripQLSoLuong_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmQuanLyHeSoLuong frmQuanLyHeSoLuong = new frmQuanLyHeSoLuong();
+            frmQuanLyHeSoLuong.ShowDialog();
+            this.Show();
         }
     }
 }
