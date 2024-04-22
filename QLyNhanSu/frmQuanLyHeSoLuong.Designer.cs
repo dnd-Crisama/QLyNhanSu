@@ -59,7 +59,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, toolStripTextBox1, toolStripButton6, toolStripButton7 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(700, 27);
+            toolStrip1.Size = new Size(1084, 27);
             toolStrip1.TabIndex = 6;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -149,7 +149,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(17, 39);
+            label2.Location = new Point(71, 58);
             label2.Name = "label2";
             label2.Size = new Size(27, 15);
             label2.TabIndex = 18;
@@ -159,7 +159,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 64);
+            label1.Location = new Point(71, 83);
             label1.Name = "label1";
             label1.Size = new Size(28, 15);
             label1.TabIndex = 19;
@@ -168,7 +168,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(17, 90);
+            label3.Location = new Point(71, 109);
             label3.Name = "label3";
             label3.Size = new Size(41, 15);
             label3.TabIndex = 20;
@@ -176,37 +176,37 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(79, 83);
+            textBox3.Location = new Point(133, 102);
             textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 23);
+            textBox3.Size = new Size(247, 23);
             textBox3.TabIndex = 25;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(79, 59);
+            textBox1.Location = new Point(133, 78);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 23);
+            textBox1.Size = new Size(247, 23);
             textBox1.TabIndex = 26;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(79, 34);
+            textBox2.Location = new Point(133, 53);
             textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 23);
+            textBox2.Size = new Size(247, 23);
             textBox2.TabIndex = 27;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(0, 116);
+            dataGridView1.Location = new Point(0, 162);
             dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(700, 290);
+            dataGridView1.Size = new Size(1072, 553);
             dataGridView1.TabIndex = 28;
             // 
             // Column1
@@ -234,7 +234,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 402);
+            ClientSize = new Size(1084, 748);
             Controls.Add(dataGridView1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);

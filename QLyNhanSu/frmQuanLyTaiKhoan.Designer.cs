@@ -64,7 +64,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnLoad, btnAdd, btnEdit, btnCancel, btnSave, toolStripLabel1, txtSearch, btnSearch, btnDelete, btnExport });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1006, 27);
+            toolStrip1.Size = new Size(1084, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -162,7 +162,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(10, 37);
+            label1.Location = new Point(66, 80);
             label1.Name = "label1";
             label1.Size = new Size(27, 15);
             label1.TabIndex = 1;
@@ -171,7 +171,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(10, 60);
+            label2.Location = new Point(66, 103);
             label2.Name = "label2";
             label2.Size = new Size(45, 15);
             label2.TabIndex = 2;
@@ -180,7 +180,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(10, 91);
+            label3.Location = new Point(66, 134);
             label3.Name = "label3";
             label3.Size = new Size(88, 15);
             label3.TabIndex = 3;
@@ -189,7 +189,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(10, 116);
+            label4.Location = new Point(66, 159);
             label4.Name = "label4";
             label4.Size = new Size(60, 15);
             label4.TabIndex = 4;
@@ -198,7 +198,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(10, 143);
+            label5.Location = new Point(66, 186);
             label5.Name = "label5";
             label5.Size = new Size(106, 15);
             label5.TabIndex = 5;
@@ -206,34 +206,34 @@
             // 
             // txtMa
             // 
-            txtMa.Location = new Point(127, 32);
+            txtMa.Location = new Point(183, 75);
             txtMa.Margin = new Padding(3, 2, 3, 2);
             txtMa.Name = "txtMa";
-            txtMa.Size = new Size(110, 23);
+            txtMa.Size = new Size(206, 23);
             txtMa.TabIndex = 6;
             // 
             // txtRePass
             // 
-            txtRePass.Location = new Point(127, 138);
+            txtRePass.Location = new Point(183, 181);
             txtRePass.Margin = new Padding(3, 2, 3, 2);
             txtRePass.Name = "txtRePass";
-            txtRePass.Size = new Size(237, 23);
+            txtRePass.Size = new Size(333, 23);
             txtRePass.TabIndex = 7;
             // 
             // txtUser
             // 
-            txtUser.Location = new Point(127, 86);
+            txtUser.Location = new Point(183, 129);
             txtUser.Margin = new Padding(3, 2, 3, 2);
             txtUser.Name = "txtUser";
-            txtUser.Size = new Size(237, 23);
+            txtUser.Size = new Size(333, 23);
             txtUser.TabIndex = 8;
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(127, 110);
+            txtPass.Location = new Point(183, 153);
             txtPass.Margin = new Padding(3, 2, 3, 2);
             txtPass.Name = "txtPass";
-            txtPass.Size = new Size(237, 23);
+            txtPass.Size = new Size(333, 23);
             txtPass.TabIndex = 10;
             // 
             // checkBox1
@@ -242,7 +242,7 @@
             checkBox1.Checked = true;
             checkBox1.CheckState = CheckState.Checked;
             checkBox1.ForeColor = Color.Green;
-            checkBox1.Location = new Point(127, 170);
+            checkBox1.Location = new Point(183, 213);
             checkBox1.Margin = new Padding(3, 2, 3, 2);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(78, 19);
@@ -254,20 +254,20 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 199);
+            dataGridView1.Location = new Point(0, 277);
             dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(996, 219);
+            dataGridView1.Size = new Size(1072, 426);
             dataGridView1.TabIndex = 12;
             dataGridView1.CellContentClick += dataGridView1_CellClick;
             // 
             // statusStrip1
             // 
             statusStrip1.Items.AddRange(new ToolStripItem[] { lblEx });
-            statusStrip1.Location = new Point(0, 392);
+            statusStrip1.Location = new Point(0, 726);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1006, 22);
+            statusStrip1.Size = new Size(1084, 22);
             statusStrip1.TabIndex = 13;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -281,16 +281,16 @@
             // cbbQuyen
             // 
             cbbQuyen.FormattingEnabled = true;
-            cbbQuyen.Location = new Point(127, 60);
+            cbbQuyen.Location = new Point(183, 103);
             cbbQuyen.Name = "cbbQuyen";
-            cbbQuyen.Size = new Size(121, 23);
+            cbbQuyen.Size = new Size(217, 23);
             cbbQuyen.TabIndex = 14;
             // 
             // frmQuanLyTaiKhoan
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1006, 414);
+            ClientSize = new Size(1084, 748);
             Controls.Add(cbbQuyen);
             Controls.Add(statusStrip1);
             Controls.Add(dataGridView1);

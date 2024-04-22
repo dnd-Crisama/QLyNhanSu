@@ -2,6 +2,9 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QLyNhanSu.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
+    <Setting Name="RememberMe" Type="System.String" Scope="User">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
     <Setting Name="Username" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>

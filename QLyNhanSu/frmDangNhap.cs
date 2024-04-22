@@ -32,6 +32,13 @@ namespace QLyNhanSu
 
         }
 
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            ReadSettings(); // Read Account
+            ImageHelper.RoundBorder(pictureBox1); // Round border Logo
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -41,33 +48,31 @@ namespace QLyNhanSu
 
         private void ckbShowPass_CheckedChanged(object sender, EventArgs e)
         {
-            txtPassword.PasswordChar = ckbShowPass.Checked ? '\0' : '*';
+            if(ckbShowPass.Checked)
+            {
+                txtPassword.PasswordChar = false;
+            }
+            else { txtPassword.PasswordChar = true; }
         }
         SqlConnection conn = new SqlConnection();
         DataAccess ac = new DataAccess();
         public string LoginUsername = "";
-
-       
+        public event EventHandler LoginSuccess;
         private void button2_Click(object sender, EventArgs e)
         {
 
-            string tenDangNhap = txtUsername.Text;
+            string tenDangNhap = txtUsername.Texts;
             LoginUsername = tenDangNhap;
-            string matkhau = AccountFunction.CalculateMD5Hash(txtPassword.Text.Trim());
+            string matkhau = AccountFunction.CalculateMD5Hash(txtPassword.Texts.Trim());
 
-            if (ckbRemember.Checked)
-            {
-                Properties.Settings.Default.Username = txtUsername.Text;
-                Properties.Settings.Default.Password = txtPassword.Text;
-                Properties.Settings.Default.Save();
+            SaveSettings();
 
-            }
-            
 
             bool dangNhapThanhCong = ac.kiemtra_dangnhap("TaiKhoan", tenDangNhap, matkhau, "username", "password");
 
             if (dangNhapThanhCong)
             {
+                LoginSuccess?.Invoke(this, EventArgs.Empty);
                 frmMain.isLogin = true;
                 this.Close();
             }
@@ -84,13 +89,36 @@ namespace QLyNhanSu
             frmMain.isLogin = false;
             frmMain.Show();
         }
-
-        private void frmDangNhap_Load(object sender, EventArgs e)
+        private void ReadSettings()
         {
-            if (Properties.Settings.Default.Username != string.Empty)
+            if (Properties.Settings.Default.RememberMe == "true")
             {
-                txtUsername.Text = Properties.Settings.Default.Username;
-                txtPassword.Text = Properties.Settings.Default.Password;
+                txtUsername.Texts = Properties.Settings.Default.Username;
+                txtPassword.Texts = Properties.Settings.Default.Password;
+                ckbRemember.Checked = true;
+            }
+            else
+            {
+                txtUsername.Texts = "";
+                txtPassword.Texts = "";
+                ckbRemember.Checked = false;
+            }
+        }
+        private void SaveSettings()
+        {
+            if (ckbRemember.Checked)
+            {
+                Properties.Settings.Default.Username = this.txtUsername.Texts;
+                Properties.Settings.Default.Password = this.txtPassword.Texts;
+                Properties.Settings.Default.RememberMe = "true";
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.Username = "";
+                Properties.Settings.Default.Password = "";
+                Properties.Settings.Default.RememberMe = "false";
+                Properties.Settings.Default.Save();
             }
         }
     }

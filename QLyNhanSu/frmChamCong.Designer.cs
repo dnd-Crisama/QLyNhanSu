@@ -147,8 +147,8 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(splitContainer2);
-            splitContainer1.Size = new Size(1141, 669);
-            splitContainer1.SplitterDistance = 244;
+            splitContainer1.Size = new Size(1084, 748);
+            splitContainer1.SplitterDistance = 231;
             splitContainer1.TabIndex = 0;
             // 
             // groupBox3
@@ -372,8 +372,8 @@
             // splitContainer2.Panel2
             // 
             splitContainer2.Panel2.Controls.Add(panel1);
-            splitContainer2.Size = new Size(893, 669);
-            splitContainer2.SplitterDistance = 297;
+            splitContainer2.Size = new Size(849, 748);
+            splitContainer2.SplitterDistance = 332;
             splitContainer2.TabIndex = 0;
             // 
             // splitContainer3
@@ -411,8 +411,8 @@
             splitContainer3.Panel2.Controls.Add(label2);
             splitContainer3.Panel2.Controls.Add(pictureBox1);
             splitContainer3.Panel2.Controls.Add(label1);
-            splitContainer3.Size = new Size(893, 297);
-            splitContainer3.SplitterDistance = 432;
+            splitContainer3.Size = new Size(849, 332);
+            splitContainer3.SplitterDistance = 410;
             splitContainer3.TabIndex = 0;
             // 
             // label9
@@ -482,7 +482,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources._2310707;
-            pictureBox5.Location = new Point(421, 120);
+            pictureBox5.Location = new Point(389, 120);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(28, 24);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -492,7 +492,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources._2310707;
-            pictureBox4.Location = new Point(421, 85);
+            pictureBox4.Location = new Point(389, 85);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(28, 24);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -502,7 +502,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources._2310707;
-            pictureBox3.Location = new Point(421, 53);
+            pictureBox3.Location = new Point(389, 53);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(28, 24);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -521,7 +521,7 @@
             // textBox7
             // 
             textBox7.BackColor = SystemColors.HighlightText;
-            textBox7.Location = new Point(169, 261);
+            textBox7.Location = new Point(140, 261);
             textBox7.Name = "textBox7";
             textBox7.ReadOnly = true;
             textBox7.Size = new Size(277, 23);
@@ -539,7 +539,7 @@
             // textBox6
             // 
             textBox6.BackColor = SystemColors.HighlightText;
-            textBox6.Location = new Point(169, 232);
+            textBox6.Location = new Point(140, 232);
             textBox6.Name = "textBox6";
             textBox6.ReadOnly = true;
             textBox6.Size = new Size(277, 23);
@@ -548,7 +548,7 @@
             // textBox5
             // 
             textBox5.BackColor = SystemColors.HighlightText;
-            textBox5.Location = new Point(169, 185);
+            textBox5.Location = new Point(139, 185);
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
             textBox5.Size = new Size(277, 23);
@@ -557,7 +557,7 @@
             // textBox4
             // 
             textBox4.BackColor = SystemColors.HighlightText;
-            textBox4.Location = new Point(169, 152);
+            textBox4.Location = new Point(139, 152);
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
             textBox4.Size = new Size(277, 23);
@@ -566,7 +566,7 @@
             // textBox3
             // 
             textBox3.BackColor = SystemColors.HighlightText;
-            textBox3.Location = new Point(169, 120);
+            textBox3.Location = new Point(139, 120);
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
             textBox3.Size = new Size(242, 23);
@@ -575,7 +575,7 @@
             // textBox2
             // 
             textBox2.BackColor = SystemColors.HighlightText;
-            textBox2.Location = new Point(169, 86);
+            textBox2.Location = new Point(139, 86);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
             textBox2.Size = new Size(242, 23);
@@ -584,7 +584,7 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.HighlightText;
-            textBox1.Location = new Point(169, 54);
+            textBox1.Location = new Point(139, 54);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(242, 23);
@@ -672,7 +672,7 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(893, 368);
+            panel1.Size = new Size(849, 412);
             panel1.TabIndex = 3;
             // 
             // panel4
@@ -688,10 +688,9 @@
             dataGridView2.BackgroundColor = SystemColors.ControlLight;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { Column1, idnhanvien, name, Column2, Column3, Column4, Column5, Column6 });
-            dataGridView2.Dock = DockStyle.Fill;
             dataGridView2.Location = new Point(0, 0);
             dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(890, 290);
+            dataGridView2.Size = new Size(851, 290);
             dataGridView2.TabIndex = 0;
             // 
             // Column1
@@ -751,9 +750,9 @@
             panel2.Controls.Add(label18);
             panel2.Controls.Add(textBox14);
             panel2.Controls.Add(label16);
-            panel2.Location = new Point(-1, 335);
+            panel2.Location = new Point(4, 338);
             panel2.Name = "panel2";
-            panel2.Size = new Size(895, 30);
+            panel2.Size = new Size(845, 30);
             panel2.TabIndex = 0;
             // 
             // pictureBox7
@@ -817,7 +816,7 @@
             panel3.Controls.Add(pictureBox6);
             panel3.Location = new Point(-1, 3);
             panel3.Name = "panel3";
-            panel3.Size = new Size(891, 39);
+            panel3.Size = new Size(850, 39);
             panel3.TabIndex = 4;
             // 
             // label17
@@ -835,7 +834,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources._3596079;
-            pictureBox6.Location = new Point(836, 5);
+            pictureBox6.Location = new Point(805, 5);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(46, 28);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -846,7 +845,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1141, 669);
+            ClientSize = new Size(1084, 748);
             Controls.Add(splitContainer1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmChamCong";

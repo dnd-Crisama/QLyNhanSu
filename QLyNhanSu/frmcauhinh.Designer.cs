@@ -74,7 +74,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnLoad, toolStripSeparator1, btnAdd, btnEdit, toolStripSeparator3, btnCancel, toolStripSeparator2, btnDelete, toolStripSeparator4, btnSave, toolStripLabel1, txtSearch, btnSearch, btnExcelIX });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1176, 25);
+            toolStrip1.Size = new Size(1084, 25);
             toolStrip1.TabIndex = 2;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -195,11 +195,11 @@
             // toolStripContainer1.ContentPanel
             // 
             toolStripContainer1.ContentPanel.Controls.Add(splitContainer1);
-            toolStripContainer1.ContentPanel.Size = new Size(1176, 579);
+            toolStripContainer1.ContentPanel.Size = new Size(1084, 698);
             toolStripContainer1.Dock = DockStyle.Fill;
             toolStripContainer1.Location = new Point(0, 25);
             toolStripContainer1.Name = "toolStripContainer1";
-            toolStripContainer1.Size = new Size(1176, 604);
+            toolStripContainer1.Size = new Size(1084, 723);
             toolStripContainer1.TabIndex = 3;
             toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -227,21 +227,21 @@
             // 
             splitContainer1.Panel2.Controls.Add(statusStrip1);
             splitContainer1.Panel2.Controls.Add(dataGridView1);
-            splitContainer1.Size = new Size(1176, 579);
-            splitContainer1.SplitterDistance = 317;
+            splitContainer1.Size = new Size(1084, 698);
+            splitContainer1.SplitterDistance = 373;
             splitContainer1.TabIndex = 0;
             // 
             // txtMa
             // 
-            txtMa.Location = new Point(192, 24);
+            txtMa.Location = new Point(215, 31);
             txtMa.Name = "txtMa";
-            txtMa.Size = new Size(176, 23);
+            txtMa.Size = new Size(214, 23);
             txtMa.TabIndex = 9;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(50, 24);
+            label5.Location = new Point(73, 31);
             label5.Name = "label5";
             label5.Size = new Size(24, 15);
             label5.TabIndex = 8;
@@ -250,7 +250,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(50, 216);
+            label4.Location = new Point(73, 223);
             label4.Name = "label4";
             label4.Size = new Size(113, 15);
             label4.TabIndex = 7;
@@ -258,16 +258,16 @@
             // 
             // txtHuongDan
             // 
-            txtHuongDan.Location = new Point(192, 213);
+            txtHuongDan.Location = new Point(215, 220);
             txtHuongDan.Name = "txtHuongDan";
-            txtHuongDan.Size = new Size(972, 96);
+            txtHuongDan.Size = new Size(825, 96);
             txtHuongDan.TabIndex = 6;
             txtHuongDan.Text = "";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(50, 114);
+            label3.Location = new Point(73, 121);
             label3.Name = "label3";
             label3.Size = new Size(58, 15);
             label3.TabIndex = 5;
@@ -275,15 +275,15 @@
             // 
             // txtTacGia
             // 
-            txtTacGia.Location = new Point(192, 82);
+            txtTacGia.Location = new Point(215, 89);
             txtTacGia.Name = "txtTacGia";
-            txtTacGia.Size = new Size(972, 23);
+            txtTacGia.Size = new Size(825, 23);
             txtTacGia.TabIndex = 4;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(50, 82);
+            label2.Location = new Point(73, 89);
             label2.Name = "label2";
             label2.Size = new Size(43, 15);
             label2.TabIndex = 3;
@@ -291,23 +291,23 @@
             // 
             // txtGioiThieu
             // 
-            txtGioiThieu.Location = new Point(192, 111);
+            txtGioiThieu.Location = new Point(215, 118);
             txtGioiThieu.Name = "txtGioiThieu";
-            txtGioiThieu.Size = new Size(972, 96);
+            txtGioiThieu.Size = new Size(825, 96);
             txtGioiThieu.TabIndex = 2;
             txtGioiThieu.Text = "";
             // 
             // txtTen
             // 
-            txtTen.Location = new Point(192, 53);
+            txtTen.Location = new Point(215, 60);
             txtTen.Name = "txtTen";
-            txtTen.Size = new Size(972, 23);
+            txtTen.Size = new Size(825, 23);
             txtTen.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(50, 53);
+            label1.Location = new Point(73, 60);
             label1.Name = "label1";
             label1.Size = new Size(97, 15);
             label1.TabIndex = 0;
@@ -316,9 +316,9 @@
             // statusStrip1
             // 
             statusStrip1.Items.AddRange(new ToolStripItem[] { lblEx });
-            statusStrip1.Location = new Point(0, 236);
+            statusStrip1.Location = new Point(0, 299);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1176, 22);
+            statusStrip1.Size = new Size(1084, 22);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -335,7 +335,7 @@
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1176, 258);
+            dataGridView1.Size = new Size(1084, 321);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellClick;
             // 
@@ -343,7 +343,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1176, 629);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(1084, 748);
             Controls.Add(toolStripContainer1);
             Controls.Add(toolStrip1);
             Name = "frmcauhinh";

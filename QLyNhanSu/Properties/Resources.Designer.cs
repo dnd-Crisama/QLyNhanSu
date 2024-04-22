@@ -10,9 +10,8 @@
 
 namespace QLyNhanSu.Properties {
     using System;
-    using System.Drawing;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -24,13 +23,7 @@ namespace QLyNhanSu.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        internal static Image toolStripButton2_Image;
-        internal static Image toolStripButton3_Image;
-        internal static Image toolStripButton4_Image;
-        internal static Image toolStripButton8_Image;
-        internal static Image toolStripButton5_Image;
-        internal static Image pngtree_magnifying_glass_icon_image_1128382;
-        internal static Image png_clipart_computer_icons_check_mark_cross_x_miscellaneous_trademark_thumbnail;
+        
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
@@ -38,9 +31,7 @@ namespace QLyNhanSu.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-
-        public static Image Flat_restart_icon_svg { get; internal set; }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -182,16 +173,6 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _32d33ae6fe6a483a86411652f7a3775a_7318876557544328823 {
-            get {
-                object obj = ResourceManager.GetObject("32d33ae6fe6a483a86411652f7a3775a_7318876557544328823", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _355861759_670321011806471_2971325253730285293_n {
             get {
                 object obj = ResourceManager.GetObject("355861759_670321011806471_2971325253730285293_n", resourceCulture);
@@ -215,6 +196,16 @@ namespace QLyNhanSu.Properties {
         internal static System.Drawing.Bitmap _399274 {
             get {
                 object obj = ResourceManager.GetObject("399274", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4043198 {
+            get {
+                object obj = ResourceManager.GetObject("4043198", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -292,9 +283,59 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _9954874 {
+            get {
+                object obj = ResourceManager.GetObject("9954874", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ddddddddddd {
+            get {
+                object obj = ResourceManager.GetObject("ddddddddddd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap desktop_wallpaper_mcdonalds_yoimiya_in_2021_mcdonalds_cute_anime_thumbnail {
             get {
                 object obj = ResourceManager.GetObject("desktop-wallpaper-mcdonalds-yoimiya-in-2021-mcdonalds-cute-anime-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Flat_restart_icon_svg {
+            get {
+                object obj = ResourceManager.GetObject("Flat_restart_icon.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Honkai_Star_Rail__Wallpaper_Penacony_2 {
+            get {
+                object obj = ResourceManager.GetObject("Honkai_Star_Rail__Wallpaper_Penacony_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap honkaistarrail_train {
+            get {
+                object obj = ResourceManager.GetObject("honkaistarrail-train", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -92,7 +92,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, toolStripTextBox1, toolStripButton6, toolStripButton7 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1034, 27);
+            toolStrip1.Size = new Size(1084, 27);
             toolStrip1.TabIndex = 1;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -447,7 +447,7 @@
             pictureBox1.Location = new Point(3, 8);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(276, 202);
+            pictureBox1.Size = new Size(275, 202);
             pictureBox1.TabIndex = 29;
             pictureBox1.TabStop = false;
             // 
@@ -469,7 +469,7 @@
             dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1034, 141);
+            dataGridView1.Size = new Size(1058, 454);
             dataGridView1.TabIndex = 29;
             // 
             // Column1
@@ -539,7 +539,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1034, 417);
+            ClientSize = new Size(1084, 748);
             Controls.Add(dataGridView1);
             Controls.Add(label13);
             Controls.Add(label1);

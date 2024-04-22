@@ -59,7 +59,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, toolStripTextBox1, toolStripButton6, toolStripButton7 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(700, 27);
+            toolStrip1.Size = new Size(1084, 27);
             toolStrip1.TabIndex = 4;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -150,11 +150,11 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(0, 139);
+            dataGridView1.Location = new Point(12, 136);
             dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(700, 265);
+            dataGridView1.Size = new Size(1047, 590);
             dataGridView1.TabIndex = 15;
             // 
             // Column1
@@ -210,7 +210,7 @@
             textBox3.Location = new Point(69, 88);
             textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 23);
+            textBox3.Size = new Size(234, 23);
             textBox3.TabIndex = 19;
             // 
             // textBox1
@@ -218,7 +218,7 @@
             textBox1.Location = new Point(69, 63);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 23);
+            textBox1.Size = new Size(234, 23);
             textBox1.TabIndex = 20;
             // 
             // textBox2
@@ -226,14 +226,14 @@
             textBox2.Location = new Point(69, 41);
             textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 23);
+            textBox2.Size = new Size(234, 23);
             textBox2.TabIndex = 21;
             // 
             // frmQuanLyDanhMucChucVu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 406);
+            ClientSize = new Size(1084, 748);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(textBox3);
