@@ -330,7 +330,6 @@
             stripNhanSu.FlatStyle = FlatStyle.Flat;
             stripNhanSu.Font = new Font("Segoe UI", 9.75F);
             stripNhanSu.ForeColor = Color.Gainsboro;
-            stripNhanSu.Image = Properties.Resources._9954874;
             stripNhanSu.ImageAlign = ContentAlignment.MiddleLeft;
             stripNhanSu.Location = new Point(0, 623);
             stripNhanSu.Name = "stripNhanSu";
@@ -602,7 +601,7 @@
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.None;
-            pictureBox2.Image = Properties.Resources.Logo;
+            pictureBox2.Image = Properties.Resources._6624c82abd9aa;
             pictureBox2.Location = new Point(62, 678);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(973, 115);

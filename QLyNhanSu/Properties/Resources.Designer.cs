@@ -243,6 +243,16 @@ namespace QLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6624c82abd9aa {
+            get {
+                object obj = ResourceManager.GetObject("6624c82abd9aa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6826735 {
             get {
                 object obj = ResourceManager.GetObject("6826735", resourceCulture);
@@ -369,6 +379,7 @@ namespace QLyNhanSu.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
@@ -385,16 +396,6 @@ namespace QLyNhanSu.Properties {
         internal static System.Drawing.Bitmap pngtree_magnifying_glass_icon_image_1128382 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-magnifying-glass-icon-image_1128382", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap search {
-            get {
-                object obj = ResourceManager.GetObject("search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

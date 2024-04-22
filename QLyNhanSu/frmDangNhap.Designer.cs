@@ -50,7 +50,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources.ddddddddddd;
-            pictureBox1.Image = Properties.Resources.Logo;
+            pictureBox1.Image = Properties.Resources._6624c82abd9aa;
             pictureBox1.Location = new Point(234, 94);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(639, 89);

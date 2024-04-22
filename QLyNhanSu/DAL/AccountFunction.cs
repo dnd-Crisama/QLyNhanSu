@@ -36,6 +36,10 @@ namespace QLyNhanSu.DAL
             var destRect = new Rectangle(0, 0, width, height);
             var destImage = new Bitmap(width, height);
 
+            if (image == null)
+            {
+                return null; 
+            }
             destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
 
             using (var graphics = Graphics.FromImage(destImage))

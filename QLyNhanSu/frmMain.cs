@@ -273,6 +273,8 @@ namespace QLyNhanSu
 
         private void button3_Click(object sender, EventArgs e) // TINH LUONG
         {
+            frmtinhluong frmtinhluong = new frmtinhluong();
+            openChildForm(frmtinhluong);
             hideSubMenu();
         }
 

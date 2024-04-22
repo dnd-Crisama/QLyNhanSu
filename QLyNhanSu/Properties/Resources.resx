@@ -154,9 +154,6 @@
   <data name="4961759" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4961759.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6624c82abd9aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="png-clipart-computer-icons-check-mark-cross-x-miscellaneous-trademark-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-computer-icons-check-mark-cross-x-miscellaneous-trademark-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -232,7 +229,10 @@
   <data name="489707" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\489707.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Flat_restart_icon.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Flat_restart_icon.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6624c82abd9aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6624c82abd9aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9954874" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9954874.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
