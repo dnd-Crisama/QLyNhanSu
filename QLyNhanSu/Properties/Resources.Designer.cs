@@ -328,5 +328,84 @@ namespace QLyNhanSu.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_check_mark_cross_x_miscellaneous_trademark_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-check-mark-cross-x-miscellaneous-trademark-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_magnifying_glass_icon_image_1128382 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-magnifying-glass-icon-image_1128382", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search {
+            get {
+                object obj = ResourceManager.GetObject("search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton2_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton2.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton3_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton3.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton4_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton4.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton5_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton5.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toolStripButton8_Image {
+            get {
+                object obj = ResourceManager.GetObject("toolStripButton8.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
