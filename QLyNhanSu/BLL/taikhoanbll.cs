@@ -53,8 +53,8 @@ namespace QLyNhanSu.BLL
         {
             string chuoi = " UPDATE TaiKhoan SET ";
             chuoi += " username= N'" + doituong.username + "', ";
-            chuoi += " password= N'" + doituong.password + "' ";
-            chuoi += " maquyen= N'" + doituong.trangthai + "' ";
+            chuoi += " password= N'" + doituong.password + "' ,";
+            chuoi += " maquyen= N'" + doituong.maquyen + "' ,";
             chuoi += " trangthai= N'" + doituong.trangthai + "' ";
             chuoi += " WHERE id = N'" + doituong.id + "' ";
             try

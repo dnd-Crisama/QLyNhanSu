@@ -15,6 +15,10 @@ using QLyNhanSu.DTO;
 using excel = Microsoft.Office.Interop.Excel;
 
 using System.Data.OleDb;
+using System.Runtime.CompilerServices;
+using System.Reflection;
+using System.Configuration;
+using MongoDB.Driver.Core.Configuration;
 namespace QLyNhanSu
 {
     public partial class frmDangNhap : Form
@@ -42,16 +46,25 @@ namespace QLyNhanSu
         SqlConnection conn = new SqlConnection();
         DataAccess ac = new DataAccess();
         public string LoginUsername = "";
-        
+
+       
         private void button2_Click(object sender, EventArgs e)
         {
 
             string tenDangNhap = txtUsername.Text;
             LoginUsername = tenDangNhap;
-            string matKhau = txtPassword.Text;
+            string matkhau = AccountFunction.CalculateMD5Hash(txtPassword.Text.Trim());
+
+            if (ckbRemember.Checked)
+            {
+                Properties.Settings.Default.Username = txtUsername.Text;
+                Properties.Settings.Default.Password = txtPassword.Text;
+                Properties.Settings.Default.Save();
+
+            }
             
 
-            bool dangNhapThanhCong = ac.kiemtra_dangnhap("TaiKhoan", tenDangNhap, matKhau, "username", "password");
+            bool dangNhapThanhCong = ac.kiemtra_dangnhap("TaiKhoan", tenDangNhap, matkhau, "username", "password");
 
             if (dangNhapThanhCong)
             {
@@ -60,7 +73,7 @@ namespace QLyNhanSu
             }
             else
             {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng. Vui lòng thử lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Dữ liệu đăng nhập không hợp lệ hoặc tài khoản của bạn đã bị vô hiệu hóa! Vui lòng kiểm tra lại.", "ĐĂNG NHẬP THẤT BẠI!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUsername.Focus();
             }
         }
@@ -70,6 +83,15 @@ namespace QLyNhanSu
             this.Close();
             frmMain.isLogin = false;
             frmMain.Show();
+        }
+
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.Username != string.Empty)
+            {
+                txtUsername.Text = Properties.Settings.Default.Username;
+                txtPassword.Text = Properties.Settings.Default.Password;
+            }
         }
     }
 }
