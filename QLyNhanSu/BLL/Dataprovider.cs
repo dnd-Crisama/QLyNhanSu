@@ -5,7 +5,7 @@ namespace QLyNhanSu.BLL
 {
     internal class Dataprovider
     {
-        private String ConnectionSTR = "Data Source=.\\SQLEXPRESS;Initial Catalog=\"19-4-2024 database\";Integrated Security=True";
+        private String ConnectionSTR = "Data Source=DESKTOP-7KDUSUG\\CRISAMA;Initial Catalog=QuanLyNhanSu;Integrated Security=True;";
 
         public DataTable ExecuteQuery(String query)
         {

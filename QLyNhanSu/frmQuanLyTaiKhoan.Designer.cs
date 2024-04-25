@@ -64,7 +64,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnLoad, btnAdd, btnEdit, btnCancel, btnSave, toolStripLabel1, txtSearch, btnSearch, btnDelete, btnExport });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1239, 27);
+            toolStrip1.Size = new Size(1084, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -74,8 +74,8 @@
             btnLoad.Image = Properties.Resources._560512;
             btnLoad.ImageTransparentColor = Color.Magenta;
             btnLoad.Name = "btnLoad";
-            btnLoad.Size = new Size(29, 24);
-            btnLoad.Text = "toolStripButton1";
+            btnLoad.Size = new Size(24, 24);
+            btnLoad.Text = "Load";
             btnLoad.Click += btnLoad_Click;
             // 
             // btnAdd
@@ -84,8 +84,8 @@
             btnAdd.Image = Properties.Resources._1828819;
             btnAdd.ImageTransparentColor = Color.Magenta;
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(29, 24);
-            btnAdd.Text = "toolStripButton2";
+            btnAdd.Size = new Size(24, 24);
+            btnAdd.Text = "Thêm";
             btnAdd.Click += btnAdd_Click;
             // 
             // btnEdit
@@ -94,8 +94,8 @@
             btnEdit.Image = Properties.Resources._1827933;
             btnEdit.ImageTransparentColor = Color.Magenta;
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(29, 24);
-            btnEdit.Text = "toolStripButton3";
+            btnEdit.Size = new Size(24, 24);
+            btnEdit.Text = "Chỉnh sửa";
             btnEdit.Click += btnEdit_Click;
             // 
             // btnCancel
@@ -104,8 +104,8 @@
             btnCancel.Image = Properties.Resources._399274;
             btnCancel.ImageTransparentColor = Color.Magenta;
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(29, 24);
-            btnCancel.Text = "toolStripButton4";
+            btnCancel.Size = new Size(24, 24);
+            btnCancel.Text = "Hủy";
             btnCancel.Click += btnCanel_Click;
             // 
             // btnSave
@@ -114,20 +114,20 @@
             btnSave.Image = Properties.Resources._489707;
             btnSave.ImageTransparentColor = Color.Magenta;
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(29, 24);
-            btnSave.Text = "toolStripButton5";
+            btnSave.Size = new Size(24, 24);
+            btnSave.Text = "Lưu";
             btnSave.Click += btnSave_Click;
             // 
             // toolStripLabel1
             // 
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(72, 24);
+            toolStripLabel1.Size = new Size(57, 24);
             toolStripLabel1.Text = "Tìm Kiếm";
             // 
             // txtSearch
             // 
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(100, 27);
+            txtSearch.Size = new Size(88, 27);
             // 
             // btnSearch
             // 
@@ -135,8 +135,8 @@
             btnSearch.Image = Properties.Resources.pngtree_magnifying_glass_icon_image_1128382;
             btnSearch.ImageTransparentColor = Color.Magenta;
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(29, 24);
-            btnSearch.Text = "toolStripButton6";
+            btnSearch.Size = new Size(24, 24);
+            btnSearch.Text = "Tìm kiếm";
             btnSearch.Click += btnSearch_Click;
             // 
             // btnDelete
@@ -145,8 +145,8 @@
             btnDelete.Image = Properties.Resources._6861362;
             btnDelete.ImageTransparentColor = Color.Magenta;
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(29, 24);
-            btnDelete.Text = "toolStripButton7";
+            btnDelete.Size = new Size(24, 24);
+            btnDelete.Text = "Xóa";
             btnDelete.Click += btnDelete_Click;
             // 
             // btnExport
@@ -155,81 +155,85 @@
             btnExport.Image = Properties.Resources._9913406;
             btnExport.ImageTransparentColor = Color.Magenta;
             btnExport.Name = "btnExport";
-            btnExport.Size = new Size(29, 24);
-            btnExport.Text = "toolStripButton8";
+            btnExport.Size = new Size(24, 24);
+            btnExport.Text = "Xuất Excel";
             btnExport.Click += btnExcelIX_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(75, 107);
+            label1.Location = new Point(66, 80);
             label1.Name = "label1";
-            label1.Size = new Size(33, 20);
+            label1.Size = new Size(27, 15);
             label1.TabIndex = 1;
             label1.Text = "Mã:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(75, 137);
+            label2.Location = new Point(66, 103);
             label2.Name = "label2";
-            label2.Size = new Size(54, 20);
+            label2.Size = new Size(45, 15);
             label2.TabIndex = 2;
             label2.Text = "Quyền:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(75, 179);
+            label3.Location = new Point(66, 134);
             label3.Name = "label3";
-            label3.Size = new Size(110, 20);
+            label3.Size = new Size(88, 15);
             label3.TabIndex = 3;
             label3.Text = "Tên đăng nhập:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(75, 212);
+            label4.Location = new Point(66, 159);
             label4.Name = "label4";
-            label4.Size = new Size(73, 20);
+            label4.Size = new Size(60, 15);
             label4.TabIndex = 4;
             label4.Text = "Mật khẩu:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(75, 248);
+            label5.Location = new Point(66, 186);
             label5.Name = "label5";
-            label5.Size = new Size(131, 20);
+            label5.Size = new Size(106, 15);
             label5.TabIndex = 5;
             label5.Text = "Nhắc lại mật khảu:";
             // 
             // txtMa
             // 
-            txtMa.Location = new Point(209, 100);
+            txtMa.Location = new Point(183, 75);
+            txtMa.Margin = new Padding(3, 2, 3, 2);
             txtMa.Name = "txtMa";
-            txtMa.Size = new Size(235, 27);
+            txtMa.Size = new Size(206, 23);
             txtMa.TabIndex = 1;
             // 
             // txtRePass
             // 
-            txtRePass.Location = new Point(209, 241);
+            txtRePass.Location = new Point(183, 181);
+            txtRePass.Margin = new Padding(3, 2, 3, 2);
             txtRePass.Name = "txtRePass";
-            txtRePass.Size = new Size(380, 27);
+            txtRePass.Size = new Size(333, 23);
             txtRePass.TabIndex = 5;
             // 
             // txtUser
             // 
-            txtUser.Location = new Point(209, 172);
+            txtUser.Location = new Point(183, 129);
+            txtUser.Margin = new Padding(3, 2, 3, 2);
             txtUser.Name = "txtUser";
-            txtUser.Size = new Size(380, 27);
+            txtUser.Size = new Size(333, 23);
             txtUser.TabIndex = 3;
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(209, 204);
+            txtPass.Location = new Point(183, 153);
+            txtPass.Margin = new Padding(3, 2, 3, 2);
             txtPass.Name = "txtPass";
-            txtPass.Size = new Size(380, 27);
+            txtPass.Size = new Size(333, 23);
             txtPass.TabIndex = 4;
             // 
             // checkBox1
@@ -238,9 +242,10 @@
             checkBox1.Checked = true;
             checkBox1.CheckState = CheckState.Checked;
             checkBox1.ForeColor = Color.Green;
-            checkBox1.Location = new Point(209, 284);
+            checkBox1.Location = new Point(183, 213);
+            checkBox1.Margin = new Padding(3, 2, 3, 2);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(97, 24);
+            checkBox1.Size = new Size(78, 19);
             checkBox1.TabIndex = 11;
             checkBox1.Text = "Trạng thái";
             checkBox1.UseVisualStyleBackColor = true;
@@ -249,10 +254,11 @@
             // dataGridViewTK
             // 
             dataGridViewTK.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewTK.Location = new Point(0, 369);
+            dataGridViewTK.Location = new Point(0, 277);
+            dataGridViewTK.Margin = new Padding(3, 2, 3, 2);
             dataGridViewTK.Name = "dataGridViewTK";
             dataGridViewTK.RowHeadersWidth = 51;
-            dataGridViewTK.Size = new Size(1225, 568);
+            dataGridViewTK.Size = new Size(1072, 426);
             dataGridViewTK.TabIndex = 12;
             dataGridViewTK.CellContentClick += dataGridView1_CellClick;
             // 
@@ -260,10 +266,9 @@
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Items.AddRange(new ToolStripItem[] { lblEx });
-            statusStrip1.Location = new Point(0, 971);
+            statusStrip1.Location = new Point(0, 726);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Padding = new Padding(1, 0, 16, 0);
-            statusStrip1.Size = new Size(1239, 26);
+            statusStrip1.Size = new Size(1084, 22);
             statusStrip1.TabIndex = 13;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -271,23 +276,22 @@
             // 
             lblEx.ForeColor = Color.CornflowerBlue;
             lblEx.Name = "lblEx";
-            lblEx.Size = new Size(75, 20);
+            lblEx.Size = new Size(59, 17);
             lblEx.Text = "Trạng thái";
             // 
             // cbbQuyen
             // 
             cbbQuyen.FormattingEnabled = true;
-            cbbQuyen.Location = new Point(209, 137);
-            cbbQuyen.Margin = new Padding(3, 4, 3, 4);
+            cbbQuyen.Location = new Point(183, 103);
             cbbQuyen.Name = "cbbQuyen";
-            cbbQuyen.Size = new Size(247, 28);
+            cbbQuyen.Size = new Size(217, 23);
             cbbQuyen.TabIndex = 2;
             // 
             // frmQuanLyTaiKhoan
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1239, 997);
+            ClientSize = new Size(1084, 748);
             Controls.Add(cbbQuyen);
             Controls.Add(statusStrip1);
             Controls.Add(dataGridViewTK);
@@ -302,6 +306,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(toolStrip1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmQuanLyTaiKhoan";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Quản Lý Tài Khoản";
