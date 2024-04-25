@@ -16,7 +16,7 @@ namespace QLyNhanSu
         public frmQuanLyPhongBan()
         {
             InitializeComponent();
-           
+
         }
         void LayDLPB()
         {
@@ -24,10 +24,22 @@ namespace QLyNhanSu
             Dataprovider provider = new Dataprovider();
             dataGridViewPB.DataSource = provider.ExecuteQuery(query);
         }
+        void HienThiDLPB ()
+        {
+            String A = toolStripTextBox1.Text;
+            String query = "SELECT * FROM dbo.PhongBan  WHERE PhongBan.id = "+ A;
+            Dataprovider provider = new Dataprovider();
+            dataGridViewPB.DataSource = provider.ExecuteQuery(query);
+        }
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
             LayDLPB();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            HienThiDLPB();
         }
     }
 }

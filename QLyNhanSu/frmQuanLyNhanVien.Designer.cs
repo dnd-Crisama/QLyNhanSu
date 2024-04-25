@@ -161,6 +161,7 @@
             toolStripButton6.Name = "toolStripButton6";
             toolStripButton6.Size = new Size(29, 24);
             toolStripButton6.Text = "toolStripButton6";
+            toolStripButton6.Click += toolStripButton6_Click;
             // 
             // toolStripButton7
             // 
@@ -226,35 +227,35 @@
             textBox8.Location = new Point(131, 193);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(227, 27);
-            textBox8.TabIndex = 22;
+            textBox8.TabIndex = 6;
             // 
             // textBox10
             // 
             textBox10.Location = new Point(131, 157);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(227, 27);
-            textBox10.TabIndex = 24;
+            textBox10.TabIndex = 5;
             // 
             // textBox11
             // 
             textBox11.Location = new Point(131, 85);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(227, 27);
-            textBox11.TabIndex = 25;
+            textBox11.TabIndex = 3;
             // 
             // textBox9
             // 
             textBox9.Location = new Point(131, 119);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(227, 27);
-            textBox9.TabIndex = 23;
+            textBox9.TabIndex = 4;
             // 
             // textBox2
             // 
             textBox2.Location = new Point(131, 12);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(107, 27);
-            textBox2.TabIndex = 16;
+            textBox2.TabIndex = 1;
             // 
             // label3
             // 
@@ -270,7 +271,7 @@
             textBox5.Location = new Point(131, 52);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(227, 27);
-            textBox5.TabIndex = 19;
+            textBox5.TabIndex = 2;
             // 
             // label4
             // 

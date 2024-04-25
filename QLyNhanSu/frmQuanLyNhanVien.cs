@@ -25,6 +25,13 @@ namespace QLyNhanSu
             Dataprovider provider = new Dataprovider();
             dataGridViewNV.DataSource = provider.ExecuteQuery(query);
         }
+        void HienThiDLNV()
+        {
+            String A = toolStripTextBox1.Text;
+            String query = "SELECT * FROM dbo.PhongBan  WHERE PhongBan.id = " + A;
+            Dataprovider provider = new Dataprovider();
+            dataGridViewNV.DataSource = provider.ExecuteQuery(query);
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -48,6 +55,11 @@ namespace QLyNhanSu
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
             LayDLNV();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            HienThiDLNV();
         }
     }
 }

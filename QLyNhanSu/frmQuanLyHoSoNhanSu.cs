@@ -16,11 +16,18 @@ namespace QLyNhanSu
         public frmQuanLyHoSoNhanSu()
         {
             InitializeComponent();
-            
+
         }
         void LayDLHSNS()
         {
             String query = "SELECT * FROM dbo.HeSoLuong";
+            Dataprovider provider = new Dataprovider();
+            dataGridViewHSNS.DataSource = provider.ExecuteQuery(query);
+        }
+        void HienThiDLHSNS()
+        {
+            String A = toolStripTextBox1.Text;
+            String query = "SELECT * FROM dbo.PhongBan  WHERE PhongBan.id = " + A;
             Dataprovider provider = new Dataprovider();
             dataGridViewHSNS.DataSource = provider.ExecuteQuery(query);
         }
@@ -32,6 +39,11 @@ namespace QLyNhanSu
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
             LayDLHSNS();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            HienThiDLHSNS();
         }
     }
 }

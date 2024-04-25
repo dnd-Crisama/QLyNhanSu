@@ -138,6 +138,7 @@
             toolStripButton6.Name = "toolStripButton6";
             toolStripButton6.Size = new Size(29, 24);
             toolStripButton6.Text = "toolStripButton6";
+            toolStripButton6.Click += toolStripButton6_Click;
             // 
             // toolStripButton7
             // 
@@ -200,35 +201,35 @@
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(317, 160);
-            textBox1.TabIndex = 9;
+            textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
             textBox2.Location = new Point(104, 55);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(317, 27);
-            textBox2.TabIndex = 10;
+            textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
             textBox3.Location = new Point(104, 93);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(317, 27);
-            textBox3.TabIndex = 11;
+            textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
             textBox4.Location = new Point(627, 61);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(229, 27);
-            textBox4.TabIndex = 12;
+            textBox4.TabIndex = 3;
             // 
             // textBox5
             // 
             textBox5.Location = new Point(627, 96);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(229, 27);
-            textBox5.TabIndex = 13;
+            textBox5.TabIndex = 4;
             // 
             // dataGridViewHSNS
             // 

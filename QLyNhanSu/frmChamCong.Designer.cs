@@ -323,7 +323,7 @@
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(184, 63);
-            button2.TabIndex = 1;
+            button2.TabIndex = 8;
             button2.Text = "CẬP NHẬT";
             button2.UseVisualStyleBackColor = true;
             // 
@@ -433,7 +433,7 @@
             splitContainer3.Panel2.Controls.Add(pictureBox1);
             splitContainer3.Panel2.Controls.Add(label1);
             splitContainer3.Size = new Size(970, 442);
-            splitContainer3.SplitterDistance = 468;
+            splitContainer3.SplitterDistance = 467;
             splitContainer3.SplitterWidth = 5;
             splitContainer3.TabIndex = 0;
             // 
@@ -568,7 +568,7 @@
             textBox7.Name = "textBox7";
             textBox7.ReadOnly = true;
             textBox7.Size = new Size(316, 27);
-            textBox7.TabIndex = 16;
+            textBox7.TabIndex = 7;
             // 
             // label8
             // 
@@ -587,7 +587,7 @@
             textBox6.Name = "textBox6";
             textBox6.ReadOnly = true;
             textBox6.Size = new Size(316, 27);
-            textBox6.TabIndex = 14;
+            textBox6.TabIndex = 6;
             // 
             // textBox5
             // 
@@ -597,7 +597,7 @@
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
             textBox5.Size = new Size(316, 27);
-            textBox5.TabIndex = 13;
+            textBox5.TabIndex = 5;
             // 
             // textBox4
             // 
@@ -607,7 +607,7 @@
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
             textBox4.Size = new Size(316, 27);
-            textBox4.TabIndex = 12;
+            textBox4.TabIndex = 4;
             // 
             // textBox3
             // 
@@ -617,7 +617,7 @@
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
             textBox3.Size = new Size(276, 27);
-            textBox3.TabIndex = 11;
+            textBox3.TabIndex = 3;
             // 
             // textBox2
             // 
@@ -627,7 +627,7 @@
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
             textBox2.Size = new Size(276, 27);
-            textBox2.TabIndex = 10;
+            textBox2.TabIndex = 2;
             // 
             // textBox1
             // 
@@ -637,7 +637,7 @@
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(276, 27);
-            textBox1.TabIndex = 9;
+            textBox1.TabIndex = 1;
             // 
             // label7
             // 

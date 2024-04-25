@@ -209,28 +209,28 @@
             txtMa.Location = new Point(209, 100);
             txtMa.Name = "txtMa";
             txtMa.Size = new Size(235, 27);
-            txtMa.TabIndex = 6;
+            txtMa.TabIndex = 1;
             // 
             // txtRePass
             // 
             txtRePass.Location = new Point(209, 241);
             txtRePass.Name = "txtRePass";
             txtRePass.Size = new Size(380, 27);
-            txtRePass.TabIndex = 7;
+            txtRePass.TabIndex = 5;
             // 
             // txtUser
             // 
             txtUser.Location = new Point(209, 172);
             txtUser.Name = "txtUser";
             txtUser.Size = new Size(380, 27);
-            txtUser.TabIndex = 8;
+            txtUser.TabIndex = 3;
             // 
             // txtPass
             // 
             txtPass.Location = new Point(209, 204);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(380, 27);
-            txtPass.TabIndex = 10;
+            txtPass.TabIndex = 4;
             // 
             // checkBox1
             // 
@@ -281,7 +281,7 @@
             cbbQuyen.Margin = new Padding(3, 4, 3, 4);
             cbbQuyen.Name = "cbbQuyen";
             cbbQuyen.Size = new Size(247, 28);
-            cbbQuyen.TabIndex = 14;
+            cbbQuyen.TabIndex = 2;
             // 
             // frmQuanLyTaiKhoan
             // 
