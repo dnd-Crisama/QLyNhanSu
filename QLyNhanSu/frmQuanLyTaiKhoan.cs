@@ -30,6 +30,13 @@ namespace QLyNhanSu
         public frmQuanLyTaiKhoan()
         {
             InitializeComponent();
+            LayDLTK();
+        }
+        void LayDLTK()
+        {
+            String query = "SELECT * FROM dbo.TaiKhoan";
+            Dataprovider provider = new Dataprovider();
+            dataGridViewTK.DataSource = provider.ExecuteQuery(query);
         }
         public string _stus = "0";
         private static int mahientai;
@@ -43,15 +50,15 @@ namespace QLyNhanSu
         public void load_data()
         {
             var dt = xuly.hien();
-            dataGridView1.DataSource = dt;
-            mahientai = dataGridView1.RowCount - 1;
+            dataGridViewTK.DataSource = dt;
+            mahientai = dataGridViewTK.RowCount - 1;
             txtMa.Text = mahientai.ToString();
         }
 
         public void timkiem()
         {
             var dt = xuly.timkiem(txtSearch.Text);
-            dataGridView1.DataSource = dt;
+            dataGridViewTK.DataSource = dt;
         }
         public void xoa_text()
         {
@@ -311,7 +318,7 @@ namespace QLyNhanSu
         }
         public void load_excel(string path)
         {
-            dataGridView1.DataSource = exec.Import(path);
+            dataGridViewTK.DataSource = exec.Import(path);
         }
         public void load_doituong()
         {
@@ -335,7 +342,7 @@ namespace QLyNhanSu
         {
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                DataGridViewRow row = this.dataGridViewTK.Rows[e.RowIndex];
                 txtMa.Text = row.Cells[4].Value.ToString();
                 txtUser.Text = row.Cells[1].Value.ToString();
                 txtPass.Text = row.Cells[0].Value.ToString();
@@ -361,21 +368,21 @@ namespace QLyNhanSu
 
             cbbQuyen.SelectedIndexChanged += cbbQuyen_SelectedIndexChanged;
 
-            dataGridView1.Columns["id"].DisplayIndex = 0;
-            dataGridView1.Columns["username"].DisplayIndex = 1;
-            dataGridView1.Columns["password"].DisplayIndex = 2;
-            dataGridView1.Columns["maquyen"].DisplayIndex = 3;
-            dataGridView1.Columns["ten"].DisplayIndex = 4;
-            dataGridView1.Columns["giatri"].DisplayIndex = 5;
-            dataGridView1.Columns["trangthai"].DisplayIndex = 6;
+            dataGridViewTK.Columns["id"].DisplayIndex = 0;
+            dataGridViewTK.Columns["username"].DisplayIndex = 1;
+            dataGridViewTK.Columns["password"].DisplayIndex = 2;
+            dataGridViewTK.Columns["maquyen"].DisplayIndex = 3;
+            dataGridViewTK.Columns["ten"].DisplayIndex = 4;
+            dataGridViewTK.Columns["giatri"].DisplayIndex = 5;
+            dataGridViewTK.Columns["trangthai"].DisplayIndex = 6;
 
-            dataGridView1.Columns[0].HeaderText = "Mật khẩu";
-            dataGridView1.Columns[1].HeaderText = "Tài khoản";
-            dataGridView1.Columns[2].HeaderText = "Mã Quyền";
-            dataGridView1.Columns[3].HeaderText = "Trạng thái";
-            dataGridView1.Columns[4].HeaderText = "ID";
-            dataGridView1.Columns[5].HeaderText = "Tên quyền";
-            dataGridView1.Columns[6].HeaderText = "Giá trị";
+            dataGridViewTK.Columns[0].HeaderText = "Mật khẩu";
+            dataGridViewTK.Columns[1].HeaderText = "Tài khoản";
+            dataGridViewTK.Columns[2].HeaderText = "Mã Quyền";
+            dataGridViewTK.Columns[3].HeaderText = "Trạng thái";
+            dataGridViewTK.Columns[4].HeaderText = "ID";
+            dataGridViewTK.Columns[5].HeaderText = "Tên quyền";
+            dataGridViewTK.Columns[6].HeaderText = "Giá trị";
 
         }
         public void LoadComboBox()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLyNhanSu.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,14 @@ namespace QLyNhanSu
         public frmQuanLyNhanVien()
         {
             InitializeComponent();
-        }
 
+        }
+        void LayDLNV()
+        {
+            String query = "SELECT * FROM dbo.NhanVien";
+            Dataprovider provider = new Dataprovider();
+            dataGridViewNV.DataSource = provider.ExecuteQuery(query);
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -36,6 +43,11 @@ namespace QLyNhanSu
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            LayDLNV();
         }
     }
 }

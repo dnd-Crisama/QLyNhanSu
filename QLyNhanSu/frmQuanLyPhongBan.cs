@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLyNhanSu.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace QLyNhanSu
         public frmQuanLyPhongBan()
         {
             InitializeComponent();
+           
+        }
+        void LayDLPB()
+        {
+            String query = "SELECT * FROM dbo.PhongBan";
+            Dataprovider provider = new Dataprovider();
+            dataGridViewPB.DataSource = provider.ExecuteQuery(query);
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            LayDLPB();
         }
     }
 }

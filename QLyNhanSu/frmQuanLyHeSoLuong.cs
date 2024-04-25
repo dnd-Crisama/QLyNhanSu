@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLyNhanSu.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,22 @@ namespace QLyNhanSu
         public frmQuanLyHeSoLuong()
         {
             InitializeComponent();
+       
         }
-
+        void LayDLHSL()
+        {
+            String query = "SELECT * FROM dbo.HoSoNhanVien";
+            Dataprovider provider = new Dataprovider();
+            dataGridViewHSL.DataSource = provider.ExecuteQuery(query);
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            LayDLHSL();
         }
     }
 }
