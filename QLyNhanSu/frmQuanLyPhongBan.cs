@@ -42,8 +42,7 @@ namespace QLyNhanSu
         void LayDLTK()
         {
             String query = "SELECT * FROM dbo.PhongBan";
-            Dataprovider provider = new Dataprovider();
-            dataGridViewPB.DataSource = provider.ExecuteQuery(query);
+            dataGridViewPB.DataSource = Dataprovider.Instance.ExecuteQuery(query);
         }
         public string _stus = "0";
         private static int mahientai;
@@ -51,6 +50,7 @@ namespace QLyNhanSu
 
         phongbanbll xuly = new phongbanbll();
         phongbandto doituong = new phongbandto();
+
         public void load_data()
         {
             var dt = xuly.hien();
@@ -58,7 +58,6 @@ namespace QLyNhanSu
             mahientai = dataGridViewPB.RowCount - 1;
             txtMa.Text = mahientai.ToString();
         }
-
         public void timkiem()
         {
             var dt = xuly.timkiem(txtSearch.Text);

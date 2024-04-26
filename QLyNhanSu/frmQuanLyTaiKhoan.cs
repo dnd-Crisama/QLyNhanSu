@@ -35,8 +35,7 @@ namespace QLyNhanSu
         void LayDLTK()
         {
             String query = "SELECT * FROM dbo.TaiKhoan";
-            Dataprovider provider = new Dataprovider();
-            dataGridViewTK.DataSource = provider.ExecuteQuery(query);
+            dataGridViewTK.DataSource = Dataprovider.Instance.ExecuteQuery(query);
         }
         public string _stus = "0";
         private static int mahientai;

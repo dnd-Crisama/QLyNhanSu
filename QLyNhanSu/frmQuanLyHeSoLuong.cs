@@ -20,16 +20,14 @@ namespace QLyNhanSu
         }
         void LayDLHSL()
         {
-            String query = "SELECT * FROM dbo.HoSoNhanVien";
-            Dataprovider provider = new Dataprovider();
-            dataGridViewHSL.DataSource = provider.ExecuteQuery(query);
+            String query = "SELECT * FROM dbo.HeSoLuong";
+            dataGridViewHSL.DataSource = Dataprovider.Instance.ExecuteQuery(query);
         }
         void HienThiDLHSL()
         {
             String A = toolStripTextBox1.Text;
-            String query = "SELECT * FROM dbo.PhongBan  WHERE PhongBan.id = " + A;
-            Dataprovider provider = new Dataprovider();
-            dataGridViewHSL.DataSource = provider.ExecuteQuery(query);
+            String query = "SELECT * FROM dbo.HeSoLuong  WHERE HeSoLuong.id = " + A;
+            dataGridViewHSL.DataSource = Dataprovider.Instance.ExecuteQuery(query);
         }
         private void label2_Click(object sender, EventArgs e)
         {

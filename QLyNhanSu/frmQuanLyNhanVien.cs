@@ -22,15 +22,13 @@ namespace QLyNhanSu
         void LayDLNV()
         {
             String query = "SELECT * FROM dbo.NhanVien";
-            Dataprovider provider = new Dataprovider();
-            dataGridViewNV.DataSource = provider.ExecuteQuery(query);
+            dataGridViewNV.DataSource = Dataprovider.Instance.ExecuteQuery(query);
         }
         void HienThiDLNV()
         {
             String A = toolStripTextBox1.Text;
-            String query = "SELECT * FROM dbo.PhongBan  WHERE PhongBan.id = " + A;
-            Dataprovider provider = new Dataprovider();
-            dataGridViewNV.DataSource = provider.ExecuteQuery(query);
+            String query = "SELECT * FROM dbo.NhanVien  WHERE NhanVien.id = " + A;
+            dataGridViewNV.DataSource = Dataprovider.Instance.ExecuteQuery(query);
         }
         private void label1_Click(object sender, EventArgs e)
         {
