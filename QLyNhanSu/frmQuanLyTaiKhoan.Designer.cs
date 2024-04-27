@@ -260,7 +260,7 @@
             dataGridViewTK.RowHeadersWidth = 51;
             dataGridViewTK.Size = new Size(1072, 426);
             dataGridViewTK.TabIndex = 12;
-            dataGridViewTK.CellContentClick += dataGridView1_CellClick;
+            dataGridViewTK.CellClick += dataGridView1_CellClick;
             // 
             // statusStrip1
             // 

@@ -18,27 +18,5 @@ namespace QLyNhanSu
             InitializeComponent();
 
         }
-        void LayDLTC()
-        {
-            String query = "SELECT * FROM dbo.TroCap";
-           
-            dataGridViewTC.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
-        void HienThiDLTC()
-        {
-            String A = toolStripTextBox1.Text;
-            String query = "SELECT * FROM dbo.TroCap  WHERE TroCap.id = " + A;
-         
-            dataGridViewTC.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
-        private void toolStripButton4_Click(object sender, EventArgs e)
-        {
-            LayDLTC();
-        }
-
-        private void toolStripButton6_Click(object sender, EventArgs e)
-        {
-           HienThiDLTC();
-        }
     }
 }

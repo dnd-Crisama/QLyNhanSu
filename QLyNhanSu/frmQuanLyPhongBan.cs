@@ -37,12 +37,6 @@ namespace QLyNhanSu
         public frmQuanLyPhongBan()
         {
             InitializeComponent();
-            LayDLTK();
-        }
-        void LayDLTK()
-        {
-            String query = "SELECT * FROM dbo.PhongBan";
-            dataGridViewPB.DataSource = Dataprovider.Instance.ExecuteQuery(query);
         }
         public string _stus = "0";
         private static int mahientai;

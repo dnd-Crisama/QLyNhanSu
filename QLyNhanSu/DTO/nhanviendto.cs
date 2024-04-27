@@ -13,10 +13,10 @@ namespace QLyNhanSu.DTO
         public string ten { get; set; }
         public string cmt { get; set; }
         public string ngaysinh { get; set; }
-        public string phone { get; set; }
+        public string email { get; set; }
         public int hosonhanvien { get; set; }
         public int trangthai { get; set; }
-        public string hinhanh { get; set; }
+        public byte[] hinhanh { get; set; }
         public int maphongban { get; set; }
         public int machucvu {  get; set; }
         public int masoheluong {  get; set; }

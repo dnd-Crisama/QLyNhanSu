@@ -139,7 +139,7 @@ namespace QLyNhanSu.DAL
                 cmd.Connection = cn;
                 // return cmd.ExecuteNonQuery();
                 // return (int)cmd.ExecuteScalar();
-                object returnObj = cmd.ExecuteScalar();
+                object returnObj = cmd.ExecuteNonQuery();
                 if (returnObj == null)
                 {
                     throw new Exception("Returned object is null.");

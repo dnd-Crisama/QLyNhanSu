@@ -100,7 +100,6 @@
             toolStripButton4.Name = "toolStripButton4";
             toolStripButton4.Size = new Size(29, 24);
             toolStripButton4.Text = "toolStripButton4";
-            toolStripButton4.Click += toolStripButton4_Click;
             // 
             // toolStripButton8
             // 
@@ -141,7 +140,6 @@
             toolStripButton6.Name = "toolStripButton6";
             toolStripButton6.Size = new Size(29, 24);
             toolStripButton6.Text = "toolStripButton6";
-            toolStripButton6.Click += toolStripButton6_Click;
             // 
             // toolStripButton7
             // 

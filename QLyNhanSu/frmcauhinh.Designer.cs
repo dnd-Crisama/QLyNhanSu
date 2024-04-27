@@ -337,7 +337,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(1084, 321);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellClick;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // frmcauhinh
             // 

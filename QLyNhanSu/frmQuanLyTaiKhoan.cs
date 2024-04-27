@@ -30,13 +30,8 @@ namespace QLyNhanSu
         public frmQuanLyTaiKhoan()
         {
             InitializeComponent();
-            LayDLTK();
         }
-        void LayDLTK()
-        {
-            String query = "SELECT * FROM dbo.TaiKhoan";
-            dataGridViewTK.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
+
         public string _stus = "0";
         private static int mahientai;
         DataAccess ac = new DataAccess();
@@ -383,6 +378,9 @@ namespace QLyNhanSu
             dataGridViewTK.Columns[5].HeaderText = "Tên quyền";
             dataGridViewTK.Columns[6].HeaderText = "Giá trị";
 
+            dataGridViewTK.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewTK.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewTK.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
         public void LoadComboBox()
         {
