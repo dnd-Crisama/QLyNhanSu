@@ -21,6 +21,7 @@ namespace QLyNhanSu
         {
             InitializeComponent();
             LayDLHSL();
+           
         }
         void LayDLHSL()
         {
@@ -48,11 +49,6 @@ namespace QLyNhanSu
             dataGridViewHSL.DataSource = dt;
             mahientai = dataGridViewHSL.RowCount - 1;
             txtma.Text = mahientai.ToString();
-        }
-        public void timkiem()
-        {
-            var dt = xuly.timkiem(txttimkiem.Text);
-            dataGridViewHSL.DataSource = dt;
         }
         public void xoa_text()
         {
