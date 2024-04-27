@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             toolStrip1 = new ToolStrip();
-            toolStripButton1 = new ToolStripButton();
+            btnLoad = new ToolStripButton();
             toolStripButton2 = new ToolStripButton();
             toolStripButton3 = new ToolStripButton();
             toolStripButton4 = new ToolStripButton();
@@ -55,22 +55,22 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, txttimkiem, toolStripButton6, toolStripButton7, toolStripButton10 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { btnLoad, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, txttimkiem, toolStripButton6, toolStripButton7, toolStripButton10 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1239, 27);
+            toolStrip1.Size = new Size(1084, 27);
             toolStrip1.TabIndex = 4;
             toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // btnLoad
             // 
-            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton1.Image = Properties.Resources.Flat_restart_icon_svg;
-            toolStripButton1.ImageTransparentColor = Color.Magenta;
-            toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(29, 24);
-            toolStripButton1.Text = "toolStripButton1";
-            toolStripButton1.Click += toolStripButton1_Click;
+            btnLoad.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btnLoad.Image = Properties.Resources.Flat_restart_icon_svg;
+            btnLoad.ImageTransparentColor = Color.Magenta;
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(24, 24);
+            btnLoad.Text = "toolStripButton1";
+            btnLoad.Click += toolStripButton1_Click;
             // 
             // toolStripButton2
             // 
@@ -78,7 +78,7 @@
             toolStripButton2.Image = Properties.Resources.toolStripButton2_Image;
             toolStripButton2.ImageTransparentColor = Color.Magenta;
             toolStripButton2.Name = "toolStripButton2";
-            toolStripButton2.Size = new Size(29, 24);
+            toolStripButton2.Size = new Size(24, 24);
             toolStripButton2.Text = "toolStripButton2";
             toolStripButton2.Click += toolStripButton2_Click;
             // 
@@ -88,7 +88,7 @@
             toolStripButton3.Image = Properties.Resources.toolStripButton3_Image;
             toolStripButton3.ImageTransparentColor = Color.Magenta;
             toolStripButton3.Name = "toolStripButton3";
-            toolStripButton3.Size = new Size(29, 24);
+            toolStripButton3.Size = new Size(24, 24);
             toolStripButton3.Text = "toolStripButton3";
             toolStripButton3.Click += toolStripButton3_Click;
             // 
@@ -98,7 +98,7 @@
             toolStripButton4.Image = Properties.Resources.toolStripButton4_Image;
             toolStripButton4.ImageTransparentColor = Color.Magenta;
             toolStripButton4.Name = "toolStripButton4";
-            toolStripButton4.Size = new Size(29, 24);
+            toolStripButton4.Size = new Size(24, 24);
             toolStripButton4.Text = "toolStripButton4";
             // 
             // toolStripButton8
@@ -107,7 +107,7 @@
             toolStripButton8.Image = Properties.Resources.toolStripButton8_Image;
             toolStripButton8.ImageTransparentColor = Color.Magenta;
             toolStripButton8.Name = "toolStripButton8";
-            toolStripButton8.Size = new Size(29, 24);
+            toolStripButton8.Size = new Size(24, 24);
             toolStripButton8.Text = "toolStripButton8";
             toolStripButton8.Click += toolStripButton8_Click;
             // 
@@ -117,20 +117,20 @@
             toolStripButton5.Image = Properties.Resources.toolStripButton5_Image;
             toolStripButton5.ImageTransparentColor = Color.Magenta;
             toolStripButton5.Name = "toolStripButton5";
-            toolStripButton5.Size = new Size(29, 24);
+            toolStripButton5.Size = new Size(24, 24);
             toolStripButton5.Text = "toolStripButton5";
             toolStripButton5.Click += toolStripButton5_Click;
             // 
             // toolStripLabel1
             // 
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(72, 24);
+            toolStripLabel1.Size = new Size(57, 24);
             toolStripLabel1.Text = "Tìm Kiếm";
             // 
             // txttimkiem
             // 
             txttimkiem.Name = "txttimkiem";
-            txttimkiem.Size = new Size(100, 27);
+            txttimkiem.Size = new Size(88, 27);
             // 
             // toolStripButton6
             // 
@@ -138,8 +138,9 @@
             toolStripButton6.Image = Properties.Resources.pngtree_magnifying_glass_icon_image_1128382;
             toolStripButton6.ImageTransparentColor = Color.Magenta;
             toolStripButton6.Name = "toolStripButton6";
-            toolStripButton6.Size = new Size(29, 24);
+            toolStripButton6.Size = new Size(24, 24);
             toolStripButton6.Text = "toolStripButton6";
+            toolStripButton6.Click += toolStripButton6_Click;
             // 
             // toolStripButton7
             // 
@@ -147,7 +148,7 @@
             toolStripButton7.Image = Properties.Resources.png_clipart_computer_icons_check_mark_cross_x_miscellaneous_trademark_thumbnail;
             toolStripButton7.ImageTransparentColor = Color.Magenta;
             toolStripButton7.Name = "toolStripButton7";
-            toolStripButton7.Size = new Size(29, 24);
+            toolStripButton7.Size = new Size(24, 24);
             toolStripButton7.Text = "toolStripButton7";
             toolStripButton7.Click += toolStripButton7_Click;
             // 
@@ -157,80 +158,85 @@
             toolStripButton10.Image = Properties.Resources._9913406;
             toolStripButton10.ImageTransparentColor = Color.Magenta;
             toolStripButton10.Name = "toolStripButton10";
-            toolStripButton10.Size = new Size(29, 24);
+            toolStripButton10.Size = new Size(24, 24);
             toolStripButton10.Text = "toolStripButton5";
             toolStripButton10.Click += toolStripButton10_Click;
             // 
             // dataGridViewCV
             // 
             dataGridViewCV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCV.Location = new Point(14, 181);
+            dataGridViewCV.Location = new Point(12, 136);
+            dataGridViewCV.Margin = new Padding(3, 2, 3, 2);
             dataGridViewCV.Name = "dataGridViewCV";
             dataGridViewCV.RowHeadersWidth = 51;
-            dataGridViewCV.Size = new Size(1197, 787);
+            dataGridViewCV.Size = new Size(1047, 590);
             dataGridViewCV.TabIndex = 15;
+            dataGridViewCV.CellClick += dataGridView1_CellClick;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(22, 61);
+            label2.Location = new Point(19, 46);
             label2.Name = "label2";
-            label2.Size = new Size(33, 20);
+            label2.Size = new Size(27, 15);
             label2.TabIndex = 16;
             label2.Text = "Mã:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(22, 92);
+            label1.Location = new Point(19, 69);
             label1.Name = "label1";
-            label1.Size = new Size(35, 20);
+            label1.Size = new Size(28, 15);
             label1.TabIndex = 17;
             label1.Text = "Tên:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(22, 124);
+            label3.Location = new Point(19, 93);
             label3.Name = "label3";
-            label3.Size = new Size(57, 20);
+            label3.Size = new Size(46, 15);
             label3.TabIndex = 18;
             label3.Text = "Kí hiệu:";
             // 
             // txtkihieu
             // 
-            txtkihieu.Location = new Point(79, 117);
+            txtkihieu.Location = new Point(69, 88);
+            txtkihieu.Margin = new Padding(3, 2, 3, 2);
             txtkihieu.Name = "txtkihieu";
-            txtkihieu.Size = new Size(267, 27);
+            txtkihieu.Size = new Size(234, 23);
             txtkihieu.TabIndex = 3;
             // 
             // txtten
             // 
-            txtten.Location = new Point(79, 84);
+            txtten.Location = new Point(69, 63);
+            txtten.Margin = new Padding(3, 2, 3, 2);
             txtten.Name = "txtten";
-            txtten.Size = new Size(267, 27);
+            txtten.Size = new Size(234, 23);
             txtten.TabIndex = 2;
             // 
             // txtma
             // 
-            txtma.Location = new Point(79, 55);
+            txtma.Location = new Point(69, 41);
+            txtma.Margin = new Padding(3, 2, 3, 2);
             txtma.Name = "txtma";
-            txtma.Size = new Size(267, 27);
+            txtma.Size = new Size(234, 23);
             txtma.TabIndex = 1;
             // 
             // lblEx
             // 
             lblEx.AutoSize = true;
-            lblEx.Location = new Point(79, 158);
+            lblEx.Location = new Point(69, 118);
             lblEx.Name = "lblEx";
-            lblEx.Size = new Size(0, 20);
+            lblEx.Size = new Size(0, 15);
             lblEx.TabIndex = 19;
             // 
             // frmQuanLyDanhMucChucVu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1239, 997);
+            ClientSize = new Size(1084, 748);
             Controls.Add(lblEx);
             Controls.Add(txtma);
             Controls.Add(txtten);
@@ -240,6 +246,7 @@
             Controls.Add(label2);
             Controls.Add(dataGridViewCV);
             Controls.Add(toolStrip1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmQuanLyDanhMucChucVu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmQuanLyDanhMucChucVu";
@@ -254,7 +261,7 @@
         #endregion
 
         private ToolStrip toolStrip1;
-        private ToolStripButton toolStripButton1;
+        private ToolStripButton btnLoad;
         private ToolStripButton toolStripButton2;
         private ToolStripButton toolStripButton3;
         private ToolStripButton toolStripButton4;

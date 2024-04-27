@@ -20,22 +20,8 @@ namespace QLyNhanSu
         public frmQuanLyHeSoLuong()
         {
             InitializeComponent();
-            LayDLHSL();
            
         }
-        void LayDLHSL()
-        {
-            String query = "SELECT * FROM dbo.HeSoLuong";
-            dataGridViewHSL.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
-        
-        void HienThiDLHSL()
-        {
-            String A = txttimkiem.Text;
-            String query = "SELECT * FROM dbo.HeSoLuong  WHERE HeSoLuong.id = " + A;
-            dataGridViewHSL.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
-
         public string _stus = "0";
         private static int mahientai;
         DataAccess ac = new DataAccess();
@@ -99,7 +85,7 @@ namespace QLyNhanSu
                 txtten.Focus();
             }
         }
-       
+
         public void xoa()
         {
             try
@@ -111,10 +97,8 @@ namespace QLyNhanSu
                 }
                 else
                 {
-
-                    String A = txtma.Text;
-                    String query = "DELETE FROM dbo.HeSoLuong WHERE HeSoLuong.id = " + A;
-                    dataGridViewHSL.DataSource = Dataprovider.Instance.ExecuteQuery(query);
+                    load_doituong();
+                    xuly.xoa(doituong);
                     load_data();
                     xoa_text();
                     lblEx.Text = "Xóa dữ liệu thành công!";
@@ -127,8 +111,7 @@ namespace QLyNhanSu
             }
             catch (Exception ex)
             {
-                //  Provide more specific message based on the exception
-                lblEx.Text = "Lỗi khi xóa dữ liệu: " + ex.Message.ToString();
+                lblEx.Text = "Lỗi, thử lại " + ex.Message.ToString();
                 txtten.Focus();
             }
         }
@@ -148,9 +131,9 @@ namespace QLyNhanSu
         }
         public void trangthai_txt(bool _trangthai)
         {
-            txtma.ReadOnly = !_trangthai;
-            txtten.ReadOnly = !_trangthai;
-            txtgiatri.ReadOnly = !_trangthai;
+            txtma.ReadOnly = _trangthai;
+            txtten.ReadOnly = _trangthai;
+            txtgiatri.ReadOnly = _trangthai;
         }
         public void trangthai_btn(bool _trangthai)
         {
@@ -160,6 +143,11 @@ namespace QLyNhanSu
             toolStripButton5.Enabled = !_trangthai;
             toolStripButton8.Enabled = !_trangthai;
         }
+        public void timkiem()
+        {
+            var dt = xuly.timkiem(txttimkiem.Text);
+            dataGridViewHSL.DataSource = dt;
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -167,12 +155,11 @@ namespace QLyNhanSu
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            LayDLHSL();
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
-            HienThiDLHSL();
+            timkiem();
         }
 
         private void label4_Click(object sender, EventArgs e)

@@ -21,18 +21,7 @@ namespace QLyNhanSu
             InitializeComponent();
 
         }
-        void LayDLCV()
-        {
-            String query = "SELECT * FROM dbo.ChucVu";
 
-            dataGridViewCV.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
-        void HienThiDLCV()
-        {
-            String A = txttimkiem.Text;
-            String query = "SELECT * FROM dbo.ChucVu  WHERE ChucVu.id = " + A;
-            dataGridViewCV.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
         public string _stus = "0";
         private static int mahientai;
         DataAccess ac = new DataAccess();
@@ -107,10 +96,8 @@ namespace QLyNhanSu
                 }
                 else
                 {
-
-                    String A = txtma.Text;
-                    String query = "DELETE FROM dbo.ChucVu WHERE ChucVu.id = " + A;
-                    dataGridViewCV.DataSource = Dataprovider.Instance.ExecuteQuery(query);
+                    load_doituong();
+                    xuly.xoa(doituong);
                     load_data();
                     xoa_text();
                     lblEx.Text = "Xóa dữ liệu thành công!";
@@ -123,7 +110,7 @@ namespace QLyNhanSu
             }
             catch (Exception ex)
             {
-                lblEx.Text = "Lỗi khi xóa dữ liệu: " + ex.Message.ToString();
+                lblEx.Text = "Lỗi, thử lại " + ex.Message.ToString();
                 txtten.Focus();
             }
         }
@@ -155,14 +142,18 @@ namespace QLyNhanSu
             toolStripButton5.Enabled = !_trangthai;
             toolStripButton8.Enabled = !_trangthai;
         }
+        public void timkiem()
+        {
+            var dt = xuly.timkiem(txttimkiem.Text);
+            dataGridViewCV.DataSource = dt;
+        }
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            LayDLCV();
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
-            HienThiDLCV();
+            timkiem();
         }
         QLyNhanSu.DAL.Excel exec = new QLyNhanSu.DAL.Excel();
         public void export_excel()
@@ -357,5 +348,6 @@ namespace QLyNhanSu
         {
             export_excel();
         }
+
     }
 }

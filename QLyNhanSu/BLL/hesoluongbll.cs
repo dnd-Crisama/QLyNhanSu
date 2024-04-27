@@ -30,8 +30,9 @@ namespace QLyNhanSu.BLL
         public void them(hesoluong doituong)
         {
             string chuoi = " INSERT INTO HeSoLuong ";
-            chuoi += " (ten,giatri) ";
+            chuoi += " (id,ten,giatri) ";
             chuoi += " VALUES ( ";
+            chuoi += " N'" + doituong.id + "', ";
             chuoi += " N'" + doituong.ten + "', ";
             chuoi += " N'" + doituong.giatri + "') ";
             try

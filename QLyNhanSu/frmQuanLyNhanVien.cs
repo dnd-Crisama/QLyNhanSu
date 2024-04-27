@@ -495,6 +495,20 @@ namespace QLyNhanSu
             dataGridViewNV.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewNV.Columns[14].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewNV.Columns[15].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+           
+            dataGridViewNV.Columns[13].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[12].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[11].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[10].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[9].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewNV.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+
 
         }
 
