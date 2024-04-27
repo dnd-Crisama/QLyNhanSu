@@ -502,16 +502,18 @@
             // btnFormMain
             // 
             btnFormMain.BackColor = Color.FromArgb(11, 7, 17);
+            btnFormMain.BackgroundImageLayout = ImageLayout.Stretch;
             btnFormMain.Dock = DockStyle.Top;
             btnFormMain.FlatAppearance.BorderColor = Color.DarkSlateBlue;
             btnFormMain.FlatStyle = FlatStyle.Flat;
             btnFormMain.Font = new Font("Segoe UI", 9.75F);
             btnFormMain.ForeColor = Color.White;
+            btnFormMain.Image = Properties.Resources._6624c82abd9aa;
+            btnFormMain.ImageAlign = ContentAlignment.BottomCenter;
             btnFormMain.Location = new Point(0, 203);
             btnFormMain.Name = "btnFormMain";
             btnFormMain.Size = new Size(233, 51);
             btnFormMain.TabIndex = 1;
-            btnFormMain.Text = "Main";
             btnFormMain.UseVisualStyleBackColor = false;
             btnFormMain.Click += btnFormMain_Click;
             // 

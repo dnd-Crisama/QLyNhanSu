@@ -11,6 +11,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.IO;
 using System.Security.Cryptography;
+using MongoDB.Driver.Core.Configuration;
 namespace QLyNhanSu.DAL
 {
     internal class DataAccess
@@ -321,5 +322,73 @@ namespace QLyNhanSu.DAL
             dt = ac.GetDataTable_Store(tenstore);
             return dt;
         }
+        public static bool DaChamCongTrongNgay(int idNhanVien, string ngay)
+        {
+
+            string query = "SELECT COUNT(*) FROM ChamCong WHERE idnhanvien = @idNhanVien AND ngay = @ngay";
+
+            using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@idNhanVien", idNhanVien);
+                    command.Parameters.AddWithValue("@ngay", ngay);
+
+                    connection.Open();
+                    int count = (int)command.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
+        public DataTable LocTheoNamThang(int? nam, int? thang)
+        {
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString))
+                {
+                    conn.Open();
+
+                    string query = "SELECT        dbo.ChamCong.id, dbo.ChamCong.idnhanvien, dbo.ChamCong.gio, dbo.ChamCong.ngay, dbo.ChamCong.thang, dbo.ChamCong.nam, dbo.ChamCong.trangthai, dbo.ChamCong.noidung, dbo.ChamCong.ghichu, \r\n                         dbo.ChamCong.dieukien, dbo.NhanVien.cmt, dbo.NhanVien.ngaysinh, dbo.NhanVien.email, dbo.NhanVien.machucvu, dbo.ChucVu.ten AS Tenchucvu, dbo.NhanVien.maphongban, dbo.PhongBan.ten AS Tenphongban, \r\n                         dbo.NhanVien.ten\r\nFROM            dbo.ChamCong INNER JOIN\r\n                         dbo.NhanVien ON dbo.ChamCong.idnhanvien = dbo.NhanVien.id INNER JOIN\r\n                         dbo.ChucVu ON dbo.NhanVien.machucvu = dbo.ChucVu.id INNER JOIN\r\n                         dbo.PhongBan ON dbo.NhanVien.maphongban = dbo.PhongBan.id"; 
+
+                    if (nam != 0 && thang != 0)
+                    {
+                        query += " WHERE nam = @Nam AND thang = @Thang";
+                    }
+                    else if (nam != 0)
+                    {
+                        query += " WHERE nam = @Nam";
+                    }
+                    else if (thang !=0)
+                    {
+                        query += " WHERE thang = @Thang";
+                    }
+
+                    SqlCommand cmd = new SqlCommand(query, conn);
+
+                    if (nam.HasValue)
+                    {
+                        cmd.Parameters.AddWithValue("@Nam", nam);
+                    }
+                    if (thang.HasValue)
+                    {
+                        cmd.Parameters.AddWithValue("@Thang", thang);
+                    }
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(dt);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
+
+            return dt;
+        }
     }
 }
+
+    
+

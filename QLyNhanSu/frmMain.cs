@@ -4,6 +4,7 @@ using System;
 using System.Windows.Forms;
 using Timer = System.Windows.Forms.Timer;
 using QLyNhanSu.DAL;
+using MongoDB.Bson;
 
 namespace QLyNhanSu
 {
@@ -12,7 +13,7 @@ namespace QLyNhanSu
         private Timer timer;
         private Random random;
         
-        private string[] quotes = { "Hello World!", "Sometime in life you gotta just 'LEGO'!.", "If two pregnant women fight, it's kind of like two babies having a mecha battle", "Phương Nam phim. Hân hạnh giới thiệu bộ phim. Anh em siêu nhân Deka/ Lực lượng đặc nhiệm S.P.D. S,P.D có nghĩa là đội biệt động đặc nhiệm Deka. Họ thuộc phân khu Trái Đất của cảnh sát vũ trụ. Họ gồm có năm thám tử đầy nhiệt huyết. Nhiệm vụ của họ là triệt hạ những tên tội phạm đến từ vũ trụ để bảo vệ niềm hòa bình cuối cùng của con người trên hành tinh này.", "Cuối cùng mới có một bộ anime mà nhân vật chính đúng chuẩn hình mẫu lý tưởng của tao. Một kẻ lạnh lùng và ít nói. Đám bạn không hiểu tại sao tao trở nên im lặng và luôn được 5 điểm bài kiểm tra. Chúng nó không biết năng lực thực sự của tao và không hề biết tao xuất chúng tới mức nào. Tao chẳng coi chúng là gì ngoài công cụ. Tao ước mình có thể vào trong thế giới anime và bộc lộ con người thực sự của mình. Tao là Ayanokouji Kiyotaka" };
+        private string[] quotes = { "Hello World!", "Sometime in life you gotta just 'LEGO'!.", "If two pregnant women fight, it's kind of like two babies having a mecha battle", "Phương Nam phim. Hân hạnh giới thiệu bộ phim. Anh em siêu nhân Deka/ Lực lượng đặc nhiệm S.P.D. S,P.D có nghĩa là đội biệt động đặc nhiệm Deka. Họ thuộc phân khu Trái Đất của cảnh sát vũ trụ. Họ gồm có năm thám tử đầy nhiệt huyết. Nhiệm vụ của họ là triệt hạ những tên tội phạm đến từ vũ trụ để bảo vệ niềm hòa bình cuối cùng của con người trên hành tinh này.", "Cuối cùng mới có một bộ anime mà nhân vật chính đúng chuẩn hình mẫu lý tưởng của tao. Một kẻ lạnh lùng và ít nói. Đám bạn không hiểu tại sao tao trở nên im lặng và luôn được 5 điểm bài kiểm tra. Chúng nó không biết năng lực thực sự của tao và không hề biết tao xuất chúng tới mức nào. Tao chẳng coi chúng là gì ngoài công cụ. Tao ước mình có thể vào trong thế giới anime và bộc lộ con người thực sự của mình. Tao là Ayanokouji Kiyotaka", "Dạo này lướt Facebook thấy các bạn hú hét vì nhân vật ảo nhiều quá làm mình chỉ biết cười trừ. Các bạn thiếu thốn tình cảm đến mức đó à? Nhưng mà thôi, mình cũng từng có một thời đu nhiệt liệt những nhân vật ảo, đổ tiền vào mà không cần suy nghĩ. Hoài niệm thật. Các bạn làm mình nhớ thời thanh xuân bồng bột, giờ mình có vợ con rồi nên khi nhìn các bạn trẻ như thế mình chỉ nhắc nhẹ thôi, rồi sẽ có lúc các bạn tìm được người lý tưởng cho bản thân mình mà không phải nhân vật ảo. Nói ít mong các bạn hiểu nhiều, vợ yêu Hanabi của mình gọi mình ra ăn cơm rồi." };
         public frmMain()
         {
             InitializeComponent();
@@ -335,6 +336,8 @@ namespace QLyNhanSu
             stripDanhMuc.Image = ImageHelper.ResizeImage(Properties.Resources._3139112, 24, 24);
             stripQLTaiKhoan.Image = ImageHelper.ResizeImage(Properties.Resources._3177440, 24, 24);
             stripHeThong.Image = ImageHelper.ResizeImage(Properties.Resources._3067416, 24, 24);
+            btnFormMain.Image = ImageHelper.ResizeImage(Properties.Resources._6624c82abd9aa, 235, 50);
+            btnFormMain.ImageAlign = ContentAlignment.MiddleCenter;
         }
     }
 }

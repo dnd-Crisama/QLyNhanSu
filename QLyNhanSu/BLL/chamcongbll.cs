@@ -60,9 +60,9 @@ namespace QLyNhanSu.BLL
             chuoi += " thang= N'" + doituong.thang + "', ";
             chuoi += " nam= N'" + doituong.nam + "', ";
             chuoi += " trangthai= N'" + doituong.trangthai + "', ";
-            chuoi += " noidung= N'" + doituong.noidung + "' ";
-            chuoi += " dieukien= N'" + doituong.dieukien + "' ";
-            chuoi += " ghichu= N'" + doituong.ghichu + "', ";
+            chuoi += " noidung= N'" + doituong.noidung + "', ";
+            chuoi += " dieukien= N'" + doituong.dieukien + "', ";
+            chuoi += " ghichu= N'" + doituong.ghichu + "' ";
             chuoi += " WHERE id = N'" + doituong.id + "' ";
             try
             {
@@ -79,6 +79,18 @@ namespace QLyNhanSu.BLL
                 ac.ExecuteCommandtext(chuoi);
             }
             catch (Exception ex) { ex.ToString(); }
+        }
+        public bool DaChamCongTrongNgay(int idNhanVien)
+        {
+            DateTime ngayHienTai = DateTime.Today;
+            string ngay = ngayHienTai.ToString("dd");
+
+            return DataAccess.DaChamCongTrongNgay(idNhanVien,ngay);
+        }
+        public DataTable LocTheoNamThang(int? nam, int? thang)
+        {
+            DataAccess dataAccess = new DataAccess();
+            return dataAccess.LocTheoNamThang(nam, thang);
         }
     }
 }

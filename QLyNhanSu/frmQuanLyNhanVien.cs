@@ -367,19 +367,28 @@ namespace QLyNhanSu
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            try
             {
-                DataGridViewRow row = this.dataGridViewNV.Rows[e.RowIndex];
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.dataGridViewNV.Rows[e.RowIndex];
 
-                txtMa.Text = row.Cells[0].Value.ToString();
-                txtTen.Text = row.Cells[1].Value.ToString();
-                txtCMT.Text = row.Cells[2].Value.ToString();
-                txtNgaySinh.Text = row.Cells[3].Value.ToString();
-                txtEmail.Text = row.Cells[4].Value.ToString();
+                    txtMa.Text = row.Cells[0].Value.ToString();
+                    txtTen.Text = row.Cells[1].Value.ToString();
+                    txtCMT.Text = row.Cells[2].Value.ToString();
+                    txtNgaySinh.Text = row.Cells[3].Value.ToString();
+                    txtEmail.Text = row.Cells[4].Value.ToString();
 
-                
+                    // tron tron vn
+                    Random random = new Random();
+                    Color randomColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256)); // Tạo một màu ngẫu nhiên
+                    Color randomColor1 = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
+                    lblTenNV.BackColor = randomColor;
+                    lblTenNV.ForeColor = randomColor1;
+                    lblTenNV.Text = row.Cells[1].Value.ToString();
 
-                var selectedValue = dataGridViewNV.Rows[e.RowIndex].Cells["trangthai"].Value;
+
+                    var selectedValue = dataGridViewNV.Rows[e.RowIndex].Cells["trangthai"].Value;
 
 
                     if (selectedValue != null && selectedValue.ToString() == "1")
@@ -394,33 +403,35 @@ namespace QLyNhanSu
                         checkBox1.Text = "Không khả dụng";
                         checkBox1.Checked = false;
                     }
-                
 
-                /* cbbHoSo.Text = row.Cells[5].Value.ToString();
-                 cbbPhongBan.Text = row.Cells[8].Value.ToString();
-                 cbbChucVu.Text = row.Cells[9].Value.ToString();
-                 cbbHeSoLuong.Text = row.Cells[10].Value.ToString();
-                 cbbTroCap.Text = row.Cells[11].Value.ToString();*/
 
-                int maPhongBan = Convert.ToInt32(row.Cells["maphongban"].Value);
-                cbbPhongBan.SelectedValue = maPhongBan;
-                int maHoSo = Convert.ToInt32(row.Cells["hosonhanvien"].Value);
-                cbbHoSo.SelectedValue = maHoSo;
-                int machucvu = Convert.ToInt32(row.Cells["machucvu"].Value);
-                cbbChucVu.SelectedValue = machucvu;
-                int mahesoluong = Convert.ToInt32(row.Cells["mahesoluong"].Value);
-                cbbHeSoLuong.SelectedValue = mahesoluong;
-                int matrocap = Convert.ToInt32(row.Cells["matrocap"].Value);
-                cbbTroCap.SelectedValue = matrocap;
+                    /* cbbHoSo.Text = row.Cells[5].Value.ToString();
+                     cbbPhongBan.Text = row.Cells[8].Value.ToString();
+                     cbbChucVu.Text = row.Cells[9].Value.ToString();
+                     cbbHeSoLuong.Text = row.Cells[10].Value.ToString();
+                     cbbTroCap.Text = row.Cells[11].Value.ToString();*/
 
+                    int maPhongBan = Convert.ToInt32(row.Cells["maphongban"].Value);
+                    cbbPhongBan.SelectedValue = maPhongBan;
+                    int maHoSo = Convert.ToInt32(row.Cells["hosonhanvien"].Value);
+                    cbbHoSo.SelectedValue = maHoSo;
+                    int machucvu = Convert.ToInt32(row.Cells["machucvu"].Value);
+                    cbbChucVu.SelectedValue = machucvu;
+                    int mahesoluong = Convert.ToInt32(row.Cells["mahesoluong"].Value);
+                    cbbHeSoLuong.SelectedValue = mahesoluong;
+                    int matrocap = Convert.ToInt32(row.Cells["matrocap"].Value);
+                    cbbTroCap.SelectedValue = matrocap;
+
+                }
+                else
+                {
+                    txtMa.Text = "0";
+                    txtTen.Text = "";
+                    txtCMT.Text = "";
+                    ptbHinhAnh.Image = null;
+                }
             }
-            else
-            {
-                txtMa.Text = "0";
-                txtTen.Text = "";
-                txtCMT.Text = "";
-                ptbHinhAnh.Image = null;
-            }
+            catch { }
             try
             {
                 if (dataGridViewNV.Rows[e.RowIndex].Cells["hinhanh"].ToString() != "")
@@ -472,18 +483,19 @@ namespace QLyNhanSu
             dataGridViewNV.Columns["trangthai"].DisplayIndex = 5;
             */
 
-            
+            // format datagridview
+
             dataGridViewNV.Columns[0].HeaderText = "ID";
             dataGridViewNV.Columns[1].HeaderText = "Tên";
             dataGridViewNV.Columns[2].HeaderText = "Chứng minh thư";
             dataGridViewNV.Columns[3].HeaderText = "Ngày sinh";
             dataGridViewNV.Columns[4].HeaderText = "Email";
             dataGridViewNV.Columns[6].HeaderText = "Trạng thái";
-            dataGridViewNV.Columns[5].HeaderText = "Hồ sơ";
-            dataGridViewNV.Columns[7].HeaderText = "Phòng Ban";
-            dataGridViewNV.Columns[8].HeaderText = "Chức vụ";
-            dataGridViewNV.Columns[9].HeaderText = "Hệ số lương";
-            dataGridViewNV.Columns[10].HeaderText = "Trợ cấp";
+            dataGridViewNV.Columns[5].HeaderText = "Mã Hồ sơ";
+            dataGridViewNV.Columns[7].HeaderText = "Mã Phòng Ban";
+            dataGridViewNV.Columns[8].HeaderText = "Mã Chức vụ";
+            dataGridViewNV.Columns[9].HeaderText = "Mã Hệ số lương";
+            dataGridViewNV.Columns[10].HeaderText = "Mã Trợ cấp";
             dataGridViewNV.Columns[11].HeaderText = "Kí hiệu";
             dataGridViewNV.Columns[12].HeaderText = "Ngày cấp phát";
             dataGridViewNV.Columns[13].HeaderText = "Tên phòng ban";

@@ -68,6 +68,7 @@
             label13 = new Label();
             dataGridViewNV = new DataGridView();
             lblEx = new Label();
+            lblTenNV = new Label();
             toolStrip1.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -180,7 +181,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(402, 20);
+            label1.Location = new Point(402, 39);
             label1.Name = "label1";
             label1.Size = new Size(57, 21);
             label1.TabIndex = 2;
@@ -200,7 +201,7 @@
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label6);
-            panel1.Location = new Point(10, 36);
+            panel1.Location = new Point(10, 48);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(331, 212);
@@ -360,7 +361,7 @@
             panel2.Controls.Add(label8);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label10);
-            panel2.Location = new Point(368, 37);
+            panel2.Location = new Point(368, 49);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
             panel2.Size = new Size(338, 212);
@@ -415,7 +416,7 @@
             // 
             panel3.BackColor = SystemColors.ActiveBorder;
             panel3.Controls.Add(ptbHinhAnh);
-            panel3.Location = new Point(732, 37);
+            panel3.Location = new Point(732, 49);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
             panel3.Size = new Size(281, 212);
@@ -435,7 +436,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(751, 20);
+            label13.Location = new Point(744, 31);
             label13.Name = "label13";
             label13.Size = new Size(38, 15);
             label13.TabIndex = 28;
@@ -444,11 +445,11 @@
             // dataGridViewNV
             // 
             dataGridViewNV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewNV.Location = new Point(0, 267);
+            dataGridViewNV.Location = new Point(0, 276);
             dataGridViewNV.Margin = new Padding(3, 2, 3, 2);
             dataGridViewNV.Name = "dataGridViewNV";
             dataGridViewNV.RowHeadersWidth = 51;
-            dataGridViewNV.Size = new Size(1058, 454);
+            dataGridViewNV.Size = new Size(1058, 445);
             dataGridViewNV.TabIndex = 29;
             dataGridViewNV.CellClick += dataGridView1_CellClick;
             dataGridViewNV.DataError += DataGridView_DataError;
@@ -463,11 +464,23 @@
             lblEx.TabIndex = 30;
             lblEx.Text = "Trạng thái";
             // 
+            // lblTenNV
+            // 
+            lblTenNV.AutoSize = true;
+            lblTenNV.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTenNV.ForeColor = Color.Black;
+            lblTenNV.Location = new Point(802, 24);
+            lblTenNV.Name = "lblTenNV";
+            lblTenNV.Size = new Size(0, 21);
+            lblTenNV.TabIndex = 31;
+            // 
             // frmQuanLyNhanVien
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(1084, 748);
+            Controls.Add(lblTenNV);
             Controls.Add(lblEx);
             Controls.Add(dataGridViewNV);
             Controls.Add(label13);
@@ -536,5 +549,6 @@
         private DataGridView dataGridViewNV;
         private Label lblEx;
         public PictureBox ptbHinhAnh;
+        private Label lblTenNV;
     }
 }
