@@ -255,12 +255,14 @@ namespace QLyNhanSu
                 txtma.Text = row.Cells[0].Value.ToString();
                 txtten.Text = row.Cells[1].Value.ToString();
                 txtkihieu.Text = row.Cells[2].Value.ToString();
+
             }
             else
             {
                 txtma.Text = "0";
                 txtten.Text = "";
                 txtkihieu.Text = "";
+
             }
         }
         public bool check_data(string _value)
@@ -277,13 +279,16 @@ namespace QLyNhanSu
             dataGridViewCV.Columns["ten"].DisplayIndex = 1;
             dataGridViewCV.Columns["kihieu"].DisplayIndex = 2;
 
+
             dataGridViewCV.Columns[0].HeaderText = "ID";
             dataGridViewCV.Columns[1].HeaderText = "Tên";
             dataGridViewCV.Columns[2].HeaderText = "Kí Hiệu";
 
+
             dataGridViewCV.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCV.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCV.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
 
         }
 
@@ -349,5 +354,9 @@ namespace QLyNhanSu
             export_excel();
         }
 
+        private void toolStripButton4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

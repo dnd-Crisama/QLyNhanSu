@@ -20,7 +20,7 @@ namespace QLyNhanSu
         public frmQuanLyHeSoLuong()
         {
             InitializeComponent();
-           
+
         }
         public string _stus = "0";
         private static int mahientai;
@@ -28,6 +28,8 @@ namespace QLyNhanSu
 
         hesoluongbll xuly = new hesoluongbll();
         hesoluong doituong = new hesoluong();
+
+        
 
         public void load_data()
         {
@@ -355,6 +357,11 @@ namespace QLyNhanSu
         }
 
         private void txtma_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton4_Click_1(object sender, EventArgs e)
         {
 
         }

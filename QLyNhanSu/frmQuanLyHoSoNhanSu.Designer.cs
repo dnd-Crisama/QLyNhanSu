@@ -36,7 +36,7 @@
             toolStripButton8 = new ToolStripButton();
             toolStripButton5 = new ToolStripButton();
             toolStripLabel1 = new ToolStripLabel();
-            toolStripTextBox1 = new ToolStripTextBox();
+            txttimkiem = new ToolStripTextBox();
             toolStripButton6 = new ToolStripButton();
             toolStripButton7 = new ToolStripButton();
             label1 = new Label();
@@ -44,12 +44,14 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            txtten = new TextBox();
+            txtma = new TextBox();
+            txtkihieu = new TextBox();
+            txtngaytao = new TextBox();
+            txtngaycapnhap = new TextBox();
             dataGridViewHSNS = new DataGridView();
+            lblEx = new Label();
+            toolStripButton10 = new ToolStripButton();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewHSNS).BeginInit();
             SuspendLayout();
@@ -57,7 +59,7 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, toolStripTextBox1, toolStripButton6, toolStripButton7 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, txttimkiem, toolStripButton6, toolStripButton7, toolStripButton10 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(1239, 27);
@@ -72,6 +74,7 @@
             toolStripButton1.Name = "toolStripButton1";
             toolStripButton1.Size = new Size(29, 24);
             toolStripButton1.Text = "toolStripButton1";
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // toolStripButton2
             // 
@@ -81,6 +84,7 @@
             toolStripButton2.Name = "toolStripButton2";
             toolStripButton2.Size = new Size(29, 24);
             toolStripButton2.Text = "toolStripButton2";
+            toolStripButton2.Click += toolStripButton2_Click;
             // 
             // toolStripButton3
             // 
@@ -90,6 +94,7 @@
             toolStripButton3.Name = "toolStripButton3";
             toolStripButton3.Size = new Size(29, 24);
             toolStripButton3.Text = "toolStripButton3";
+            toolStripButton3.Click += toolStripButton3_Click;
             // 
             // toolStripButton4
             // 
@@ -99,6 +104,7 @@
             toolStripButton4.Name = "toolStripButton4";
             toolStripButton4.Size = new Size(29, 24);
             toolStripButton4.Text = "toolStripButton4";
+            toolStripButton4.Click += toolStripButton4_Click;
             // 
             // toolStripButton8
             // 
@@ -108,6 +114,7 @@
             toolStripButton8.Name = "toolStripButton8";
             toolStripButton8.Size = new Size(29, 24);
             toolStripButton8.Text = "toolStripButton8";
+            toolStripButton8.Click += toolStripButton8_Click;
             // 
             // toolStripButton5
             // 
@@ -117,6 +124,7 @@
             toolStripButton5.Name = "toolStripButton5";
             toolStripButton5.Size = new Size(29, 24);
             toolStripButton5.Text = "toolStripButton5";
+            toolStripButton5.Click += toolStripButton5_Click;
             // 
             // toolStripLabel1
             // 
@@ -124,10 +132,10 @@
             toolStripLabel1.Size = new Size(72, 24);
             toolStripLabel1.Text = "Tìm Kiếm";
             // 
-            // toolStripTextBox1
+            // txttimkiem
             // 
-            toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 27);
+            txttimkiem.Name = "txttimkiem";
+            txttimkiem.Size = new Size(100, 27);
             // 
             // toolStripButton6
             // 
@@ -137,6 +145,7 @@
             toolStripButton6.Name = "toolStripButton6";
             toolStripButton6.Size = new Size(29, 24);
             toolStripButton6.Text = "toolStripButton6";
+            toolStripButton6.Click += toolStripButton6_Click;
             // 
             // toolStripButton7
             // 
@@ -146,6 +155,7 @@
             toolStripButton7.Name = "toolStripButton7";
             toolStripButton7.Size = new Size(29, 24);
             toolStripButton7.Text = "toolStripButton7";
+            toolStripButton7.Click += toolStripButton7_Click;
             // 
             // label1
             // 
@@ -192,41 +202,41 @@
             label5.TabIndex = 7;
             label5.Text = "Ngày cập nhập:";
             // 
-            // textBox1
+            // txtten
             // 
-            textBox1.Location = new Point(104, 140);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(317, 160);
-            textBox1.TabIndex = 5;
+            txtten.Location = new Point(104, 140);
+            txtten.Multiline = true;
+            txtten.Name = "txtten";
+            txtten.Size = new Size(317, 160);
+            txtten.TabIndex = 5;
             // 
-            // textBox2
+            // txtma
             // 
-            textBox2.Location = new Point(104, 55);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(317, 27);
-            textBox2.TabIndex = 1;
+            txtma.Location = new Point(104, 55);
+            txtma.Name = "txtma";
+            txtma.Size = new Size(317, 27);
+            txtma.TabIndex = 1;
             // 
-            // textBox3
+            // txtkihieu
             // 
-            textBox3.Location = new Point(104, 93);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(317, 27);
-            textBox3.TabIndex = 2;
+            txtkihieu.Location = new Point(104, 93);
+            txtkihieu.Name = "txtkihieu";
+            txtkihieu.Size = new Size(317, 27);
+            txtkihieu.TabIndex = 2;
             // 
-            // textBox4
+            // txtngaytao
             // 
-            textBox4.Location = new Point(627, 61);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(229, 27);
-            textBox4.TabIndex = 3;
+            txtngaytao.Location = new Point(627, 61);
+            txtngaytao.Name = "txtngaytao";
+            txtngaytao.Size = new Size(229, 27);
+            txtngaytao.TabIndex = 3;
             // 
-            // textBox5
+            // txtngaycapnhap
             // 
-            textBox5.Location = new Point(627, 96);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(229, 27);
-            textBox5.TabIndex = 4;
+            txtngaycapnhap.Location = new Point(627, 96);
+            txtngaycapnhap.Name = "txtngaycapnhap";
+            txtngaycapnhap.Size = new Size(229, 27);
+            txtngaycapnhap.TabIndex = 4;
             // 
             // dataGridViewHSNS
             // 
@@ -236,18 +246,38 @@
             dataGridViewHSNS.RowHeadersWidth = 51;
             dataGridViewHSNS.Size = new Size(1207, 621);
             dataGridViewHSNS.TabIndex = 14;
+            dataGridViewHSNS.CellContentClick += dataGridView1_CellClick;
+            // 
+            // lblEx
+            // 
+            lblEx.AutoSize = true;
+            lblEx.Location = new Point(495, 143);
+            lblEx.Name = "lblEx";
+            lblEx.Size = new Size(0, 20);
+            lblEx.TabIndex = 15;
+            // 
+            // toolStripButton10
+            // 
+            toolStripButton10.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton10.Image = Properties.Resources._9913406;
+            toolStripButton10.ImageTransparentColor = Color.Magenta;
+            toolStripButton10.Name = "toolStripButton10";
+            toolStripButton10.Size = new Size(29, 24);
+            toolStripButton10.Text = "toolStripButton5";
+            toolStripButton10.Click += toolStripButton10_Click;
             // 
             // frmQuanLyHoSoNhanSu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1239, 997);
+            Controls.Add(lblEx);
             Controls.Add(dataGridViewHSNS);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtngaycapnhap);
+            Controls.Add(txtngaytao);
+            Controls.Add(txtkihieu);
+            Controls.Add(txtma);
+            Controls.Add(txtten);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -257,6 +287,7 @@
             Name = "frmQuanLyHoSoNhanSu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmQuanLyHoSoNhanSu";
+            Load += frmQuanLyHoSoNhanSu_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewHSNS).EndInit();
@@ -274,7 +305,7 @@
         private ToolStripButton toolStripButton8;
         private ToolStripButton toolStripButton5;
         private ToolStripLabel toolStripLabel1;
-        private ToolStripTextBox toolStripTextBox1;
+        private ToolStripTextBox txttimkiem;
         private ToolStripButton toolStripButton6;
         private ToolStripButton toolStripButton7;
         private Label label1;
@@ -282,11 +313,13 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtten;
+        private TextBox txtma;
+        private TextBox txtkihieu;
+        private TextBox txtngaytao;
+        private TextBox txtngaycapnhap;
         private DataGridView dataGridViewHSNS;
+        private Label lblEx;
+        private ToolStripButton toolStripButton10;
     }
 }
