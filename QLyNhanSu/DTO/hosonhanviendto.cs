@@ -9,7 +9,7 @@ namespace QLyNhanSu.DTO
     internal class hosonhanviendto
     {
         public int id { get; set; }
-        public string kihieu { get; set; }
+        public int kihieu { get; set; }
         public string noidung { get; set; }
         public string ngaytao { get; set; }
         public string ngaycapphat { get; set; }

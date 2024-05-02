@@ -29,11 +29,7 @@ namespace QLyNhanSu
         hosonhanvienbll xuly = new hosonhanvienbll();
         hosonhanviendto doituong = new hosonhanviendto();
 
-        void LayDLHSL()
-        {
-            String query = "SELECT * FROM dbo.HoSoNhanVien";
-            dataGridViewHSNS.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
+        
         public void load_data()
         {
             var dt = xuly.hien();
@@ -245,7 +241,7 @@ namespace QLyNhanSu
         public void load_doituong()
         {
             doituong.id = int.Parse(txtma.Text);
-            doituong.kihieu = txtkihieu.Text;
+            doituong.kihieu = int.Parse(txtkihieu.Text);
             doituong.noidung = txtten.Text;
             doituong.ngaytao = txtngaytao.Text;
             doituong.ngaycapphat = txtngaycapnhap.Text;
@@ -311,7 +307,7 @@ namespace QLyNhanSu
             txtngaytao.Clear();
             txtngaycapnhap.Clear();
             txtma.Focus();
-            trangthai_txt(true);
+            trangthai_txt(false);
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
@@ -352,7 +348,7 @@ namespace QLyNhanSu
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            LayDLHSL();
+            load_data();
         }
 
         private void toolStripButton7_Click(object sender, EventArgs e)

@@ -28,11 +28,7 @@ namespace QLyNhanSu
 
         trocapbll xuly = new trocapbll();
         trocapdto doituong = new trocapdto();
-        void LayDLHSL()
-        {
-            String query = "SELECT * FROM dbo.TroCap";
-            dataGridViewTC.DataSource = Dataprovider.Instance.ExecuteQuery(query);
-        }
+       
         public void load_data()
         {
             var dt = xuly.hien();
@@ -290,6 +286,7 @@ namespace QLyNhanSu
             txtten.Clear();
             txtgiatri.Clear();
             txtma.Focus();
+            trangthai_txt(false);
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
@@ -346,7 +343,7 @@ namespace QLyNhanSu
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            LayDLHSL();
+            load_data();
         }
     }
 }
