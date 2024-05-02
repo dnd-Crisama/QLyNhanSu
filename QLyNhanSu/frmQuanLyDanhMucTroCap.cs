@@ -145,7 +145,7 @@ namespace QLyNhanSu
             toolStripButton3.Enabled = _trangthai;
             toolStripButton7.Enabled = _trangthai;
             toolStripButton5.Enabled = !_trangthai;
-            toolStripButton8.Enabled = !_trangthai;
+            toolStripButton8.Enabled = _trangthai;
         }
         public void timkiem()
         {

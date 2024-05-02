@@ -130,9 +130,9 @@ namespace QLyNhanSu
         }
         public void trangthai_txt(bool _trangthai)
         {
-            txtma.ReadOnly = !_trangthai;
-            txtten.ReadOnly = !_trangthai;
-            txtkihieu.ReadOnly = !_trangthai;
+            txtma.ReadOnly = _trangthai;
+            txtten.ReadOnly = _trangthai;
+            txtkihieu.ReadOnly = _trangthai;
         }
         public void trangthai_btn(bool _trangthai)
         {
@@ -338,14 +338,14 @@ namespace QLyNhanSu
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             trangthai_btn(false);
-            trangthai_txt(true);
+            trangthai_txt(false);
             _stus = "1";
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             trangthai_btn(false);
-            trangthai_txt(true);
+            trangthai_txt(false);
             _stus = "0";
         }
 

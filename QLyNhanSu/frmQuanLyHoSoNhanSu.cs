@@ -142,11 +142,11 @@ namespace QLyNhanSu
         }
         public void trangthai_txt(bool _trangthai)
         {
-            txtma.ReadOnly = !_trangthai;
-            txtten.ReadOnly = !_trangthai;
-            txtkihieu.ReadOnly = !_trangthai;
-            txtngaytao.ReadOnly = !_trangthai;
-            txtngaycapnhap.ReadOnly = !_trangthai;
+            txtma.ReadOnly = _trangthai;
+            txtten.ReadOnly = _trangthai;
+            txtkihieu.ReadOnly = _trangthai;
+            txtngaytao.ReadOnly = _trangthai;
+            txtngaycapnhap.ReadOnly = _trangthai;
         }
         public void trangthai_btn(bool _trangthai)
         {
@@ -256,8 +256,8 @@ namespace QLyNhanSu
             {
                 DataGridViewRow row = this.dataGridViewHSNS.Rows[e.RowIndex];
                 txtma.Text = row.Cells[0].Value.ToString();
-                txtten.Text = row.Cells[1].Value.ToString();
-                txtkihieu.Text = row.Cells[2].Value.ToString();
+                txtten.Text = row.Cells[2].Value.ToString();
+                txtkihieu.Text = row.Cells[1].Value.ToString();
                 txtngaytao.Text = row.Cells[3].Value.ToString();
                 txtngaycapnhap.Text = row.Cells[4].Value.ToString();
             }
@@ -317,14 +317,14 @@ namespace QLyNhanSu
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             trangthai_btn(false);
-            trangthai_txt(true);
+            trangthai_txt(false);
             _stus = "1";
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             trangthai_btn(false);
-            trangthai_txt(true);
+            trangthai_txt(false); ;
             _stus = "0";
         }
 
@@ -371,6 +371,16 @@ namespace QLyNhanSu
         private void toolStripButton10_Click(object sender, EventArgs e)
         {
             export_excel();
+        }
+
+        private void GetDateCreate_Click(object sender, EventArgs e)
+        {
+            txtngaytao.Text = DateTime.Now.ToString("dd/MM/yyyy");
+        }
+
+        private void GetDateUpdate_Click(object sender, EventArgs e)
+        {
+            txtngaycapnhap.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
     }
 }

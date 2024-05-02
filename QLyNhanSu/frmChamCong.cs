@@ -128,8 +128,8 @@ namespace QLyNhanSu
             dataGridView2.Columns[2].HeaderText = "Giờ";
             dataGridView2.Columns[3].HeaderText = "Ngày";
             dataGridView2.Columns[4].HeaderText = "Tháng";
-            dataGridView2.Columns[6].HeaderText = "Năm";
-            dataGridView2.Columns[5].HeaderText = "Trạng thái";
+            dataGridView2.Columns[5].HeaderText = "Năm";
+            dataGridView2.Columns[6].HeaderText = "Trạng thái";
             dataGridView2.Columns[7].HeaderText = "Nội dung";
             dataGridView2.Columns[8].HeaderText = "Ghi chú";
             dataGridView2.Columns[9].HeaderText = "Điều kiện";
@@ -211,7 +211,7 @@ namespace QLyNhanSu
         public void xoa_text()
         {
             txtMa.Text = "";
-            txtNoiDung.Text = "";
+            txtNoiDung.Text = "Chấm công";
             txtGhiChu.Text = "";
             txtDieuKien.Text = "";
         }
@@ -270,7 +270,7 @@ namespace QLyNhanSu
                 string thang = ngayGio.ToString("MM");
                 string nam = ngayGio.ToString("yyyy");
 
-                doituong.id = int.Parse(txtMa.Text);
+                doituong.id = int.Parse(txtIDChamCong.Text);
                 doituong.idnhanvien = int.Parse(txtMaNV.Text);
                 doituong.gio = gio;
                 doituong.ngay = ngay;
@@ -351,12 +351,12 @@ namespace QLyNhanSu
 
             if (!int.TryParse(txtLocNam.Text, out nam))
             {
-                nam = 0; 
+                nam = 0;
             }
 
             if (!int.TryParse(txtLocThang.Text, out thang))
             {
-                thang = 0; 
+                thang = 0;
             }
             var dt = xuly.LocTheoNamThang(nam, thang);
             dataGridView2.DataSource = dt;
@@ -365,6 +365,23 @@ namespace QLyNhanSu
         private void btnExport_Click(object sender, EventArgs e)
         {
             export_excel();
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.dataGridView2.Rows[e.RowIndex];
+                    txtIDChamCong.Text = row.Cells[0].Value.ToString();
+                }
+                else
+                {
+                    txtIDChamCong.Text = "";
+                }
+            }
+            catch { }
         }
     }
 }

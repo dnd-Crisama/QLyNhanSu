@@ -85,6 +85,8 @@
             label18 = new Label();
             txtLocThang = new TextBox();
             panel3 = new Panel();
+            label16 = new Label();
+            txtIDChamCong = new TextBox();
             pictureBox6 = new PictureBox();
             label17 = new Label();
             btnExport = new PictureBox();
@@ -185,7 +187,6 @@
             txtDieuKien.BackColor = SystemColors.HighlightText;
             txtDieuKien.Location = new Point(107, 338);
             txtDieuKien.Name = "txtDieuKien";
-            txtDieuKien.ReadOnly = true;
             txtDieuKien.Size = new Size(112, 23);
             txtDieuKien.TabIndex = 21;
             // 
@@ -204,7 +205,6 @@
             txtNoiDung.Location = new Point(107, 146);
             txtNoiDung.Multiline = true;
             txtNoiDung.Name = "txtNoiDung";
-            txtNoiDung.ReadOnly = true;
             txtNoiDung.Size = new Size(112, 87);
             txtNoiDung.TabIndex = 19;
             txtNoiDung.Text = "Chấm công";
@@ -224,7 +224,6 @@
             txtGhiChu.Location = new Point(107, 239);
             txtGhiChu.Multiline = true;
             txtGhiChu.Name = "txtGhiChu";
-            txtGhiChu.ReadOnly = true;
             txtGhiChu.Size = new Size(112, 80);
             txtGhiChu.TabIndex = 17;
             // 
@@ -656,6 +655,7 @@
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.Size = new Size(851, 290);
             dataGridView2.TabIndex = 0;
+            dataGridView2.CellClick += dataGridView2_CellClick;
             // 
             // panel2
             // 
@@ -727,6 +727,8 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(label16);
+            panel3.Controls.Add(txtIDChamCong);
             panel3.Controls.Add(pictureBox6);
             panel3.Controls.Add(label17);
             panel3.Controls.Add(btnExport);
@@ -734,6 +736,23 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(850, 39);
             panel3.TabIndex = 4;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(9, 12);
+            label16.Name = "label16";
+            label16.Size = new Size(21, 15);
+            label16.TabIndex = 22;
+            label16.Text = "ID:";
+            // 
+            // txtIDChamCong
+            // 
+            txtIDChamCong.Location = new Point(35, 7);
+            txtIDChamCong.Name = "txtIDChamCong";
+            txtIDChamCong.ReadOnly = true;
+            txtIDChamCong.Size = new Size(49, 23);
+            txtIDChamCong.TabIndex = 21;
             // 
             // pictureBox6
             // 
@@ -880,5 +899,7 @@
         private Label lblEx;
         private PictureBox pictureBox6;
         private Button btnLoc;
+        private TextBox txtIDChamCong;
+        private Label label16;
     }
 }
