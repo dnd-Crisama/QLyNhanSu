@@ -177,6 +177,7 @@ namespace QLyNhanSu
             txtten.Clear();
             txtgiatri.Clear();
             txtma.Focus();
+            trangthai_txt(false);
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
@@ -363,7 +364,7 @@ namespace QLyNhanSu
 
         private void toolStripButton4_Click_1(object sender, EventArgs e)
         {
-
+            load_data();
         }
     }
 }
