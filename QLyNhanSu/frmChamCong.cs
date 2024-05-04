@@ -159,6 +159,7 @@ namespace QLyNhanSu
             dataGridView2.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView2.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView2.Columns[17].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView2.Columns[16].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             #endregion
 
         }
@@ -194,6 +195,7 @@ namespace QLyNhanSu
                     txtEmail.Text = row.Cells[4].Value.ToString();
                     txtPhongBan.Text = row.Cells[13].Value.ToString();
                     txtChucVu.Text = row.Cells[14].Value.ToString();
+                    txtIDChamCong.Text = "0";
                 }
                 else
                 {
@@ -319,25 +321,38 @@ namespace QLyNhanSu
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            sua();
+            if (txtIDChamCong.Text != "0")
+            {
+                sua();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn id để cập nhật", "Thông báo", MessageBoxButtons.OK);
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             var dt = xuly_nhanvien.timkiem(txtMaNV.Text);
-            dataGridView2.DataSource = dt;
+            var dt2 = xuly.timkiem(txtMaNV.Text);
+            dataGridView1.DataSource = dt;
+            dataGridView2.DataSource = dt2;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             var dt = xuly_nhanvien.timkiem(txtTenNV.Text);
-            dataGridView2.DataSource = dt;
+            var dt2 = xuly.timkiem(txtTenNV.Text);
+            dataGridView2.DataSource = dt2;
+            dataGridView1.DataSource = dt;
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             var dt = xuly_nhanvien.timkiem(txtCMT.Text);
-            dataGridView2.DataSource = dt;
+            var dt2 = xuly.timkiem(txtCMT.Text);
+            dataGridView2.DataSource = dt2;
+            dataGridView1.DataSource= dt;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
