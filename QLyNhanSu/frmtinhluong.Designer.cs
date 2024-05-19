@@ -30,6 +30,7 @@
         {
             dataGridView1 = new DataGridView();
             groupBox1 = new GroupBox();
+            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             textBox7 = new TextBox();
             textBox6 = new TextBox();
@@ -49,6 +50,7 @@
             label1 = new Label();
             dataGridView2 = new DataGridView();
             groupBox2 = new GroupBox();
+            label31 = new Label();
             label30 = new Label();
             label29 = new Label();
             label28 = new Label();
@@ -86,9 +88,9 @@
             textBox14 = new TextBox();
             label24 = new Label();
             textBox13 = new TextBox();
-            label31 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             groupBox2.SuspendLayout();
@@ -99,18 +101,18 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(1, 57);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(854, 276);
+            dataGridView1.Size = new Size(747, 276);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.Control;
+            groupBox1.Controls.Add(pictureBox2);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(textBox7);
             groupBox1.Controls.Add(textBox6);
@@ -127,12 +129,23 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label4);
-            groupBox1.Location = new Point(861, 57);
+            groupBox1.Location = new Point(754, 57);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(360, 276);
+            groupBox1.Size = new Size(343, 276);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin nhân viên";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources._2310707;
+            pictureBox2.Location = new Point(283, 52);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(27, 27);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 13;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
@@ -143,6 +156,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // textBox7
             // 
@@ -165,7 +179,7 @@
             panel1.BackColor = SystemColors.MenuHighlight;
             panel1.Location = new Point(10, 184);
             panel1.Name = "panel1";
-            panel1.Size = new Size(345, 11);
+            panel1.Size = new Size(331, 11);
             panel1.TabIndex = 5;
             // 
             // label8
@@ -275,7 +289,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(569, 9);
+            label1.Location = new Point(458, 9);
             label1.Name = "label1";
             label1.Size = new Size(249, 28);
             label1.TabIndex = 2;
@@ -287,8 +301,9 @@
             dataGridView2.Location = new Point(1, 441);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(854, 365);
+            dataGridView2.Size = new Size(701, 341);
             dataGridView2.TabIndex = 3;
+            dataGridView2.CellClick += dataGridView2_CellClick;
             // 
             // groupBox2
             // 
@@ -309,12 +324,21 @@
             groupBox2.Controls.Add(label13);
             groupBox2.Controls.Add(label14);
             groupBox2.Controls.Add(label15);
-            groupBox2.Location = new Point(861, 441);
+            groupBox2.Location = new Point(708, 441);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(370, 365);
+            groupBox2.Size = new Size(387, 341);
             groupBox2.TabIndex = 13;
             groupBox2.TabStop = false;
             groupBox2.Text = "Thông tin tính lương";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Location = new Point(277, 27);
+            label31.Name = "label31";
+            label31.Size = new Size(0, 20);
+            label31.TabIndex = 26;
+            label31.Visible = false;
             // 
             // label30
             // 
@@ -356,7 +380,7 @@
             groupBox3.Controls.Add(checkBox1);
             groupBox3.Location = new Point(10, 170);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(354, 189);
+            groupBox3.Size = new Size(377, 171);
             groupBox3.TabIndex = 14;
             groupBox3.TabStop = false;
             groupBox3.Text = "Lấy lương";
@@ -379,7 +403,7 @@
             textBox8.Location = new Point(6, 76);
             textBox8.Multiline = true;
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(338, 107);
+            textBox8.Size = new Size(367, 89);
             textBox8.TabIndex = 16;
             // 
             // label20
@@ -499,7 +523,7 @@
             // 
             button1.BackColor = SystemColors.ControlLight;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(899, 368);
+            button1.Location = new Point(771, 368);
             button1.Name = "button1";
             button1.Size = new Size(123, 41);
             button1.TabIndex = 7;
@@ -511,7 +535,7 @@
             // 
             button2.BackColor = SystemColors.ControlLight;
             button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(1058, 368);
+            button2.Location = new Point(943, 368);
             button2.Name = "button2";
             button2.Size = new Size(123, 41);
             button2.TabIndex = 8;
@@ -521,14 +545,16 @@
             // 
             // textBox9
             // 
+            textBox9.Anchor = AnchorStyles.None;
             textBox9.BorderStyle = BorderStyle.FixedSingle;
-            textBox9.Location = new Point(102, 23);
+            textBox9.Location = new Point(111, 24);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(119, 27);
+            textBox9.Size = new Size(84, 27);
             textBox9.TabIndex = 13;
             // 
             // label17
             // 
+            label17.Anchor = AnchorStyles.None;
             label17.AutoSize = true;
             label17.Location = new Point(6, 26);
             label17.Name = "label17";
@@ -538,14 +564,16 @@
             // 
             // textBox10
             // 
+            textBox10.Anchor = AnchorStyles.None;
             textBox10.BorderStyle = BorderStyle.FixedSingle;
-            textBox10.Location = new Point(102, 56);
+            textBox10.Location = new Point(111, 57);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(119, 27);
+            textBox10.Size = new Size(84, 27);
             textBox10.TabIndex = 14;
             // 
             // label21
             // 
+            label21.Anchor = AnchorStyles.None;
             label21.AutoSize = true;
             label21.Location = new Point(6, 59);
             label21.Name = "label21";
@@ -555,33 +583,36 @@
             // 
             // textBox11
             // 
+            textBox11.Anchor = AnchorStyles.None;
             textBox11.BorderStyle = BorderStyle.FixedSingle;
-            textBox11.Location = new Point(301, 23);
+            textBox11.Location = new Point(273, 24);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(125, 27);
+            textBox11.Size = new Size(90, 27);
             textBox11.TabIndex = 16;
             textBox11.Text = "0";
             // 
             // label22
             // 
+            label22.Anchor = AnchorStyles.None;
             label22.AutoSize = true;
-            label22.Location = new Point(235, 26);
+            label22.Location = new Point(201, 26);
             label22.Name = "label22";
             label22.Size = new Size(60, 20);
             label22.TabIndex = 17;
             label22.Text = "Thưởng";
-            label22.Click += label22_Click;
             // 
             // textBox12
             // 
+            textBox12.Anchor = AnchorStyles.None;
             textBox12.BorderStyle = BorderStyle.FixedSingle;
-            textBox12.Location = new Point(82, 16);
+            textBox12.Location = new Point(93, 21);
             textBox12.Name = "textBox12";
-            textBox12.Size = new Size(114, 27);
+            textBox12.Size = new Size(90, 27);
             textBox12.TabIndex = 18;
             // 
             // label23
             // 
+            label23.Anchor = AnchorStyles.None;
             label23.AutoSize = true;
             label23.Location = new Point(6, 23);
             label23.Name = "label23";
@@ -591,21 +622,23 @@
             // 
             // groupBox4
             // 
+            groupBox4.Anchor = AnchorStyles.None;
             groupBox4.Controls.Add(textBox9);
             groupBox4.Controls.Add(label17);
             groupBox4.Controls.Add(label21);
             groupBox4.Controls.Add(label22);
             groupBox4.Controls.Add(textBox11);
             groupBox4.Controls.Add(textBox10);
-            groupBox4.Location = new Point(12, 336);
+            groupBox4.Location = new Point(1, 336);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(433, 99);
+            groupBox4.Size = new Size(369, 99);
             groupBox4.TabIndex = 20;
             groupBox4.TabStop = false;
             groupBox4.Text = "Thưởng, trợ cấp";
             // 
             // groupBox5
             // 
+            groupBox5.Anchor = AnchorStyles.None;
             groupBox5.Controls.Add(textBox15);
             groupBox5.Controls.Add(label26);
             groupBox5.Controls.Add(label25);
@@ -614,26 +647,28 @@
             groupBox5.Controls.Add(textBox13);
             groupBox5.Controls.Add(label23);
             groupBox5.Controls.Add(textBox12);
-            groupBox5.Location = new Point(451, 339);
+            groupBox5.Location = new Point(376, 339);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(404, 96);
+            groupBox5.Size = new Size(389, 96);
             groupBox5.TabIndex = 21;
             groupBox5.TabStop = false;
             groupBox5.Text = "Phí";
             // 
             // textBox15
             // 
+            textBox15.Anchor = AnchorStyles.None;
             textBox15.BorderStyle = BorderStyle.FixedSingle;
-            textBox15.Location = new Point(288, 56);
+            textBox15.Location = new Point(288, 54);
             textBox15.Name = "textBox15";
-            textBox15.Size = new Size(110, 27);
+            textBox15.Size = new Size(86, 27);
             textBox15.TabIndex = 25;
             textBox15.Text = "50000";
             // 
             // label26
             // 
+            label26.Anchor = AnchorStyles.None;
             label26.AutoSize = true;
-            label26.Location = new Point(202, 56);
+            label26.Location = new Point(189, 56);
             label26.Name = "label26";
             label26.Size = new Size(82, 20);
             label26.TabIndex = 24;
@@ -641,8 +676,9 @@
             // 
             // label25
             // 
+            label25.Anchor = AnchorStyles.None;
             label25.AutoSize = true;
-            label25.Location = new Point(202, 23);
+            label25.Location = new Point(189, 23);
             label25.Name = "label25";
             label25.Size = new Size(49, 20);
             label25.TabIndex = 23;
@@ -650,14 +686,16 @@
             // 
             // textBox14
             // 
+            textBox14.Anchor = AnchorStyles.None;
             textBox14.BorderStyle = BorderStyle.FixedSingle;
             textBox14.Location = new Point(288, 16);
             textBox14.Name = "textBox14";
-            textBox14.Size = new Size(110, 27);
+            textBox14.Size = new Size(86, 27);
             textBox14.TabIndex = 22;
             // 
             // label24
             // 
+            label24.Anchor = AnchorStyles.None;
             label24.AutoSize = true;
             label24.Location = new Point(6, 56);
             label24.Name = "label24";
@@ -667,27 +705,19 @@
             // 
             // textBox13
             // 
+            textBox13.Anchor = AnchorStyles.None;
             textBox13.BorderStyle = BorderStyle.FixedSingle;
-            textBox13.Location = new Point(82, 53);
+            textBox13.Location = new Point(93, 54);
             textBox13.Name = "textBox13";
-            textBox13.Size = new Size(114, 27);
+            textBox13.Size = new Size(90, 27);
             textBox13.TabIndex = 20;
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Location = new Point(277, 27);
-            label31.Name = "label31";
-            label31.Size = new Size(0, 20);
-            label31.TabIndex = 26;
-            label31.Visible = false;
             // 
             // frmtinhluong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(1232, 810);
+            ClientSize = new Size(1100, 787);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(button2);
@@ -697,13 +727,14 @@
             Controls.Add(label1);
             Controls.Add(groupBox1);
             Controls.Add(dataGridView1);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmtinhluong";
             Text = "QUẢN LÝ TÍNH LƯƠNG NHÂN VIÊN";
             Load += frmtinhluong_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             groupBox2.ResumeLayout(false);
@@ -779,5 +810,6 @@
         private Label label27;
         private Button button3;
         private Label label31;
+        private PictureBox pictureBox2;
     }
 }

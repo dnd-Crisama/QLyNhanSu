@@ -269,6 +269,8 @@ namespace QLyNhanSu
 
         private void button4_Click(object sender, EventArgs e) //QUAN LY LUONG
         {
+            frmQuanLyLuong frmQuanLyLuong = new frmQuanLyLuong();
+            openChildForm(frmQuanLyLuong);
             hideSubMenu();
         }
 

@@ -362,7 +362,7 @@ namespace QLyNhanSu
                 doituong.trangthai = 0;
             }
             doituong.hinhanh = ImageToByteArray(ptbHinhAnh);
-            
+
 
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -507,7 +507,7 @@ namespace QLyNhanSu
             dataGridViewNV.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewNV.Columns[14].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewNV.Columns[15].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-           
+
             dataGridViewNV.Columns[13].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewNV.Columns[12].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewNV.Columns[11].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
@@ -557,7 +557,7 @@ namespace QLyNhanSu
         private int selectedHeSoLuongID;
         private int selectedTroCapID;
 
-        
+
         private void cbbHoSo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -598,7 +598,7 @@ namespace QLyNhanSu
                 selectedTroCapID = (int)cbbTroCap.SelectedValue;
             }
         }
-        
+
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -613,7 +613,7 @@ namespace QLyNhanSu
                 checkBox1.Text = "Không khả dụng";
             }
         }
-        
+
 
         private void ptbHinhAnh_Click(object sender, EventArgs e)
         {
@@ -623,19 +623,24 @@ namespace QLyNhanSu
             openFileDialog.Title = "Chọn hình ảnh";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {            
-                    ptbHinhAnh.ImageLocation = openFileDialog.FileName;
+            {
+                ptbHinhAnh.ImageLocation = openFileDialog.FileName;
             }
         }
         private byte[] ImageToByteArray(PictureBox pictureBox)
         {
-             MemoryStream memoryStream = new MemoryStream();
-        
-             pictureBox.Image.Save(memoryStream, pictureBox.Image.RawFormat);
-             return memoryStream.ToArray();
-           
+            MemoryStream memoryStream = new MemoryStream();
+
+            pictureBox.Image.Save(memoryStream, pictureBox.Image.RawFormat);
+            return memoryStream.ToArray();
+
         }
         private void DataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+
+        }
+
+        private void dataGridViewNV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

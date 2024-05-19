@@ -29,7 +29,7 @@ namespace QLyNhanSu
         hesoluongbll xuly = new hesoluongbll();
         hesoluong doituong = new hesoluong();
 
-        
+
 
         public void load_data()
         {
@@ -365,6 +365,11 @@ namespace QLyNhanSu
         private void toolStripButton4_Click_1(object sender, EventArgs e)
         {
             load_data();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

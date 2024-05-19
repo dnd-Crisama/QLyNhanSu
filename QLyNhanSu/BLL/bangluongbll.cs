@@ -17,66 +17,35 @@ namespace QLyNhanSu.BLL
 {
     internal class bangluongbll
     {
-        DataAccess ac = new DataAccess();
-        public DataTable hien()
+        ketnoiCSDL data = new ketnoiCSDL();
+        public bangluongdto bl { get; set; }
+        public DataTable gettinhluong()
         {
-            var dt = ac.GetDataTable_Store("bangluong_hien");
-            return dt;
+            return data.gettinhluong();
         }
-        public DataTable timkiem(string ma)
+        public void luunoidung(string noidung)
         {
-            var dt = ac.Load_Theo_ma("bangluong_timkiem", ma);
-            return dt;
+            data.luunoidung(bl.id, noidung);
         }
-        public void them(bangluongdto doituong)
+        public string getchucvu()
         {
-            string chuoi = " INSERT INTO BangLuong ";
-            chuoi += " (idnhanvien,gio,ngay,thang,nam,trangthai,noidung,ghichu) ";
-            chuoi += " VALUES ( ";
-            chuoi += " N'" + doituong.idnhanvien + "', ";
-            chuoi += " N'" + doituong.gio + "', ";
-            chuoi += " N'" + doituong.ngay + "', ";
-            chuoi += " N'" + doituong.thang + "', ";
-            chuoi += " N'" + doituong.nam + "', ";
-            chuoi += " N'" + doituong.trangthai + "', ";
-            chuoi += " N'" + doituong.noidung + "', ";
-            chuoi += " N'" + doituong.ghichu + "') ";
-            try
-            {
-                ac.ExecuteCommandtext(chuoi);
-            }
-            catch (Exception ex)
-            {
-                ex.ToString();
-            }
+            return data.getchucvu(bl.idnhanvien);
         }
-        public void sua(bangluongdto doituong)
+        public DataTable tim_idnhanvien2(int idnv)
         {
-            string chuoi = " UPDATE BangLuong SET ";
-            chuoi += " idnhanvien= N'" + doituong.idnhanvien + "', ";
-            chuoi += " gio= N'" + doituong.gio + "', ";
-            chuoi += " ngay= N'" + doituong.ngay + "', ";
-            chuoi += " thang= N'" + doituong.thang + "', ";
-            chuoi += " nam= N'" + doituong.nam + "', ";
-            chuoi += " trangthai= N'" + doituong.trangthai + "', ";
-            chuoi += " noidung= N'" + doituong.noidung + "' ";
-            chuoi += " ghichu= N'" + doituong.ghichu + "', ";
-            chuoi += " WHERE id = N'" + doituong.id + "' ";
-            try
-            {
-                ac.ExecuteCommandtext(chuoi);
-            }
-            catch (Exception ex) { ex.ToString(); }
+            return data.tim_idnhanvien2(idnv);
         }
-        public void xoa(bangluongdto doituong)
+        public DataTable tim_tennhanvien2(string tennv)
         {
-            string chuoi = "DELETE FROM BangLuong ";
-            chuoi += " WHERE id = N'" + doituong.id + "' ";
-            try
-            {
-                ac.ExecuteCommandtext(chuoi);
-            }
-            catch (Exception ex) { ex.ToString(); }
+            return data.tim_tennhanvien2(tennv);
+        }
+        public DataTable tim_chucvu(string  chucvu)
+        {
+            return data.tim_chucvu(chucvu);
+        }
+        public void Xoabangluong(string id)
+        {
+            data.Xoabangluong(id);
         }
     }
 }
