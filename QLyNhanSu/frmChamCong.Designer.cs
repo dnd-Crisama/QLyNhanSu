@@ -553,7 +553,8 @@
             txtCMT.Location = new Point(159, 160);
             txtCMT.Margin = new Padding(3, 4, 3, 4);
             txtCMT.Name = "txtCMT";
-            txtCMT.Size = new Size(276, 27);
+            txtCMT.Size = new Size(242, 23);
+            txtCMT.Size = new Size(242, 23);
             txtCMT.TabIndex = 3;
             // 
             // txtTenNV
@@ -562,7 +563,8 @@
             txtTenNV.Location = new Point(159, 115);
             txtTenNV.Margin = new Padding(3, 4, 3, 4);
             txtTenNV.Name = "txtTenNV";
-            txtTenNV.Size = new Size(276, 27);
+            txtTenNV.ReadOnly = true;
+            txtTenNV.Size = new Size(242, 23);
             txtTenNV.TabIndex = 2;
             // 
             // txtMaNV
@@ -571,7 +573,8 @@
             txtMaNV.Location = new Point(159, 72);
             txtMaNV.Margin = new Padding(3, 4, 3, 4);
             txtMaNV.Name = "txtMaNV";
-            txtMaNV.Size = new Size(276, 27);
+            txtMaNV.ReadOnly = true;
+            txtMaNV.Size = new Size(242, 23);
             txtMaNV.TabIndex = 1;
             // 
             // label7
