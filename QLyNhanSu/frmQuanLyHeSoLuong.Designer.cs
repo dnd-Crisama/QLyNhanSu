@@ -30,10 +30,7 @@
         {
             toolStrip1 = new ToolStrip();
             toolStripButton1 = new ToolStripButton();
-            toolStripButton2 = new ToolStripButton();
             toolStripButton3 = new ToolStripButton();
-            toolStripButton4 = new ToolStripButton();
-            toolStripButton8 = new ToolStripButton();
             toolStripButton5 = new ToolStripButton();
             toolStripLabel1 = new ToolStripLabel();
             txttimkiem = new ToolStripTextBox();
@@ -48,6 +45,9 @@
             txtma = new TextBox();
             dataGridViewHSL = new DataGridView();
             lblEx = new Label();
+            toolStripButton8 = new ToolStripButton();
+            toolStripButton4 = new ToolStripButton();
+            toolStripButton2 = new ToolStripButton();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewHSL).BeginInit();
             SuspendLayout();
@@ -58,7 +58,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, txttimkiem, toolStripButton6, toolStripButton7, toolStripButton10 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1239, 27);
+            toolStrip1.Size = new Size(1082, 27);
             toolStrip1.TabIndex = 6;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -72,16 +72,6 @@
             toolStripButton1.Text = "toolStripButton1";
             toolStripButton1.Click += toolStripButton1_Click;
             // 
-            // toolStripButton2
-            // 
-            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton2.Image = Properties.Resources.toolStripButton2_Image;
-            toolStripButton2.ImageTransparentColor = Color.Magenta;
-            toolStripButton2.Name = "toolStripButton2";
-            toolStripButton2.Size = new Size(29, 24);
-            toolStripButton2.Text = "toolStripButton2";
-            toolStripButton2.Click += toolStripButton2_Click;
-            // 
             // toolStripButton3
             // 
             toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
@@ -91,26 +81,6 @@
             toolStripButton3.Size = new Size(29, 24);
             toolStripButton3.Text = "toolStripButton3";
             toolStripButton3.Click += toolStripButton3_Click;
-            // 
-            // toolStripButton4
-            // 
-            toolStripButton4.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton4.Image = Properties.Resources.toolStripButton4_Image;
-            toolStripButton4.ImageTransparentColor = Color.Magenta;
-            toolStripButton4.Name = "toolStripButton4";
-            toolStripButton4.Size = new Size(29, 24);
-            toolStripButton4.Text = "toolStripButton4";
-            toolStripButton4.Click += toolStripButton4_Click_1;
-            // 
-            // toolStripButton8
-            // 
-            toolStripButton8.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton8.Image = Properties.Resources.toolStripButton8_Image;
-            toolStripButton8.ImageTransparentColor = Color.Magenta;
-            toolStripButton8.Name = "toolStripButton8";
-            toolStripButton8.Size = new Size(29, 24);
-            toolStripButton8.Text = "toolStripButton8";
-            toolStripButton8.Click += toolStripButton8_Click;
             // 
             // toolStripButton5
             // 
@@ -215,10 +185,10 @@
             // dataGridViewHSL
             // 
             dataGridViewHSL.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewHSL.Location = new Point(0, 216);
+            dataGridViewHSL.Location = new Point(12, 179);
             dataGridViewHSL.Name = "dataGridViewHSL";
             dataGridViewHSL.RowHeadersWidth = 51;
-            dataGridViewHSL.Size = new Size(1225, 737);
+            dataGridViewHSL.Size = new Size(1058, 551);
             dataGridViewHSL.TabIndex = 28;
             dataGridViewHSL.CellClick += dataGridView1_CellClick;
             // 
@@ -231,11 +201,41 @@
             lblEx.TabIndex = 29;
             lblEx.Click += label4_Click;
             // 
+            // toolStripButton8
+            // 
+            toolStripButton8.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton8.Image = Properties.Resources.toolStripButton8_Image;
+            toolStripButton8.ImageTransparentColor = Color.Magenta;
+            toolStripButton8.Name = "toolStripButton8";
+            toolStripButton8.Size = new Size(29, 24);
+            toolStripButton8.Text = "toolStripButton8";
+            toolStripButton8.Click += toolStripButton8_Click;
+            // 
+            // toolStripButton4
+            // 
+            toolStripButton4.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton4.Image = Properties.Resources.toolStripButton4_Image;
+            toolStripButton4.ImageTransparentColor = Color.Magenta;
+            toolStripButton4.Name = "toolStripButton4";
+            toolStripButton4.Size = new Size(29, 24);
+            toolStripButton4.Text = "toolStripButton4";
+            toolStripButton4.Click += toolStripButton4_Click_1;
+            // 
+            // toolStripButton2
+            // 
+            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton2.Image = Properties.Resources.toolStripButton2_Image;
+            toolStripButton2.ImageTransparentColor = Color.Magenta;
+            toolStripButton2.Name = "toolStripButton2";
+            toolStripButton2.Size = new Size(29, 24);
+            toolStripButton2.Text = "toolStripButton2";
+            toolStripButton2.Click += toolStripButton2_Click;
+            // 
             // frmQuanLyHeSoLuong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1239, 997);
+            ClientSize = new Size(1082, 740);
             Controls.Add(lblEx);
             Controls.Add(dataGridViewHSL);
             Controls.Add(txtma);
@@ -245,6 +245,7 @@
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(toolStrip1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmQuanLyHeSoLuong";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmQuanLyHeSoLuong";
@@ -260,10 +261,7 @@
 
         private ToolStrip toolStrip1;
         private ToolStripButton toolStripButton1;
-        private ToolStripButton toolStripButton2;
         private ToolStripButton toolStripButton3;
-        private ToolStripButton toolStripButton4;
-        private ToolStripButton toolStripButton8;
         private ToolStripButton toolStripButton5;
         private ToolStripLabel toolStripLabel1;
         private ToolStripTextBox txttimkiem;
@@ -282,5 +280,8 @@
         private DataGridView dataGridViewHSL;
         private Label lblEx;
         private ToolStripButton toolStripButton10;
+        private ToolStripButton toolStripButton2;
+        private ToolStripButton toolStripButton4;
+        private ToolStripButton toolStripButton8;
     }
 }

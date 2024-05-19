@@ -48,10 +48,11 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources.ddddddddddd;
             pictureBox1.Image = Properties.Resources._6624c82abd9aa;
-            pictureBox1.Location = new Point(267, 125);
+            pictureBox1.Location = new Point(192, 83);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(730, 119);
@@ -61,10 +62,11 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button1.BackColor = Color.Red;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(1213, 0);
+            button1.Location = new Point(1055, 0);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(45, 40);
@@ -75,10 +77,10 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox3.Anchor = AnchorStyles.None;
             pictureBox3.BackgroundImage = Properties.Resources.ddddddddddd;
             pictureBox3.Image = Properties.Resources._10542551;
-            pictureBox3.Location = new Point(370, 525);
+            pictureBox3.Location = new Point(290, 398);
             pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(67, 76);
@@ -88,14 +90,14 @@
             // 
             // button2
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button2.Anchor = AnchorStyles.None;
             button2.BackColor = Color.LightBlue;
             button2.BackgroundImageLayout = ImageLayout.None;
             button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(370, 724);
+            button2.Location = new Point(290, 597);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(142, 92);
+            button2.Size = new Size(142, 59);
             button2.TabIndex = 3;
             button2.Text = "Đăng nhập";
             button2.UseVisualStyleBackColor = false;
@@ -103,13 +105,13 @@
             // 
             // button4
             // 
-            button4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button4.Anchor = AnchorStyles.None;
             button4.BackColor = Color.IndianRed;
             button4.FlatStyle = FlatStyle.Popup;
-            button4.Location = new Point(730, 724);
+            button4.Location = new Point(650, 597);
             button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(145, 92);
+            button4.Size = new Size(142, 59);
             button4.TabIndex = 4;
             button4.Text = "Thoát";
             button4.UseVisualStyleBackColor = false;
@@ -117,11 +119,11 @@
             // 
             // ckbShowPass
             // 
-            ckbShowPass.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ckbShowPass.Anchor = AnchorStyles.None;
             ckbShowPass.AutoSize = true;
             ckbShowPass.BackgroundImage = Properties.Resources.ddddddddddd;
             ckbShowPass.ForeColor = Color.SteelBlue;
-            ckbShowPass.Location = new Point(746, 623);
+            ckbShowPass.Location = new Point(666, 496);
             ckbShowPass.Margin = new Padding(3, 4, 3, 4);
             ckbShowPass.Name = "ckbShowPass";
             ckbShowPass.Size = new Size(139, 24);
@@ -132,11 +134,11 @@
             // 
             // ckbRemember
             // 
-            ckbRemember.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ckbRemember.Anchor = AnchorStyles.None;
             ckbRemember.AutoSize = true;
             ckbRemember.BackgroundImage = Properties.Resources.ddddddddddd;
             ckbRemember.ForeColor = Color.SteelBlue;
-            ckbRemember.Location = new Point(370, 623);
+            ckbRemember.Location = new Point(290, 496);
             ckbRemember.Margin = new Padding(3, 4, 3, 4);
             ckbRemember.Name = "ckbRemember";
             ckbRemember.Size = new Size(129, 24);
@@ -153,17 +155,17 @@
             pictureBox4.Location = new Point(0, 0);
             pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(1257, 1049);
+            pictureBox4.Size = new Size(1100, 787);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 13;
             pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.BackgroundImage = Properties.Resources.ddddddddddd;
             pictureBox2.Image = Properties.Resources._3177440;
-            pictureBox2.Location = new Point(370, 427);
+            pictureBox2.Location = new Point(290, 300);
             pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(67, 72);
@@ -173,6 +175,7 @@
             // 
             // txtUsername
             // 
+            txtUsername.Anchor = AnchorStyles.None;
             txtUsername.BackColor = Color.DarkSlateBlue;
             txtUsername.BorderColor = Color.DarkBlue;
             txtUsername.BorderFocusColor = Color.DarkViolet;
@@ -180,8 +183,8 @@
             txtUsername.BorderSize = 2;
             txtUsername.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsername.ForeColor = Color.White;
-            txtUsername.Location = new Point(446, 440);
-            txtUsername.Margin = new Padding(5, 5, 5, 5);
+            txtUsername.Location = new Point(366, 313);
+            txtUsername.Margin = new Padding(5);
             txtUsername.Multiline = false;
             txtUsername.Name = "txtUsername";
             txtUsername.Padding = new Padding(11, 9, 11, 9);
@@ -195,6 +198,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.Anchor = AnchorStyles.None;
             txtPassword.BackColor = Color.DarkSlateBlue;
             txtPassword.BorderColor = Color.DarkBlue;
             txtPassword.BorderFocusColor = Color.DarkViolet;
@@ -202,8 +206,8 @@
             txtPassword.BorderSize = 2;
             txtPassword.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPassword.ForeColor = Color.White;
-            txtPassword.Location = new Point(446, 543);
-            txtPassword.Margin = new Padding(5, 5, 5, 5);
+            txtPassword.Location = new Point(366, 416);
+            txtPassword.Margin = new Padding(5);
             txtPassword.Multiline = false;
             txtPassword.Name = "txtPassword";
             txtPassword.Padding = new Padding(11, 9, 11, 9);
@@ -220,7 +224,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1257, 1049);
+            ClientSize = new Size(1100, 787);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(ckbShowPass);

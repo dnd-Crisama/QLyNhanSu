@@ -58,7 +58,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnLoad, toolStripButton2, toolStripButton3, toolStripButton4, toolStripButton8, toolStripButton5, toolStripLabel1, txttimkiem, toolStripButton6, toolStripButton7, toolStripButton10 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1239, 27);
+            toolStrip1.Size = new Size(1100, 27);
             toolStrip1.TabIndex = 4;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -166,10 +166,10 @@
             // dataGridViewCV
             // 
             dataGridViewCV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCV.Location = new Point(14, 181);
+            dataGridViewCV.Location = new Point(12, 157);
             dataGridViewCV.Name = "dataGridViewCV";
             dataGridViewCV.RowHeadersWidth = 51;
-            dataGridViewCV.Size = new Size(1197, 787);
+            dataGridViewCV.Size = new Size(1074, 618);
             dataGridViewCV.TabIndex = 15;
             dataGridViewCV.CellClick += dataGridView1_CellClick;
             // 
@@ -233,7 +233,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1239, 997);
+            ClientSize = new Size(1100, 787);
             Controls.Add(lblEx);
             Controls.Add(txtma);
             Controls.Add(txtten);
@@ -243,6 +243,7 @@
             Controls.Add(label2);
             Controls.Add(dataGridViewCV);
             Controls.Add(toolStrip1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmQuanLyDanhMucChucVu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmQuanLyDanhMucChucVu";
