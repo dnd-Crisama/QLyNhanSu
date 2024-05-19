@@ -85,7 +85,7 @@
             lblTime.ForeColor = Color.DarkMagenta;
             lblTime.Location = new Point(853, 11);
             lblTime.Name = "lblTime";
-            lblTime.Size = new Size(0, 23);
+            lblTime.Size = new Size(0, 17);
             lblTime.TabIndex = 4;
             // 
             // panelSideMenu
@@ -125,7 +125,7 @@
             btnThoat.Location = new Point(0, 1137);
             btnThoat.Name = "btnThoat";
             btnThoat.Padding = new Padding(10, 0, 0, 0);
-            btnThoat.Size = new Size(229, 51);
+            btnThoat.Size = new Size(233, 51);
             btnThoat.TabIndex = 13;
             btnThoat.Text = " Thoát";
             btnThoat.TextAlign = ContentAlignment.MiddleLeft;
@@ -146,7 +146,7 @@
             stripHeThong.Location = new Point(0, 1086);
             stripHeThong.Name = "stripHeThong";
             stripHeThong.Padding = new Padding(10, 0, 0, 0);
-            stripHeThong.Size = new Size(229, 51);
+            stripHeThong.Size = new Size(233, 51);
             stripHeThong.TabIndex = 12;
             stripHeThong.Text = " Cấu hình";
             stripHeThong.TextAlign = ContentAlignment.MiddleLeft;
@@ -167,7 +167,7 @@
             stripQLTaiKhoan.Location = new Point(0, 1035);
             stripQLTaiKhoan.Name = "stripQLTaiKhoan";
             stripQLTaiKhoan.Padding = new Padding(10, 0, 0, 0);
-            stripQLTaiKhoan.Size = new Size(229, 51);
+            stripQLTaiKhoan.Size = new Size(233, 51);
             stripQLTaiKhoan.TabIndex = 11;
             stripQLTaiKhoan.Text = " Quản lý tài khoản";
             stripQLTaiKhoan.TextAlign = ContentAlignment.MiddleLeft;
@@ -185,7 +185,7 @@
             panelMenuDanhMuc.Dock = DockStyle.Top;
             panelMenuDanhMuc.Location = new Point(0, 833);
             panelMenuDanhMuc.Name = "panelMenuDanhMuc";
-            panelMenuDanhMuc.Size = new Size(229, 202);
+            panelMenuDanhMuc.Size = new Size(233, 202);
             panelMenuDanhMuc.TabIndex = 10;
             // 
             // button11
@@ -198,7 +198,7 @@
             button11.Location = new Point(0, 141);
             button11.Name = "button11";
             button11.Padding = new Padding(30, 0, 0, 0);
-            button11.Size = new Size(229, 48);
+            button11.Size = new Size(233, 48);
             button11.TabIndex = 3;
             button11.Text = "Quản lý Hệ số lương";
             button11.TextAlign = ContentAlignment.MiddleLeft;
@@ -215,7 +215,7 @@
             button10.Location = new Point(0, 93);
             button10.Name = "button10";
             button10.Padding = new Padding(30, 0, 0, 0);
-            button10.Size = new Size(229, 48);
+            button10.Size = new Size(233, 48);
             button10.TabIndex = 2;
             button10.Text = "Quản lý trợ cấp";
             button10.TextAlign = ContentAlignment.MiddleLeft;
@@ -232,7 +232,7 @@
             button8.Location = new Point(0, 45);
             button8.Name = "button8";
             button8.Padding = new Padding(30, 0, 0, 0);
-            button8.Size = new Size(229, 48);
+            button8.Size = new Size(233, 48);
             button8.TabIndex = 1;
             button8.Text = "Quản lý chức vụ";
             button8.TextAlign = ContentAlignment.MiddleLeft;
@@ -249,7 +249,7 @@
             button9.Location = new Point(0, 0);
             button9.Name = "button9";
             button9.Padding = new Padding(30, 0, 0, 0);
-            button9.Size = new Size(229, 45);
+            button9.Size = new Size(233, 45);
             button9.TabIndex = 0;
             button9.Text = "Quản lý phòng ban";
             button9.TextAlign = ContentAlignment.MiddleLeft;
@@ -269,7 +269,7 @@
             stripDanhMuc.Location = new Point(0, 782);
             stripDanhMuc.Name = "stripDanhMuc";
             stripDanhMuc.Padding = new Padding(10, 0, 0, 0);
-            stripDanhMuc.Size = new Size(229, 51);
+            stripDanhMuc.Size = new Size(233, 51);
             stripDanhMuc.TabIndex = 9;
             stripDanhMuc.Text = " Danh mục";
             stripDanhMuc.TextAlign = ContentAlignment.MiddleLeft;
@@ -285,7 +285,7 @@
             panelMenuNhanSu.Dock = DockStyle.Top;
             panelMenuNhanSu.Location = new Point(0, 674);
             panelMenuNhanSu.Name = "panelMenuNhanSu";
-            panelMenuNhanSu.Size = new Size(229, 108);
+            panelMenuNhanSu.Size = new Size(233, 108);
             panelMenuNhanSu.TabIndex = 8;
             // 
             // button5
@@ -298,7 +298,7 @@
             button5.Location = new Point(0, 45);
             button5.Name = "button5";
             button5.Padding = new Padding(30, 0, 0, 0);
-            button5.Size = new Size(229, 48);
+            button5.Size = new Size(233, 48);
             button5.TabIndex = 1;
             button5.Text = "Quản lý hồ sơ nhân sự";
             button5.TextAlign = ContentAlignment.MiddleLeft;
@@ -315,7 +315,7 @@
             button6.Location = new Point(0, 0);
             button6.Name = "button6";
             button6.Padding = new Padding(30, 0, 0, 0);
-            button6.Size = new Size(229, 45);
+            button6.Size = new Size(233, 45);
             button6.TabIndex = 0;
             button6.Text = "Quản lý nhân sự";
             button6.TextAlign = ContentAlignment.MiddleLeft;
@@ -334,7 +334,7 @@
             stripNhanSu.Location = new Point(0, 623);
             stripNhanSu.Name = "stripNhanSu";
             stripNhanSu.Padding = new Padding(10, 0, 0, 0);
-            stripNhanSu.Size = new Size(229, 51);
+            stripNhanSu.Size = new Size(233, 51);
             stripNhanSu.TabIndex = 7;
             stripNhanSu.Text = " Nhân sự";
             stripNhanSu.TextAlign = ContentAlignment.MiddleLeft;
@@ -350,7 +350,7 @@
             panelMenuChucNang.Dock = DockStyle.Top;
             panelMenuChucNang.Location = new Point(0, 515);
             panelMenuChucNang.Name = "panelMenuChucNang";
-            panelMenuChucNang.Size = new Size(229, 108);
+            panelMenuChucNang.Size = new Size(233, 108);
             panelMenuChucNang.TabIndex = 6;
             // 
             // btnTinhLuong
@@ -363,7 +363,7 @@
             btnTinhLuong.Location = new Point(0, 45);
             btnTinhLuong.Name = "btnTinhLuong";
             btnTinhLuong.Padding = new Padding(30, 0, 0, 0);
-            btnTinhLuong.Size = new Size(229, 48);
+            btnTinhLuong.Size = new Size(233, 48);
             btnTinhLuong.TabIndex = 1;
             btnTinhLuong.Text = "Tính lương";
             btnTinhLuong.TextAlign = ContentAlignment.MiddleLeft;
@@ -380,7 +380,7 @@
             btnQLLuong.Location = new Point(0, 0);
             btnQLLuong.Name = "btnQLLuong";
             btnQLLuong.Padding = new Padding(30, 0, 0, 0);
-            btnQLLuong.Size = new Size(229, 45);
+            btnQLLuong.Size = new Size(233, 45);
             btnQLLuong.TabIndex = 0;
             btnQLLuong.Text = "Quản lý lương";
             btnQLLuong.TextAlign = ContentAlignment.MiddleLeft;
@@ -400,7 +400,7 @@
             stripChucNang.Location = new Point(0, 464);
             stripChucNang.Name = "stripChucNang";
             stripChucNang.Padding = new Padding(10, 0, 0, 0);
-            stripChucNang.Size = new Size(229, 51);
+            stripChucNang.Size = new Size(233, 51);
             stripChucNang.TabIndex = 5;
             stripChucNang.Text = " Chức năng";
             stripChucNang.TextAlign = ContentAlignment.MiddleLeft;
@@ -421,7 +421,7 @@
             stripChamCong.Location = new Point(0, 413);
             stripChamCong.Name = "stripChamCong";
             stripChamCong.Padding = new Padding(10, 0, 0, 0);
-            stripChamCong.Size = new Size(229, 51);
+            stripChamCong.Size = new Size(233, 51);
             stripChamCong.TabIndex = 4;
             stripChamCong.Text = " Chấm công";
             stripChamCong.TextAlign = ContentAlignment.MiddleLeft;
@@ -437,7 +437,7 @@
             panelMenuHeThong.Dock = DockStyle.Top;
             panelMenuHeThong.Location = new Point(0, 305);
             panelMenuHeThong.Name = "panelMenuHeThong";
-            panelMenuHeThong.Size = new Size(229, 108);
+            panelMenuHeThong.Size = new Size(233, 108);
             panelMenuHeThong.TabIndex = 3;
             // 
             // stripThoat
@@ -450,7 +450,7 @@
             stripThoat.Location = new Point(0, 45);
             stripThoat.Name = "stripThoat";
             stripThoat.Padding = new Padding(30, 0, 0, 0);
-            stripThoat.Size = new Size(229, 48);
+            stripThoat.Size = new Size(233, 48);
             stripThoat.TabIndex = 1;
             stripThoat.Text = "Đăng xuất";
             stripThoat.TextAlign = ContentAlignment.MiddleLeft;
@@ -469,7 +469,7 @@
             stripDangNhap.Location = new Point(0, 0);
             stripDangNhap.Name = "stripDangNhap";
             stripDangNhap.Padding = new Padding(30, 0, 0, 0);
-            stripDangNhap.Size = new Size(229, 45);
+            stripDangNhap.Size = new Size(233, 45);
             stripDangNhap.TabIndex = 0;
             stripDangNhap.Text = "Đăng Nhập";
             stripDangNhap.TextAlign = ContentAlignment.MiddleLeft;
@@ -491,7 +491,7 @@
             btnHeThong.Location = new Point(0, 254);
             btnHeThong.Name = "btnHeThong";
             btnHeThong.Padding = new Padding(10, 0, 0, 0);
-            btnHeThong.Size = new Size(229, 51);
+            btnHeThong.Size = new Size(233, 51);
             btnHeThong.TabIndex = 2;
             btnHeThong.Text = " Hệ thống";
             btnHeThong.TextAlign = ContentAlignment.MiddleLeft;
@@ -512,7 +512,7 @@
             btnFormMain.ImageAlign = ContentAlignment.BottomCenter;
             btnFormMain.Location = new Point(0, 203);
             btnFormMain.Name = "btnFormMain";
-            btnFormMain.Size = new Size(229, 51);
+            btnFormMain.Size = new Size(233, 51);
             btnFormMain.TabIndex = 1;
             btnFormMain.UseVisualStyleBackColor = false;
             btnFormMain.Click += btnFormMain_Click;
@@ -523,7 +523,7 @@
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(229, 203);
+            panelLogo.Size = new Size(233, 203);
             panelLogo.TabIndex = 0;
             // 
             // pictureBox3
@@ -561,7 +561,7 @@
             lblQuote.ForeColor = Color.BlueViolet;
             lblQuote.Location = new Point(165, 10);
             lblQuote.Name = "lblQuote";
-            lblQuote.Size = new Size(65, 23);
+            lblQuote.Size = new Size(50, 17);
             lblQuote.TabIndex = 7;
             lblQuote.Text = "Quotes";
             // 
@@ -613,8 +613,7 @@
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             AutoSize = true;
             ClientSize = new Size(1350, 827);
             Controls.Add(panelChildForm);
