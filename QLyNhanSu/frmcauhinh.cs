@@ -35,11 +35,11 @@ namespace QLyNhanSu
         public void load_data()
         {
             var dt = xuly.hien();
-            dataGridView1.DataSource = dt; 
-            mahientai = dataGridView1.RowCount-1;
+            dataGridView1.DataSource = dt;
+            mahientai = dataGridView1.RowCount - 1;
             txtMa.Text = mahientai.ToString();
         }
-        
+
         public void timkiem()
         {
             var dt = xuly.timkiem(txtSearch.Text);
@@ -72,7 +72,7 @@ namespace QLyNhanSu
         {
             try
             {
-                if(int.Parse(txtMa.Text) < 0)
+                if (int.Parse(txtMa.Text) < 0)
                 {
                     MessageBox.Show("Vui lòng chọn dữ liệu", "Thông báo!", MessageBoxButtons.OK);
                     lblEx.Text = "Chưa chọn dữ liệu.";
@@ -86,13 +86,13 @@ namespace QLyNhanSu
                     lblEx.Text = "Cập nhật dữ liệu thành công!";
                 }
             }
-            catch ( Exception ex )
+            catch (Exception ex)
             {
                 lblEx.Text = "Lỗi, thử lại " + ex.Message.ToString();
                 txtTen.Focus();
             }
         }
-        public void xoa ()
+        public void xoa()
         {
             try
             {
@@ -110,7 +110,7 @@ namespace QLyNhanSu
                     lblEx.Text = "Xóa dữ liệu thành công!";
                     if (mahientai > 0)
                     {
-                        mahientai--;                      
+                        mahientai--;
                     }
                     txtMa.Text = mahientai.ToString();
                 }
@@ -133,7 +133,7 @@ namespace QLyNhanSu
             }
             trangthai_btn(true);
             trangthai_txt(true);
-            load_data() ;
+            load_data();
         }
         public void trangthai_txt(bool _trangthai)
         {
@@ -151,28 +151,28 @@ namespace QLyNhanSu
             btnSave.Enabled = !_trangthai;
             btnCancel.Enabled = !_trangthai;
         }
-        private void btnDelete_Click (object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc muốn xóa dữ liệu? Dữ liệu sẽ bị mất và không thể khôi phục.","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc muốn xóa dữ liệu? Dữ liệu sẽ bị mất và không thể khôi phục.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Yes)
             {
                 xoa();
             }
             else if (dialogResult == DialogResult.No)
             {
-                txtTen.Focus ();
+                txtTen.Focus();
             }
         }
-        private void btnAdd_Click (object sender, EventArgs e)
-        {
-            trangthai_btn (false);
-            trangthai_txt (false);
-            _stus = "1";
-        }
-        private void btnEdit_Click (object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             trangthai_btn(false);
-            trangthai_txt (false);
+            trangthai_txt(false);
+            _stus = "1";
+        }
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            trangthai_btn(false);
+            trangthai_txt(false);
             _stus = "0";
         }
         private void btnCanel_Click(object sender, EventArgs e)
@@ -181,15 +181,15 @@ namespace QLyNhanSu
             trangthai_txt(true);
             _stus = "0";
         }
-        private void btnSave_Click (object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             luu();
         }
-        private void btnSearch_Click (object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             timkiem();
         }
-        private void btnLoad_Click (object sender, EventArgs e)
+        private void btnLoad_Click(object sender, EventArgs e)
         {
             load_data();
         }
@@ -212,12 +212,12 @@ namespace QLyNhanSu
             load_data();
 
         }*/
-       /* private void btnImport_Click (object sender, EventArgs e)
-        {
-            import_excel();
-            btnDataToDatabase.Enabled = true;
+        /* private void btnImport_Click (object sender, EventArgs e)
+         {
+             import_excel();
+             btnDataToDatabase.Enabled = true;
 
-        }*/
+         }*/
         QLyNhanSu.DAL.Excel exec = new QLyNhanSu.DAL.Excel();
         public void export_excel()
         {
@@ -228,7 +228,7 @@ namespace QLyNhanSu
             {
                 var chuoi = f.FileName;
                 lblEx.Text = chuoi;
-                lblEx.Text = exec.Exports(dt,lblEx.Text);
+                lblEx.Text = exec.Exports(dt, lblEx.Text);
             }
             else
             {
@@ -294,7 +294,8 @@ namespace QLyNhanSu
                     excelApp.Quit();
                     excelApp.Visible = true;
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 lblEx.Text = "Không thực hiện được!" + ex.Message;
             }
@@ -329,7 +330,7 @@ namespace QLyNhanSu
             doituong.noidung = txtGioiThieu.Text;
             doituong.huongdan = txtHuongDan.Text;
         }
-        private void dataGridView1_CellClick (object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
@@ -349,7 +350,7 @@ namespace QLyNhanSu
         }
         public bool check_data(string _value)
         {
-            return ac.check_tontai("NhanVien","cmt",_value);
+            return ac.check_tontai("NhanVien", "cmt", _value);
         }
         /*private void save_data_grid_to_database(DataGridView dgv)
         {
@@ -391,6 +392,6 @@ namespace QLyNhanSu
             dataGridView1.Columns[4].HeaderText = "Hướng dẫn";
 
         }
-        
+
     }
 }

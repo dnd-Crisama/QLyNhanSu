@@ -48,6 +48,8 @@ namespace QLyNhanSu
             dataGridView1.CellClick += new DataGridViewCellEventHandler(dataGridView1_CellClick);
             dataGridView2.CellClick += new DataGridViewCellEventHandler(dataGridView2_CellClick);
             dataGridView2_load();
+            dataGridView2.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {

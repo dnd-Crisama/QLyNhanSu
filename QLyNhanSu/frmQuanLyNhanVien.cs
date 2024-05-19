@@ -528,7 +528,7 @@ namespace QLyNhanSu
         {
             var dsHoSo = ac.GetDataTable_Text("SELECT * FROM HoSoNhanVien");
             cbbHoSo.ValueMember = "id";
-            cbbHoSo.DisplayMember = "kihieu";
+            cbbHoSo.DisplayMember = "noidung";
             cbbHoSo.DataSource = dsHoSo;
 
             var dsPhongBan = ac.GetDataTable_Text("SELECT * FROM PhongBan");

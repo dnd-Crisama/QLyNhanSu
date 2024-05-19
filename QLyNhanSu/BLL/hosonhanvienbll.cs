@@ -31,7 +31,7 @@ namespace QLyNhanSu.BLL
             chuoi += " (kihieu,noidung,ngaytao,ngaycapphat) ";
             chuoi += " VALUES ( ";
             chuoi += " N'" + doituong.kihieu + "', ";
-            chuoi += " N'" + doituong.noidung + "', ";
+            chuoi += " N'" + doituong.noidung.Replace("'", "''") + "', ";
             chuoi += " N'" + doituong.ngaytao + "', ";
             chuoi += " N'" + doituong.ngaycapphat + "') ";
             try
@@ -45,12 +45,12 @@ namespace QLyNhanSu.BLL
         }
         public void sua(hosonhanviendto doituong)
         {
-            string chuoi = " UPDATE HoSoNhanVien SET ";
-            chuoi += " kihieu= N'" + doituong.kihieu + "', ";
-            chuoi += " noidung= N'" + doituong.noidung + "', ";
-            chuoi += " ngaytao= N'" + doituong.ngaytao + "', ";
-            chuoi += " ngaycapphat= N'" + doituong.ngaycapphat + "' ";
-            chuoi += " WHERE id = N'" + doituong.id + "' ";
+            string chuoi = "UPDATE HoSoNhanVien SET ";
+            chuoi += "kihieu = N'" + doituong.kihieu + "', ";
+            chuoi += "noidung = N'" + doituong.noidung.Replace("'", "''") + "', ";
+            chuoi += "ngaytao = N'" + doituong.ngaytao + "', ";
+            chuoi += "ngaycapphat = N'" + doituong.ngaycapphat + "' ";
+            chuoi += "WHERE id = N'" + doituong.id + "' ";
             try
             {
                 ac.ExecuteCommandtext(chuoi);

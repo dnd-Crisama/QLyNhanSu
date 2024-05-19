@@ -79,6 +79,7 @@ namespace QLyNhanSu
         {
             load_dataNhanVien();
             load_dataChamCong();
+            txtIDChamCong.Text = "0";
 
             #region Format Dataview
             // dataNhanvien
@@ -237,7 +238,7 @@ namespace QLyNhanSu
         {
             try
             {
-                if (int.Parse(txtMa.Text) < 0)
+                if (int.Parse(txtIDChamCong.Text) < 0)
                 {
                     MessageBox.Show("Vui lòng chọn dữ liệu", "Thông báo!", MessageBoxButtons.OK);
                     lblEx.Text = "Chưa chọn dữ liệu.";
@@ -321,7 +322,7 @@ namespace QLyNhanSu
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            if (txtIDChamCong.Text != "0")
+            if (txtIDChamCong.Text != "0" || txtIDChamCong.Text == null)
             {
                 sua();
             }
@@ -357,7 +358,13 @@ namespace QLyNhanSu
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            txtMaNV.Clear();
+            txtTenNV.Clear();
+            txtCMT.Clear();
+            txtNgaySinh.Clear();
+            txtEmail.Clear();
             load_dataChamCong();
+            load_dataNhanVien();
         }
 
         private void btnLoc_Click(object sender, EventArgs e)
@@ -390,6 +397,7 @@ namespace QLyNhanSu
                 {
                     DataGridViewRow row = this.dataGridView2.Rows[e.RowIndex];
                     txtIDChamCong.Text = row.Cells[0].Value.ToString();
+                    txtMaNV.Text = row.Cells[1].Value.ToString();
                 }
                 else
                 {

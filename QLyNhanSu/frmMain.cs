@@ -127,6 +127,11 @@ namespace QLyNhanSu
 
         private void stripThoat_Click(object sender, EventArgs e)
         {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            
             isLogin = false;
             stripDangNhap.Click += stripDangNhap_Click;
             KiemTraDangNhap();
